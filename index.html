@@ -2,3 +2,48 @@
 layout: page
 title: Home
 ---
+
+<style>
+  .mybutton{
+    background:#1aa2ab;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:40px;
+    font-size:0.7em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  .mybutton:hover{
+    background:#fff;
+    color:#1aa2ab;
+  }
+  .mybutton:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1aa2ab;
+    transition:400ms ease all;
+  }
+  .mybutton:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .mybutton:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+</style>
+<center>
+  <br><br>
+  <a href="https://flask-resume-template.glitch.me" target="_blank">
+    <button class="mybutton">Check out my Flask-based resume!</button>
+  </a>
+</center>
