@@ -49,7 +49,7 @@ description: "Una breve infografía sobre las redes neuronales artificiales."
   <br>
   <li class="cyclone">
   <strong>Nota histórica:</strong><br>
-  El primer modelo esquemático de una neurona artificial fue propuesto por Warren McCulloch y Walter Pitts en 1943, y después en 1960 el modelo de “perceptrón” propuesto por Frank Rosenblatt. Tras un pequeño boom por aquellos años, los modelos basados en neuronas artificiales fueron decayendo un poco, hasta finales de los 80’s y en los 90s, donde volvieron a ganar mucho auge con nuevos modelos y estructuras.
+  El primer modelo esquemático de una neurona artificial fue propuesto por Warren McCulloch y Walter Pitts en 1943, y después en 1960 el modelo de “perceptrón” propuesto por Frank Rosenblatt. Tras un pequeño boom por aquellos años, los modelos basados en neuronas artificiales fueron decayendo un poco, hasta finales de los 80’s y en los 90s, donde volvieron a ganar mucho auge con nuevos modelos y operaciones definidas entre sus capas.
   </li>
   <br>
   <li class="cyclone">
