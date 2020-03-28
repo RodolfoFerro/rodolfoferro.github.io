@@ -1,0 +1,19 @@
+---
+title: "HasckSureste WIRE"
+subtitle: Introducción (básica) a las neuronas artificiales.
+layout: post
+date: 2020-03-28 03:00
+tag:
+  - Python
+  - Neural Networks
+headerImage: false
+projects: true
+hidden: false # don't count this post in blog pagination
+description: Link al notebook de mi taller Introducción (básica) a las neuronas artificiales.
+category: blog
+author: rodferro
+externalLink: https://colab.research.google.com/gist/RodolfoFerro/bae7bd54cdb773e684f8f0ccbdfb3a90/introducci-n-b-sica-a-la-neuronas-artificiales.ipynb
+---
+
+<center><a href="https://colab.research.google.com/gist/RodolfoFerro/bae7bd54cdb773e684f8f0ccbdfb3a90/introducci-n-b-sica-a-la-neuronas-artificiales.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" width="40%" alt="Open In Colab"/></a></center>
+<br><br><br>
