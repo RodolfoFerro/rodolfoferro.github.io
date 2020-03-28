@@ -1,10 +1,11 @@
 ---
-title: "HasckSureste WIRE"
+title: "HackSureste WIRE"
 subtitle: Introducción (básica) a las neuronas artificiales.
 layout: post
 date: 2020-03-28 03:00
 tag:
   - Python
+  - Artificial Neurons
   - Neural Networks
 headerImage: false
 projects: true
