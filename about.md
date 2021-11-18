@@ -7,9 +7,9 @@ layout: page
 
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-> 💻 ML Engineer @ Zetalabs S.L.
-> 👨🏻‍💻 Google Dev Expert in ML
-> 👨🏻‍🏫 Sherpa Digital de IA para Microsoft MX
+> 💻 ML Engineer @ Zetalabs S.L. <br>
+> 👨🏻‍💻 Google Dev Expert in ML <br>
+> 👨🏻‍🏫 Sherpa Digital de IA para Microsoft MX <br>
 > 🚀 [@futurelabmx](https://futurelab.mx/) co-founder
 
 <br>
