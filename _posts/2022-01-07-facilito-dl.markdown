@@ -36,7 +36,7 @@ Para abrir el cuaderno de trabajo, puedes dar click en el siguiente botón:
 
 ### Slides
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQnOXco8jfJOSsHZo4ZWU70O7PWzGsg5lNbkWhweFuWe64nlHs5YF9sIpirSOcsDgC19eti-ZfF91Gr/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQnOXco8jfJOSsHZo4ZWU70O7PWzGsg5lNbkWhweFuWe64nlHs5YF9sIpirSOcsDgC19eti-ZfF91Gr/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ***
 
