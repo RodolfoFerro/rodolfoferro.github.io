@@ -46,7 +46,7 @@ Puedes revisar los slides dando [click aquí](https://docs.google.com/presentati
 Para abrir el cuaderno de trabajo, puedes dar click en el siguiente botón:
 
 <center>
-  <a href="https://colab.research.google.com/gist/RodolfoFerro/5a56d670d41288c96832122028f5d4a6/introducci-n-a-las-redes-neuronales-convolucionales-con-tensorflow-y-keras.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/gist/RodolfoFerro/b9d1ed80179bd3ed949f96706c6b7b46/introducci-n-a-las-redes-neuronales-convolucionales-con-tensorflow-y-keras.ipynb" target="_blank">
     <img src="https://camo.githubusercontent.com/52feade06f2fecbf006889a904d221e6a730c194/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg">
   </a>
 </center>
