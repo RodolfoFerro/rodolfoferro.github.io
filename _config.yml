@@ -34,7 +34,7 @@ disqus:
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
-twitter: FerroRodolfo
+twitter: rodo_ferro
 github: RodolfoFerro
 linkedin: rodolfoferro
 google: RodolfoFerro
@@ -57,7 +57,7 @@ authors:
         bio: With great power comes great responsibility.
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: FerroRodolfo
+        twitter: rodo_ferro
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
