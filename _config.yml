@@ -3,7 +3,7 @@ name: Rodolfo Ferro
 bio: "Let's build our future. 🚀"
 
 # twitter summary info
-description: "ƒ[💻] Computer-mathemagician · 🚀 Future Lab co-founder · 👨🏻‍💻 LAB León tech consultant · 🚩 GitHub Campus Expert · 👾 León Joven ambassador · 🐍 Python Dev · 🔬 Clubes de Ciencia México Member · #SoyUG #CIMAT 🇲🇽"
+description: "💻 Dev @Bisonic_Games • 🧠 ML + Blockchain + Back Engineer • 🐍 Pythonista • 🚀 @futurelabmx co-founder • 👨🏻‍💻 prev @ploomber @CodeandoMexico @Innovacion_Leon"
 
 # if it's an external image, update below for true
 # better with square images
@@ -35,13 +35,13 @@ disqus:
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
 twitter: rodo_ferro
+instagram: rodo_ferro
 github: RodolfoFerro
 linkedin: rodolfoferro
-google: RodolfoFerro
-medium: FerroRodolfo
 email: rodolfoferroperez@gmail.com
-youtube: channel/UC3Q7iZXB950Bvtjpml9jqZg
-# instagram: myinstagram
+# youtube: channel/UC3Q7iZXB950Bvtjpml9jqZg
+# medium: rodolfoferro
+# google: 
 # pinterest: mypinterest
 # spotify: myspotify
 # lastfm: mylastfm
@@ -97,7 +97,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-feed
-  - jemoji
   - jekyll-admin
 
 jekyll-mentions:

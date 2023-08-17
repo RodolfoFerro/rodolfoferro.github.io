@@ -30,15 +30,19 @@ title: Resume
 }
 </style>
 
-# My résumé
+# Resume
 
 <center>
-<a class="cvbutton" href="/assets/docs/Rodolfo%20Ferro%20-%20CV%20(full).pdf" target="_blank"><span><img src="../assets/images/download.png" height="18px" style="padding-top:5px; margin-right:5px;">  Full Size </span></a>
-<a class="cvbutton" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume.pdf" target="_blank"><span><img src="../assets/images/download.png" height="18px" style="padding-top:5px; margin-right:5px;">  One Page </span></a>
+<!-- <a class="cvbutton" href="/assets/docs/Rodolfo%20Ferro%20-%20CV%20(full).pdf" target="_blank"><span><img src="../assets/images/download.png" height="18px" style="padding-top:5px; margin-right:5px;">  Full Size </span></a> -->
+<a class="cvbutton" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume.pdf" target="_blank"><span><img src="../assets/images/download.png" height="18px" style="padding-top:5px; margin-right:5px;">Download PDF</span></a>
 </center>
 
 ---
-<i><b>Última actualización:</b> 30 de junio de 2019 (falta actualizar sección de charlas y talleres).</i>
+<i><b>Última actualización:</b> 30 de junio de 2019. Se sugiere consultar el single pager (el PDF en el botón de arriba).</i>
+
+<i><b>Nota:</b> No tengo intención de actualizar pronto esta sección (salvo el PDF de arriba), así que te invito a que me contactes directo si deseas platicar. :) </i>
+
+---
 
 <h4>ACTIVIDADES ACTUALES:</h4>
 <ul>

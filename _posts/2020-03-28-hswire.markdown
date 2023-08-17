@@ -16,11 +16,3 @@ author: rodferro
 externalLink: https://colab.research.google.com/gist/RodolfoFerro/bae7bd54cdb773e684f8f0ccbdfb3a90/introducci-n-b-sica-a-la-neuronas-artificiales.ipynb
 ---
 
-<center>
-
-  <a href="https://docs.google.com/presentation/d/e/2PACX-1vQW84OnTrKz8th8N7qJMoX6VoiumSyQfBjBP86cQBREGloAA5boy4ItIAfr19pcuP39kqK2WGGNEiAB/pub?start=false&loop=false&delayms=3000" target="_blank\"><img src="https://img.shields.io/static/v1?label=Slides&message=Google%20Slides&color=tomato" height="40px" alt="Open In Colab"/></a>
-  
-  <a href="https://colab.research.google.com/gist/RodolfoFerro/bae7bd54cdb773e684f8f0ccbdfb3a90/introducci-n-b-sica-a-la-neuronas-artificiales.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" height="40px" alt="Open In Colab"/></a>
-
-</center>
-<br><br><br>
