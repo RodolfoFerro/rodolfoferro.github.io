@@ -26,7 +26,7 @@ Puedes revisar los slides dando [click aquí](https://docs.google.com/presentati
 Para acceder al código desarrollado durante la sesión, puedes dar click en el siguiente botón:
 
 <center>
-  <a href="#" target="_blank">
+  <a href="https://github.com/RodolfoFerro/streamlit-facilito" target="_blank">
     <img src="/assets/images/github_button.png" alt="Available on GitHub" width="30%">
   </a>
 </center>
