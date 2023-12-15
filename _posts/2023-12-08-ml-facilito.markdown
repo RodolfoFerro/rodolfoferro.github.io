@@ -60,6 +60,23 @@ Para abrir el cuaderno de trabajo, puedes dar click en el siguiente botón:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTtv50C9crDgutRVCZj8szu8rasAZYTC6f_3AT3vXO7Kas-73PDgLQo5qpbcFvDCIODZ7EHgynwCZ42/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
+
+## 👾 Sesión 3 - Redes neuronales con PyTorch
+
+Puedes revisar los slides dando [click aquí](https://docs.google.com/presentation/d/e/2PACX-1vQjshC4kSfMfRqMf0Y12ZmAGw1XWD2cRRrEAlxBmiK0vsVsSmflWPc10Lqru1aKSQ1k-bPvLN-AOvXo/pub?start=false&loop=false&delayms=3000) o puedes consultarlos en directo a continuación.
+
+Para abrir el cuaderno de trabajo, puedes dar click en el siguiente botón:
+
+<center>
+  <a href="https://colab.research.google.com/github/RodolfoFerro/ml-facilito/blob/main/notebooks/Deep_Learning_Clase_3.ipynb" target="_blank">
+    <img src="https://camo.githubusercontent.com/52feade06f2fecbf006889a904d221e6a730c194/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667" alt="Open In Colab" data-canonical-src="https://colab.research.google.com/assets/colab-badge.svg">
+  </a>
+</center>
+
+### Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQjshC4kSfMfRqMf0Y12ZmAGw1XWD2cRRrEAlxBmiK0vsVsSmflWPc10Lqru1aKSQ1k-bPvLN-AOvXo/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 ***
 
 ### SOBRE EL USO DE INFORMACIÓN TOTAL O PARCIAL: 🔐
