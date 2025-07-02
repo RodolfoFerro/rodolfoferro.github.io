@@ -43,12 +43,18 @@ Para abrir el cuaderno de trabajo, puedes dar click en el siguiente botón:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSTwTVSH3PElOnxo_bEWGPdMYEVXkeIz13yB_Ibu9t5XYLNrmBA9hJiK2NYKNymf0hpbXJNL9G6i3wO/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-> **NOTA:** Los contenidos de las sesiones serán actualizados y añadidos próximos a impartir las clases.
-
-<!--  
+  
 ## 👾 Sesión 2 - Introducción a redes neuronales con Keras
 
 Puedes revisar los slides dando [click aquí](https://docs.google.com/presentation/d/e/2PACX-1vTtv50C9crDgutRVCZj8szu8rasAZYTC6f_3AT3vXO7Kas-73PDgLQo5qpbcFvDCIODZ7EHgynwCZ42/pub?start=false&loop=false&delayms=3000) o puedes consultarlos en directo a continuación.
+
+Para abrir la plataforma de TensorFlow Playground, puedes dar click en el siguiente botón:
+
+<center>
+  <a href="https://playground.tensorflow.org/" target="_blank">
+    <img src="https://img.shields.io/badge/TensorFlow%20Playground-8A2BE2">
+  </a>
+</center>
 
 Para abrir el cuaderno de trabajo, puedes dar click en el siguiente botón:
 
@@ -62,7 +68,11 @@ Para abrir el cuaderno de trabajo, puedes dar click en el siguiente botón:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTtv50C9crDgutRVCZj8szu8rasAZYTC6f_3AT3vXO7Kas-73PDgLQo5qpbcFvDCIODZ7EHgynwCZ42/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
+> **NOTA:** Los contenidos de las sesiones serán actualizados y añadidos próximos a impartir las clases.
 
+
+
+<!--
 ## 👾 Sesión 3 - Redes neuronales con PyTorch
 
 Puedes revisar los slides dando [click aquí](https://docs.google.com/presentation/d/e/2PACX-1vQjshC4kSfMfRqMf0Y12ZmAGw1XWD2cRRrEAlxBmiK0vsVsSmflWPc10Lqru1aKSQ1k-bPvLN-AOvXo/pub?start=false&loop=false&delayms=3000) o puedes consultarlos en directo a continuación.
