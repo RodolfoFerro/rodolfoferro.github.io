@@ -86,7 +86,6 @@ Para abrir el cuaderno de trabajo, puedes dar click en el siguiente botón:
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQjshC4kSfMfRqMf0Y12ZmAGw1XWD2cRRrEAlxBmiK0vsVsSmflWPc10Lqru1aKSQ1k-bPvLN-AOvXo/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
-<!--
 ## 👾 Sesión 4 - Modelos Fundacionales & Hugging Face
 
 Puedes revisar los slides dando [click aquí](https://docs.google.com/presentation/d/e/2PACX-1vTYwPkZOB3ShgJOcLGkitDHT-Huu_gD06fjHc0b7E2mFnmxa0OvLZNgSagRxszQycpCCvM0CQ4ifx2x/pub?start=false&loop=false&delayms=3000) o puedes consultarlos en directo a continuación.
@@ -102,9 +101,10 @@ Para abrir el cuaderno de trabajo, puedes dar click en el siguiente botón:
 ### Slides
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTYwPkZOB3ShgJOcLGkitDHT-Huu_gD06fjHc0b7E2mFnmxa0OvLZNgSagRxszQycpCCvM0CQ4ifx2x/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
--->
 
+<!--
 > **NOTA:** Los contenidos de las sesiones serán actualizados y añadidos próximos a impartir las clases.
+-->
 
 ***
 
