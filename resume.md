@@ -33,8 +33,7 @@ title: Resume
 # Resume
 
 <center>
-<!-- <a class="cvbutton" href="/assets/docs/Rodolfo%20Ferro%20-%20CV%20(full).pdf" target="_blank"><span><img src="../assets/images/download.png" height="18px" style="padding-top:5px; margin-right:5px;">  Full Size </span></a> -->
-<a class="cvbutton" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume.pdf" target="_blank"><span><img src="../assets/images/download.png" height="18px" style="padding-top:5px; margin-right:5px;">Download PDF</span></a>
+  <a class="cvbutton" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume%20(2025).pdf" target="_blank"><span><img src="../assets/images/download.png" height="18px" style="padding-top:5px; margin-right:5px;">Download PDF</span></a>
 </center>
 
 ---
