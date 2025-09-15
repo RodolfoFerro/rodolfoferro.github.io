@@ -5,7 +5,7 @@ layout: page
 
 # About
 
-![Profile Image]({{ site.url }}/{{ site.picture }})
+![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
 > 💻 Sr. SWE @ [Bisonic](https://bisonic.io/) <br>
 > 👨🏻‍💻 Consejero Municipal @ León (MX) <br>
