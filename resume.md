@@ -149,7 +149,7 @@ title: Resume
 - **"LEÓN JOVEN" AMBASSADOR.** Youth Ambassador for the Municipal Youth Institute. León, Guanajuato. _MAY 2017 – JUL 2018._
 - **"CON-CIENCIA" RADIO HOST.** In charge of the "Con-Ciencia" segment on the program "El Aguijón UG", Radio Universidad de Guanajuato. _OCT 2016 – OCT 2017._
 - **GOOGLE DEVELOPER GROUP LEÓN.** Founding and core member of GDG León. _MAY 2016 – OCT 2018._
-- **SOCIEDAD CIENtÍFICA JUVENIL.** Member of SCJ León. _AUG 2016 – NOV 2017._
+- **SOCIEDAD CIENTÍFICA JUVENIL.** Member of SCJ León. _AUG 2016 – NOV 2017._
 - **ESPIRAL FORO UNIVERSITARIO.** Outreach Coordinator. University of Guanajuato. _AUG 2016 – OCT 2017._
 - **NÉBULA 2016.** Leader of a scientific entrepreneurship project (SciHack). _NOV 2016._
 - **MECATE 2016.** Participation as a maker in social entrepreneurship. _JUN 2016._
@@ -222,4 +222,4 @@ title: Resume
 - **1ST PLACE – 6TH CREATIVITY AND INNOVAITON CONTEST (DCEA).** School of Economics and Administrative Sciences, University of Guanajuato. _NOV 2016._
 - **SILVER AWARD – iGEM 2016 GIANT JAMBOREE.** Hynes Convention Center, Boston, MA, USA. _OCT 2016._
 - **1ST PLACE – 4TH CREATIVITY AND INNOVATION CONTEST (DCNE).** DCNE, University of Guanajuato. _OCT 2016._
-- **1ST PACEL – HACKBAJÍO FINTECH.** ITESM Campus León, Gto. _APR 2016._
+- **1ST PLACE – HACKBAJÍO FINTECH.** ITESM Campus León, Gto. _APR 2016._
