@@ -28,7 +28,7 @@ A very simple approach to perform a linear regression with a single neuron using
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
-plt.style.use('ggplot')
+plt.style.use("ggplot")
 ```
 
 ### Random data generation
@@ -80,7 +80,10 @@ The generated data looks like this:
 
 
 ```
-plt.scatter(x, y, label='Generated  data')
+plt.figure(figsize=(10, 6), dpi=300)
+plt.scatter(x, y, label="Generated  data")
+plt.xlabel("Feature X")
+plt.ylabel("Value y")
 plt.legend()
 plt.show()
 ```
@@ -98,8 +101,9 @@ The trained weight will correspond to the slope $m$ of the equation and the bias
 
 ```
 model = tf.keras.Sequential()
-model.add(tf.keras.layers.Dense(1, input_shape=[1]))
-model.compile(loss='mean_squared_error', optimizer=tf.keras.optimizers.Adam(0.1))
+model.add(tf.keras.layers.Input(shape=[1]))
+model.add(tf.keras.layers.Dense(1))
+model.compile(loss="mean_squared_error", optimizer=tf.keras.optimizers.Adam(0.1))
 ```
 
 
@@ -532,7 +536,11 @@ And we can plot the loss during the training.
 
 
 ```
-plt.plot(history.history['loss'])
+plt.figure(figsize=(10, 6), dpi=300)
+plt.plot(history.history["loss"], label="Training loss")
+plt.xlabel("Epochs")
+plt.ylabel("Loss")
+plt.legend()
 plt.show()
 ```
 
@@ -551,8 +559,11 @@ y_pred_model = model.predict(x)
 
 
 ```
-plt.scatter(x, y, label='Generated data')
-plt.plot(x, y_pred_model, label='Predicted with model', color='c')
+plt.figure(figsize=(10, 6), dpi=300)
+plt.scatter(x, y, label="Generated data")
+plt.plot(x, y_pred_model, label="Predicted with model", color="c")
+plt.xlabel("Feature X")
+plt.ylabel("Value Y")
 plt.legend()
 plt.show()
 ```
@@ -589,7 +600,7 @@ weights
 
 
 
-    [array([[1.014319]], dtype=float32), array([4.2396894], dtype=float32)]
+    [array([[1.0214125]], dtype=float32), array([4.3216815], dtype=float32)]
 
 
 
