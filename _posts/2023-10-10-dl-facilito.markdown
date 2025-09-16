@@ -9,7 +9,7 @@ tag:
 - Python
 - Deep Learning
 - Bootcamp
-category: blog
+category: course
 author: rodferro
 description: Introducción a Deep Learning (Bootcamp Código Facilito, 2023)
 ---

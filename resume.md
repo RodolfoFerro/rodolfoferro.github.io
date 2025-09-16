@@ -4,37 +4,39 @@ title: Resume
 ---
 
 <style>
-.cvbutton {
-  display: inline-block;
-  padding: 13px 25px;; margin-right:5px;
-  font-size: 1.2em;
+.button-cv {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
   cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
   text-align: center;
   text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #008CBA;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #666;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.cvbutton:hover {
-  background-color: #4CAF50
-}
-
-.cvbutton:active {
-  background-color: #f44336;
-  box-shadow: 0 5px #555;
-  transform: translateY(4px);
+.button-cv:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
 }
 </style>
 
 # Resume
 
 <center>
-  <a class="cvbutton" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume%20(2025).pdf" target="_blank"><span><img src="../assets/images/download.png" height="18px" style="padding-top:5px; margin-right:5px;">Download PDF</span></a>
+  <a class="button-cv" role="button" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume%20(2025).pdf" target="_blank">Download PDF</a>
 </center>
+
+<!-- HTML !-->
+
 
 ---
 <i><b>Última actualización:</b> 30 de junio de 2019. Se sugiere consultar el single pager (el PDF en el botón de arriba).</i>

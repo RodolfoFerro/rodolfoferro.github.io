@@ -10,7 +10,7 @@ tag:
 - APIs
 - Workshop
 - Hackathon
-category: blog
+category: course
 author: rodferro
 description: Desarrollo de APIs con Python (Workshop HackSureste 2019)
 ---

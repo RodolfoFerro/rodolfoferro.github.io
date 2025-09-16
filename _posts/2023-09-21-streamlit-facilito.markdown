@@ -9,7 +9,7 @@ tag:
 - Python
 - Data Science
 - Bootcamp
-category: blog
+category: course
 author: rodferro
 description: Introducción a Streamlit (Bootcamp de Ciencia de Datos en Código Facilito, 2023)
 ---

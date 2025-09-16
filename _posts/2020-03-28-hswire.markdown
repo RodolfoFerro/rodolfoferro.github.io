@@ -11,7 +11,7 @@ headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
 description: Link al notebook de mi taller Introducción (básica) a las neuronas artificiales.
-category: blog
+category: project
 author: rodferro
 externalLink: https://colab.research.google.com/gist/RodolfoFerro/bae7bd54cdb773e684f8f0ccbdfb3a90/introducci-n-b-sica-a-la-neuronas-artificiales.ipynb
 ---

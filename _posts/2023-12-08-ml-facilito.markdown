@@ -10,7 +10,7 @@ tag:
 - Deep Learning
 - Hugging Face
 - Bootcamp
-category: blog
+category: course
 author: rodferro
 description: Deep Learning, Keras, PyTorch y Hugging Face (Bootcamp de ML @ Código Facilito, 2023-2025)
 ---

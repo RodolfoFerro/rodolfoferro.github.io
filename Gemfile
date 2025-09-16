@@ -8,4 +8,9 @@ group :jekyll_plugins do
     gem 'jemoji'
 end
 
+gem "base64"
+gem "bigdecimal"
+gem "csv"
+gem "faraday-retry"
+gem "logger"
 gem "webrick"
