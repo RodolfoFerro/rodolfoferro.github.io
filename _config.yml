@@ -3,16 +3,16 @@ title: Rodolfo Ferro
 bio: "Let's build our future. 🚀"
 
 # twitter summary info
-description: "💻 Dev @Bisonic_Games • 🧠 ML + Blockchain + Back Engineer • 🐍 Pythonista • 🚀 @futurelabmx co-founder • 👨🏻‍💻 prev @ploomber @CodeandoMexico @Innovacion_Leon"
+description: "📊 Statistical Methods Specialist | 💻 Sr. SWE (Data Engineer) @ Bisonic | 👨🏻‍🏫 Data Science professor @ ENES León (UNAM) | 🧠 Data + AI + Blockchain"
 
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/rodo_2021.png
+picture: assets/images/rodolfoferro.jpg
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
-dark-theme: auto
+dark-theme: false
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -56,7 +56,7 @@ authors:
     name: Rodolfo Ferro
     bio: With great power comes great responsibility.
     external-image: false
-    picture: assets/images/profile.jpg
+    picture: assets/images/rodolfoferro.jpg
     twitter: rodo_ferro
 
 # do you want a larger site? change the option below

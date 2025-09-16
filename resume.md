@@ -31,347 +31,195 @@ title: Resume
 
 # Resume
 
+<!-- CV Button -->
 <center>
   <a class="button-cv" role="button" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume%20(2025).pdf" target="_blank">Download PDF</a>
 </center>
 
-<!-- HTML !-->
-
-
 ---
-<i><b>Última actualización:</b> 30 de junio de 2019. Se sugiere consultar el single pager (el PDF en el botón de arriba).</i>
+<i><b>Last update:</b> 16/09/2025.</i>
 
-<i><b>Nota:</b> No tengo intención de actualizar pronto esta sección (salvo el PDF de arriba), así que te invito a que me contactes directo si deseas platicar. :) </i>
+<i><b>Note:</b> There's a time gap (2019-2024) in which I didn't update a considerable amount of talks and workshops in the info below. If you're interested in inviting me to an event, please do not hesitate to contact me. :) </i>
 
 ---
 
-<h4>ACTIVIDADES ACTUALES:</h4>
-<ul>
-  <li>
-    <b>LAB LEÓN.</b> Coordinador de datos abiertos. Dirección General de Innovación, Municipio de León, Guanajuato. <i>Julio 2018 - presente.</i>
-  </li>
-  <li>
-    <b>CONSULTOR DE TECNOLOGÍAS.</b> Consultor de tecnologías en temas de aprendizaje de máquina, automatización y datos. <i>Julio 2018 – presente.</i>
-  </li>
-  <li>
-    <b>COORDINADOR DE SEDE E INSTRUCTOR.</b> <a href="https://www.clubesdeciencia.mx/" target="_blank" style="color: skyblue;">Clubes de Ciencia México</a>, sede Guanajuato. <i>Enero 2015 – presente.</i>
-  </li>
-</ul>
-<h4>ACTIVIDADES EXTRA:</h4>
-<ul>
-  <li>
-    <b>FUTURE LAB.</b> Co-fundador y coordinador <a href="http://www.ugto.mx/noticias/noticias/11851-matematicas-aplicadas-para-transformar-el- mundo-el-objetivo-de-rodolfo-ferro-alumno-ug"  style="color: skyblue;">de laboratorio de innovación y desarrollo científico y tecnológico para mejora de la sociedad.</a> Guanajuato. <i>Abril 2017 - presente.</i>
-  </li>
-  <li>
-    <b>ML LEAD ENGINEER.</b> Participante de <a href="https://medium.com/omdena/building-ai-for-good-by-the-people-for-the-people-d98ad78b5001" style="color: skyblue;">reto global sobre inteligencia artificial</a> para la prevención de incendios forestales mediante la detección de árboles en imágenes satelitales. Omdena. <i>Mayo 2019-presente.</i>
-  </li>
-  <li>
-    <b>GITHUB CAMPUS EXPERT.</b> Miembro mexicano del programa de GitHub Campus Experts a nivel mundial (<a href="https://githubcampus.expert/RodolfoFerro/" style="color: skyblue;">githubcampus.expert/RodolfoFerro/</a>). GitHub Education. <i>Octubre 2017 – presente.</i>
-  </li>
-  <li>
-    <b>EMBAJADOR LEÓN JOVEN.</b> Embajador León Joven por el Instituto municipal de la Juventud. León, Guanajuato. <i>Mayo 2017-presente.</i>
-  </li>
-  <li>
-    <b>COMITÉ ORGANIZADOR.</b> Miembro organizador del primer hackatón en Guanajuato Capital  <a href="http://guanahacks.com/" style="color: skyblue;"><i>GuanaHacks</i></a>/<a href="https://beehack.ugto.mx/" style="color: skyblue;"><i>BeeHack</i></a>. <i>Octubre 2017-presente.</i>
-  </li>
-</ul>
-<h4>EDUCACIÓN:</h4>
-<ul>
-  <li>
-    <b>LICENCIATURA EN MATEMÁTICAS.</b> Departamento de Matemáticas, División de Ciencias Naturales y Exactas. Universidad de Guanajuato, Campus Guanajuato. <i>2011 – presente.</i>
-  </li>
-  <li>
-    <b>SUMMER INTERN.</b> <i><a href="http://www.eluniversal.com.mx/ciencia-y-salud/ciencia/estudiante-mexicano-desarrolla-un-proyecto-en-harvard" style="color: skyblue;">Adapting machine learning techniques for quantum chemistry problems</a>.</i> Desarrollo de librería de predicción y calibración de propiedades moleculares para libre uso. Departamento de Química y Química Biológica. Harvard University y Universidad de Guanajuato. <i>Junio 2017 – agosto 2017.</i>
-  </li>
-  <li>
-    <b>MONGODB FOR PYTHON DEVELOPERS COURSE (M220P).</b> Learned the essentials of Python application development with MongoDB (<a href="http://university.mongodb.com/course_completion/252af203-c8e8-4169-b178-fa8e59410387" style="color: skyblue;">course completion confirmation</a>). MongoDB University. <i>Junio 2019.</i>
-  </li>
-  <li>
-    <b>ESCUELA DE INVIERNO EN INTELIGENCIA ARTIFICIAL.</b> Asistencia al evento. Consorcio en Inteligencia Artificial, Centro de Investigación en Matemáticas A.C. <i>Febrero 2019.</i>
-  </li>
-  <li>
-    <b>REUNIÓN DE INTELIGENCIA ARTIFICIAL Y SUS APLICACIONES (RIIAA ‘18).</b> Participación como estudiante. C3 + Universum, UNAM. <i>Agosto 2018.</i>
-  </li>
-  <li>
-    <b>CERTIFICACIÓN EN CÓMPUTO CUÁNTICO - IBM.</b> Certificación Quantum Computing 101 por IBM Q (<a href="https://rodolfoferro.xyz/IBMQ-Badge/" style="color: skyblue;">IBMQ-Badge</a>). IBM México @ WeWork, Ciudad de México. <i>Junio 2018.</i>
-  </li>
-  <li>
-    <b>ESTANCIA DE INVESTIGACIÓN.</b> <i>Classification of Difficulty Measurement in Game-Based Learning with Pupil Size and Game Data.</i> Centro de Investigación en Matemáticas (CIMAT), A.C., Unidad Zacatecas. <i> Enero 2018.</i>
-  </li>
-  <li>
-    <b>ESTANCIA DE INVESTIGACIÓN.</b> <i>Innovation and Technology Development as Strategy for a Better Health Management using IoT.</i> Centro de Investigación en Matemáticas (CIMAT), A.C., Unidad Zacatecas. <i> Diciembre 2016 – enero 2017.</i>
-  </li>
-  <li>
-    <b>ESCUELA DE CÓMPUTO EVOLUTIVO.</b> Participación como estudiante. Centro de Investigación en Matemáticas A.C. <i>Noviembre 2016.</i>
-  </li>
-  <li>
-    <b>XI TALLER-ESCUELA DE PROCESAMIENTO DE IMÁGENES (PI’15), V TALLER DE RECONOCIMIENTO ESTADÍSTICO DE PATRONES(SPR’15).</b> Participación como estudiante. Centro de Investigación en Matemáticas A.C. <i>Noviembre 2015.</i>
-  </li>
-  <li>
-    <b>ESCUELA DE MODELACIÓN Y METODOS NUMÉRICOS.</b> Participación como estudiante. Centro de Investigación en Matemáticas A.C. <i>Junio 2015.</i>
-  </li>
-</ul>
-<h4>DESARROLLO PROFESIONAL / ACTIVIDADES LABORALES:</h4>
-<ul>
-  <li>
-    <b>CLOUDLINUX.</b> Jr. Python Dev in Alternatives Team. León, Guanajuato. <i>Febrero 2019 - mayo 2019.</i>
-  </li>
-  <li>
-    <b>UNIVERSIDAD DE GUANAJUATO.</b> Analista de datos y automatización. Contraloría General, Universidad de Guanajuato, Guanajuato. <i>Febrero 2019 - abril 2019.</i>
-  </li>
-  <li>
-    <b>ASISTENTE DE INVESTIGACIÓN CONACYT.</b> Asistente de investigación en Inteligencia Artificial. CIMAT A.C., Guanajuato, Gto. <i>Febrero 2018 - febrero 2019.</i>
-  </li>
-  <li>
-    <b>TALLER DE VIDEOJUEGOS CON PYTHON.</b> Instructor del taller <a href="https://rodolfoferro.xyz/PythonIMJU/" target="_blank" style="color: skyblue;"><i>"Crea tus propios videojuegos con Python"</i></a>. Casa de la Juventud, León, Gto. <i>Noviembre 2018.</i>
-  </li>
-  <li>
-    <b>UGMUN 2018.</b> <a href="https://ugmun.com/" target="_blank" style="color: skyblue;">Desarrollador web</a> y asistente técnico de la edición 2018. Universidad de Guanajuato – Campus Guanajuato, Guanajuato, Gto. <i>Septiembre 2018.</i>
-  </li>
-  <li>
-    <b>ASISTENTE DE PROFESOR.</b> En materia de Administración de Proyectos. División de Ciencias Económico- Administrativas. Universidad de Guanajuato, Campus Guanajuato. <i>Enero 2017 - Junio 2017.</i>
-  </li>
-  <li>
-    <b>CLUBES DE CIENCIA MÉXICO.</b> Instructor del taller <a href="https://rodolfoferro.github.io/ExplorandoLosSentidos/" target="_blank" style="color: skyblue;"><i>"Explorando los sentidos: ¡Ciencia y tecnología!"</i></a>, diseñado por el premio Nobel de física <a href="https://en.wikipedia.org/wiki/Frank_Wilczek" style="color: skyblue;" target="_blank">Frank Wilczek</a>. <i>Agosto 2016.</i>
-  </li>
-  <li>
-    <b>GOOGLE STUDENT AMBASSADOR LATAM.</b> Trabajo como embajador estudiantil de Google. <i>2014 - 2015.</i>
-  </li>
-  <li>
-    <b>CLUBES DE CIENCIA MÉXICO.</b> Instructor del taller <a href="https://rodolfoferro.github.io/Acelerando/" target="_blank" style="color: skyblue;"><i>"Acelerando a la ciencia con procesadores múltiples"</i></a>. <i>Agosto 2015.</i>
-  </li>
-  <li>
-    <b>CLUBES DE CIENCIA MÉXICO.</b> Instructor del taller <i>"Cristalografía: El poder de la simetría en la materia"</i>. <i>Enero 2015.</i>
-  </li>
-</ul>
-<h4>PROYECTOS / EMPRENDIMIENTO / PARTICIPACIÓN EN PROGRAMAS, EVENTOS, ACTIVIDADES:</h4>
-<ul>
-  <li>
-    <b>COMITÉ ORGANIZADOR.</b> Organizador del <i><a href="https://hcc-cimat.com/meetup2018/" style="color: skyblue;">Meetup HCC-CIMAT 2018</a></i>. Centro de Investigación en Matemáticas (CIMAT) A.C., Unidad Zacatecas. <i>Agosto 2018.</i>
-  </li>
-  <li>
-    <b>COMITÉ ORGANIZADOR.</b> Organizador del <i><a href="https://github.com/cimat-dlrg" style="color: skyblue;">Reading Group on Deep Learning</a></i>. Grupo de lectura sobre aprendizaje profundo en el Centro de Investigación en Matemáticas, Guanajuato, Gto. <i>Septiembre 2017 – Agosto 2018.</i>
-  </li>
-  <li>
-    <b>LOCUTOR DE PODCAST.</b> <i><a href="https://defpodcastmx.github.io/" style="color: skyblue;">def Podcast(mx):</a></i> Primer podcast exclusivo sobre Python en México. <i>Julio 2017 – presente.</i>
-  </li>
-  <li>
-    <b>LOCUTOR DE RADIO.</b> A cargo de la cápsula <i>‘Con-Ciencia’</i> del programa El Aguijón UG en Radio Universidad de Guanajuato. <i>Octubre 2016 – presente.</i>
-  </li>
-  <li>
-    <b>GOOGLE DEVELOPER GROUP LEÓN.</b> Miembro fundador y core member del GDG León. <i>Mayo 2016 - presente.</i>
-  </li>
-  <li>
-    <b>NÉBULA 2016.</b> Líder en proyecto de emprendimiento científico (<a href="http://scihack.xyz/" style="color: skyblue;" target="_blank">SciHack</a>). <i>Noviembre 2016.</i>
-  </li>
-  <li>
-    <b>MECATE 2016.</b> Participación como <i>maker</i> en emprendimiento social. <i>Junio 2016.</i>
-  </li>
-</ul>
-<h4>PONENCIAS / CONGRESOS / ENCUENTROS ACADÉMICOS:</h4>
-<ul>
-  <li>
-    <b>PYTHONDAY MÉXICO 2019.</b> Charla <a href="https://github.com/RodolfoFerro/DataSciPy" target="_blank" style="color: skyblue;"><i>“Data Science con SciPy”</i></a>. CUCEA, Guadalajara, Jal. <i>Diciembre 2018.</i>
-  </li>
-  <li>
-    <b>PYTHONDAY MÉXICO 2019.</b> Taller <a href="https://github.com/RodolfoFerro/MLaaS" target="_blank" style="color: skyblue;"><i>“Machine Learning as a Service (MLaaS): Sirviendo Soluciones Inteligentes”</i></a>. CUCEA, Guadalajara, Jal. <i>Noviembre 2018.</i>
-  </li>
-  <li>
-    <b>CONFERENCIA.</b> Charla <i>“I.A. en tiempos modernos”</i>. Ibero León, León, Gto. <i>Noviembre 2018.</i>
-  </li>
-  <li>
-    <b>UTL HERE HACKATHON 2018.</b> Participación como mentor y charla <a href="https://github.com/RodolfoFerro/HereHackathon" target="_blank" style="color: skyblue;"><i>“Web Services: Integración de soluciones tecnológicas”</i></a>. UTL, León, Gto. <i>Noviembre 2018.</i>
-  </li>
-  <li>
-    <b>UG TALKS.</b> Charla <i>“Tecnología aplicada”</i>. Universidad de Guanajuato – Fac. de Minas, Guanajuato, Gto. <i>Noviembre 2018.</i>
-  </li>
-  <li>
-    <b>CONFERENCIA.</b> Charla <i>“Distinguiendo entre perros y gatos: Sobre I.A. en tiempos modernos”</i>. Escuela de Nivel Medio Superior de León, León, Gto. <i>Noviembre 2018.</i>
-  </li>
-  <li>
-    <b>CONFERENCIA.</b> Charla <i>“Innovando en lo público: Tecnología y automatización”</i>. Universidad de Guanajuato – División de Derecho Política y Gobierno, Guanajuato, Gto. <i>Octubre 2018.</i>
-  </li>
-  <li>
-    <b>CONISOFT 2018.</b> Taller  <a href="https://github.com/RodolfoFerro/CONISOFT2018" target="_blank" style="color: skyblue;"><i>“Intro a redes neuronales con Keras”</i></a>. Universidad Autónoma de San Luis Potosí – Fac. de Ingeniería, San Luis Potosí, S.L.P. <i>Octubre 2018.</i>
-  </li>
-  <li>
-    <b>CONFERENCIA.</b> Charla <i>“I.A. en tiempos modernos”</i>. Casa de la Juventud, León, Gto. <i>Octubre 2018.</i>
-  </li>
-  <li>
-    <b>CHARLA N.I.C.E.</b> Charla <i>“Cómo hablar en público y no morir en el intento”</i>. ITESM León, León, Gto. <i>Octubre 2018.</i>
-  </li>
-  <li>
-    <b>HACKCHIAPAS 2018.</b> Participación como mentor de tecnología. Universidad Politécnica de Chiapas, Suchiapa, Chiapas. <i>Octubre 2018.</i>
-  </li>
-  <li>
-    <b>UGMUN 2018.</b> Charla <i>“¿En qué mundo vivimos? De bots, internet de las cosas, inteligencia artificial y más…”</i>. División de Ciencias Económico-Administrativas, UG, Guanajuato, Gto. <i>Septiembre 2018.</i>
-  </li>
-  <li>
-    <b>MARATÓN IDEÓSFERA.</b> Participación como mentor de tecnologías e innovación. Parque de Innovación de LaSalle, León, Gto. <i>Septiembre 2018.</i>
-  </li>
-  <li>
-    <b>HACKATUR TUI-MEXSOST 2018.</b> Participación como mentor de tecnologías e innovación. ITESM León, León, Gto. <i>Septiembre 2018.</i>
-  </li>
-  <li>
-    <b>LINCEHACK 2018.</b> Participación como mentor de tecnología y con el taller  <a href="https://github.com/RodolfoFerro/PythonBaseAPI" target="_blank" style="color: skyblue;"><i>“Creanto APIs con Python”</i></a>. TecNM Celaya, Celaya, Gto. <i>Septiembre 2018.</i>
-  </li>
-  <li>
-    <b>MEETUP HCC-CIMAT.</b> Taller <i>“Introducción a Deep Learning con Keras”</i>. Centro de Investigación en Matemáticas (CIMAT) A.C., Unidad Zacatecas. <i>Agosto 2018.</i>
-  </li>
-  <li>
-    <b>MEETUP HCC-CIMAT.</b> Charla <i>“La emoción en el rostro de las masas”</i>. Centro de Investigación en Matemáticas (CIMAT) A.C., Unidad Zacatecas. <i>Agosto 2018.</i>
-  </li>
-  <li>
-    <b>TALENT NIGHTS GUANAJUATO.</b> Charla <i>“Cuando las máquinas aprenden”</i>. León, Guanajuato. <i>Mayo 2018.</i>
-  </li>
-  <li>
-    <b>MEX I CAN.</b> Panelista. ENMSG – Universidad de Guanajuato, Guanajuato, Gto. <i>Mayo 2018.</i>
-  </li>
-  <li>
-    <b>GIRA ‘EL PRIMER PASO’.</b> Panelista. DCNE – Universidad de Guanajuato, Guanajuato, Gto. <i>Mayo 2018.</i>
-  </li>
-  <li>
-    <b>FESTIVAL LATINOAMERICANO DE INSTALACIÓN DE SOFTWARE LIBRE (FLISoL) 2018.</b> Taller <a href="https://github.com/RodolfoFerro/FLISoL18" target="_blank" style="color: skyblue;"><i>“Introducción a redes neuronales con Keras”</i></a> y conferencia magistral de inauguración <b>“FLISoL 2018: Herramientas, comunidad y más”</b>. <i>Abril 2018.</i>
-  </li>
-  <li>
-    <b>CONFERENCIA.</b> Charla <i>“¿En qué mundo vivimos? De bots, internet de las cosas, inteligencia artificial y más...”</i> División de Ciencias Económico-Administrativas, UG, Guanajuato, Gto. <i>Marzo 2018.</i>
-  </li>
-  <li>
-    <b>SEMANA CULTURAL ENMSL.</b> Charla <i>“¿En qué mundo vivimos?”</i> en el marco de la Semana Cultural 2018, por la conmemoración del 140 aniversario de la ENMSL, UG. León, Gto. <i>Marzo 2018.</i>
-  </li>
-  <li>
-    <b>1ER. SIMPOSIUM DE INGENIERÍA EN REDES Y TELECOMUNICACIONES.</b> Taller <i>“Let’s botify Twitter w/Python”.</i> Universidad Politécnica de Juventino Rosas, Juventino Rosas, Gto. <i>Marzo 2018.</i>
-  </li>
-  <li>
-    <b>1ER. ENCUENTRO MULTIDISCIPLINARIO POR MÉXICO 2018.</b> Ponencia <i>“Pequeñas acciones tienden a generar cambios exponenciales”.</i> DICIS, UG. Salamanca, Gto. <i>Marzo 2018.</i>
-  </li>
-  <li>
-    <b>CONFERENCIA.</b> Charla <i>“Tecnología: Su poder social y su impacto en el derecho”</i>  en el marco del Programa de Tutorías de la División de Derecho, Política y Gobierno, UG. Guanajuato, Gto. <i>Marzo 2018.</i>
-  </li>
-  <li>
-    <b>1ER. iTALK ICONMUNITY.</b> Ponencia <i>“Haciendo y compartiendo ciencia”.</i> ITESM, León, Gto. <i>Febrero 2018.</i>
-  </li>
-  <li>
-    <b>&lt;DEVNIGHTS/&gt;.</b> Charla <i>“Hubot: Poniendo ChatOps en tus manos”.</i> Tepache Hacklab, León, Gto. <i>Enero 2018.</i>
-  </li>
-  <li>
-    <b>FORUM EDUCATIVO VOCACIONAL Y PROFESIOGRÁFICO.</b> Charla <i>“Presente y futuro: ¿Hacia dónde vamos?”.</i> León, Guanajuato. <i>Noviembre 2017.</i>
-  </li>
-  <li>
-    <b>FORO DE INGENIERÍA QUÍMICA.</b> Ponencia <i>“De visualización de moléculas bots y más...”</i> Sección Estudiantil del Instituto Mexicano de Ingenieros Químicos A.C. DCNE, Campus Guanajuato. <i>Noviembre 2017.</i>
-  </li>
-  <li>
-    <b>1ER. SEMANA DE LA CIENCIA - QUIUBOLE UG</b> Charla <i>“Presente y futuro: ¿hacia dónde vamos?”</i> QUIUBOLE UG. DCNE, Universidad de Guanajuato. <i>Noviembre 2017.</i>
-  </li>
-  <li>
-    <b>2DA. SEMANA INTERNACIONAL DE EMPRENDIMIENTO E INNOVACIÓN DCEA.</b> Taller <i>“Mockups: Maquetado de proyectos”</i>. DCEA, Universidad de Guanajuato, Campus Guanajuato. <i>Octubre 2017.</i>
-  </li>
-  <li>
-    <b>PRIMER CONGRESO NACIONAL DE CIENCIA COMPUTACIONAL APLICADA.</b> Ponencia <i>“De magos, programadores y otros súper poderes”</i>. Rama estudiantil IEEE, DICIS, Salamanca, Gto. <i>Octubre 2017.</i>
-  </li>
-  <li>
-    <b>&lt;DEVNIGHTS/&gt;.</b> Plática <i>“Cuando las máquinas aprenden”</i>. Tepache Hacklab, León, Gto. <i>Septiembre 2016.</i>
-  </li>
-  <li>
-    <b>DÍA ABIERTO DCEA.</b> Ponencia en el marco del “DÍA ABIERTO DCEA”: <i>“INNOVACIÓN Y EMPRENDIMIENTO”.</i>. División de Ciencias Económico-Administrativas, Universidad de Guanajuato, Guanajuato. <i>Septiembre 2017.</i>
-  </li>
-  <li>
-    <b>YOUTHGTO.</b> Ponencia en el 1er. Panel de Internacionalización YouthGTO <i>"Los Jóvenes y la Cosmovisión internacional"</i>. División de Ciencias Económico-Administrativas, Universidad de Guanajuato, Guanajuato. <i>Agosto 2017.</i>
-  </li>
-  <li>
-    <b>EUGREKA - LUNES DE LA CIENCIA.</b> Conferencia <i>“Compilando el futuro: ¿Hacia dónde vamos?”</i>. Escuela de Nivel Medio Superios de Celaya, Celaya, Guanajuato. <i>Agosto 2017.</i>
-  </li>
-  <li>
-    <b>CURSO DE BLENDED LEARING.</b> Curso <i>“Principios de Python para el desarrollo de software”</i> con una duraciónde siete sesiones. División de Ciencias Económico-Administrativas, Universidad de Guanajuato. <i>Marzo - Junio 2017.</i>
-  </li>
-  <li>
-    <b>PYTHONDAY MÉXICO.</b> Taller <a href="https://github.com/RodolfoFerro/Twitterbot_en_30" target="_blank" style="color: skyblue;"><i>“¡Crea tu Twitterbot en 30 minutos!”</i></a> para el PythonDay México (<a href="https://youtu.be/x0VWnm9CAyE" target="_blank" style="color: skyblue;">video del taller</a>). Telmexhub, Ciudad de México. <i>Junio 2017.</i>
-  </li>
-  <li>
-    <b>6TO. FORO DE DIVULGACIÓN CIENTÍFICO Y TENOLÓGICO.</b> Ponencia <i>“Ciencia y tecnología al alcance de... ¿La fisiología humana?”.</i> Instituto Tecnológico de Celaya, Celaya, Gto. <i>Mayo 2017.</i>
-  </li>
-  <li>
-    <b>FESTIVAL LATINOAMERICANO DE INSTALACIÓN DE SOFTWARE LIBRE (FLISoL) 2017.</b> Taller <a href="https://github.com/RodolfoFerro/FLISoL17" target="_blank" style="color: skyblue;"><i>“Primeros pasos con Python: Manipulando imágenes”</i></a> . <i>Abril 2017.</i>
-  </li>
-  <li>
-    <b>&lt;DEVNIGHTS/&gt;.</b> Plática <i>“Programando videojuegos: Introducción a PyGame”</i>. Tepache Hacklab, León, Gto. <i>Noviembre 2016.</i>
-  </li>
-  <li>
-    <b>FERIA DE NEGOCIOS E INNOVADORES 2016.</b> Ponencia <i>“Desarrollo de proyectos: De cero a proyecto (From Zero to Hero)”</i>. Instituto Tecnológico de Celaya, Celaya, Gto. <i>Noviembre 2016.</i>
-  </li>
-  <li>
-    <b>FESTIVAL INTERNACIONAL CERVANTINO.</b> Taller de ciencia para niños <i>“Explorando los sentidos: ¡Ciencia y Tecnología!”</i>. Prometeo, divulgación científica de la UNAM, FIC. Guanajuato, Gto. <i>Octubre 2016.</i>
-  </li>
-  <li>
-    <b>GOOGLE DEVELOPER GROUP.</b> Ponencia-taller <a href="https://github.com/RodolfoFerro/PokeGO" target="_blank" style="color: skyblue;"><i>“Cómo simular datos válidos a partir de una muestra (con datos de Pokémon GO)”</i></a>. Google Devloper Group León, León, Gto. <i>Julio 2016.</i>
-  </li>
-  <li>
-    <b>SEMINARIO DE ESTUDIANTES.</b> Ponencia <i>“Drive 101 – Un enfoque para los estudiantes”</i>. División de Ciencias e Ingenierías, Universidad de Guanajuato. León, Gto. <i>Agosto 2014.</i>
-  </li>
-</ul>
-<h4>CONCURSOS / COMPETENCIAS, PREMIOS Y DISTINCIONES:</h4>
-<ul>
-  <li>
-    <b>PREMIO ESTATAL DE LA JUVENTUD. </b> Categoría: <i>Academia y Tecnología</i>. Guanajuato, Guanajuato. <i>Julio 2018.</i>
-  </li>
-  <li>
-    <b>1ER. LUGAR - RETO HDI @ TALENT HACKATHON.</b> Proyecto <a href="http://rodolfoferro.xyz/omnichem/" target="_blank" style="color: skyblue;"><i>“HIER: An Automated Solution for Insurance Services”</i></a>. Centro Fox. <i>Junio 2018.</i>
-  </li>
-  <li>
-    <b>2DO. LUGAR - 5TO. CONCURSO DE CREATIVIDAD E INNOVACIÓN DCNE.</b> Proyecto <a href="http://rodolfoferro.xyz/omnichem/" target="_blank" style="color: skyblue;"><i>“OmniChem”</i></a>. DCNE, UG. <i>Mayo 2018.</i>
-  </li>
-  <li>
-    <b>1ER. LUGAR - HACKATÓN SWITCH 2017. </b> <a href="https://rodolfoferro.github.io/SWITCH17/" target="_blank" style="color: skyblue;"><i>DABOT: Disaster Attention Bot</i></a>, sistema de reportes ante desastres naturales. León, Guanajuato. <i>Noviembre 2017.</i>
-  </li>
-  <li>
-    <b>1ER. LUGAR - HACKAPALOOZA IBM BLUEHACK MÉXICO. </b> <a href="https://www.youtube.com/watch?v=bH80lD148BY" target="_blank" style="color: skyblue;"><i>Travis</i></a>, asistente inteligente en compra personalizada utilizando IBM Watson. Parque Tecnológico IBM, Guadalajara, Jalisco. <i>Octubre 2017.</i>
-  </li>
-  <li>
-    <b>PREMIO MUNICIPAL DE LA JUVENTUD. </b> Categoría: <i>Academia y Tecnología</i>. Guanajuato, Guanajuato. <i>Agosto 2017.</i>
-  </li>
-  <li>
-    <b>1ER. LUGAR - 12VO. CONCURSO INSTITUCIONAL DE CREATIVIDAD E INNOVACIÓN. </b> <i>AdaBot</i>, bots inteligentes para atención a clientes. Campus Guanajuato, Universidad de Guanajuato. <i>Agosto 2017.</i>
-  </li>
-  <li>
-    <b>1ER. LUGAR - HACKATÓN CFOX 2017 “(Re)Programando la sustentabilidad”. </b> <a href="https://rodolfoferro.github.io/CitizenBot_HackCF/" target="_blank" style="color: skyblue;"><i>CitizenBot</i>,</a> bots inteligentes para atención ciudadana. Centro Fox. <i>Mayo 2017.</i>
-  </li>
-  <li>
-    <b>GANADOR – GUANAJUATO TALEN-TIC 2017.</b> <a href="www.brim.esy.es" target="_blank" style="color: skyblue;"><i>Bring me in! (BriM!)</i></a>, sistema autónomo e inteligente de búsqueda de convocatorias. Guanajuato TALEN-TIC 2017. <i>Marzo 2017.</i>
-  </li>
-  <li>
-    <b>1ER. LUGAR - 1ER. CONCURSO INSTITUCIONAL “MI PROYECTO DE VIDA”.</b> Universidad de Guanajuato. <i>Noviembre 2016.</i>
-  </li>
-  <li>
-    <b>1ER. LUGAR – 6TO. CONCURSO DE CREATIVIDAD E INNOVACIÓN DCEA.</b> División de Ciencias Económico Administrativas, Universidad de Guanajuato. <i>Noviembre 2016.</i>
-  </li>
-  <li>
-    <b>SILVER AWARD - iGEM 2016 GIANT JAMBOREE.</b> Hynes Convention Center, Boston, MA. <i>Octubre 2016.</i>
-  </li>
-  <li>
-    <b>1ER. LUGAR - 4TO. CONCURSO DE CREATIVIDAD E INNOVACIÓN DCNE.</b> DCNE, UG. <i>Octubre 2016.</i>
-  </li>
-  <li>
-    <b>1ER. LUGAR - HACKBAJÍO FINTECH.</b> ITESM Campus León. <i>Abril 2016.</i>
-  </li>
-</ul>
-<h4>PERTENENCIA / ACTIVIDADES DE PARTICIPACIÓN SOCIAL:</h4>
-<ul>
-  <li>
-    <b>CLUBES DE CIENCIA MÉXICO. </b> Miembro del <i>#TeamGuanajuato</i>. <i>2015 - presente.</i>
-  </li>
-  <li>
-    <b>SOCIEDAD CIENTÍFICA JUVENIL. </b> Miembro de la SCJ León. <i>2016 - 2017.</i>
-  </li>
-  <li>
-    <b>ESPIRAL FORO UNIVERSITARIO. </b> Coordinador de Difusión. Universidad de Guanajuato. <i>2016 - 2017.</i>
-  </li>
-  <li>
-  <b>MATEMORFOSIS. </b> Talleres de matemáticas para niños. Centro de Investigación en Matemáticas A.C. <i>2014.</i>
-</li>
-</ul>
-<h4>REGISTRO DE PROPIEDAD INTELECTUAL / DERECHOS DE AUTOR:</h4>
-<ul>
-  <li>
-    <b>NÚMERO DE REGISTRO: 03-2017-071811472900-01. </b>DERECHOS DE AUTOR. Título: <i>CitizenBot</i>. Rama: <i>Programas computacionales</i>. Autores: <i>Rodolfo Ferro Pérez, Ricardo Mirón Torres, Edgar René Vázquez González</i>. Titulares: <i>Rodolfo Ferro Pérez, Edgar René Vázquez González</i>. México, D.F. <i>Julio 2017.</i>
-  </li>
-</ul>
+
+#### CURRENT ACTIVITIES:
+
+- **SR. SWE (DATA ENGINEER).** Data and blockchain developer at Bisonic México.
+- **TECHNOLOGY/AI CONSULTANT.** Consultant on technologies related to AI, automation, and data.
+- **DATA SCIENCE TEACHER.** Tech lead in the data science bootcamp at Código Facilito, data science professor in the Data Science Diploma at ENES León (UNAM).
+
+
+#### EDUCATION:
+
+- **STATISTICAL METHODS SPECIALIST.** Centro de Investigación en Matemáticas (CIMAT), A.C., Unidad Aguascalientes. _AUG 2024 – JUL 2025._
+- **COMPUTER SYSTEMS ENGINEER.** Universidad Virtual del Estado de Guanajuato (UVEG). _JAN 2021 – JUL 2023._
+- **BACHELOR IN MATHEMATICS.** Department of Mathematics, Divison of Natural and Exact Sciences. Universidad de Guanajuato, Campus Guanajuato. _AUG 2011 – DEC 2017._
+
+
+#### COMPLEMENTARY EDUCATION:
+
+- **MUFRAMEX 2ND. THEMATIC SCHOOL ON DEEP GENERATIVE MODELS.** Attendance as student. Centro de Investigación en Matemáticas (CIMAT), A.C. _NOV 2022._
+- **MONGODB FOR PYTHON DEVELOPERS COURSE (M220P).** Learned the essentials of Python application development with MongoDB ([course completion confirmation](http://university.mongodb.com/course_completion/252af203-c8e8-4169-b178-fa8e59410387)). MongoDB University. _JUN 2019._
+- **WINTER SCHOOL ON AI.** Attendance as student. National AI Consortium, Centro de Investigación en Matemáticas (CIMAT), A.C. _FEB 2019._
+- **"REUNIÓN DE INTELIGENCIA ARTIFICIAL Y SUS APLICACIONES" (RIIAA ‘18).** Attendance as student. C3 + Universum, UNAM. _AUG 2018._
+- **IBM QUANTUM COMPUTING CERTIFICATION.** Quantum Computing 101 Certification by IBM Q ([IBMQ-Badge](https://rodolfoferro.xyz/IBMQ-Badge/)). IBM México @ WeWork, Mexico City. _JUN 2018._
+- **EVOLUTIONARY COMPUTING SCHOOL.** Attendance as student. Centro de Investigación en Matemáticas (CIMAT), A.C. _NOV 2016._
+- **XI IMAGE PROCESSING WORKSHOP-SCHOOL (PI’15), V STATISTICAL PATTERN RECOGNITION WORKSHOP (SPR’15).** Attendance as student. Centro de Investigación en Matemáticas (CIMAT), A.C. _NOV 2015._
+- **SCHOOL OF MODELING AND NUMERICAL METHODS.** Attendance as student. Centro de Investigación en Matemáticas (CIMAT), A.C. _JUN 2015._
+
+
+#### PROFESSIONAL EXPERIENCE:
+
+- **SR. SWE (DATA ENGINEER) @ BISONIC MÉXICO.** _MAR 2023 – PRESENT._
+  - Automated processes for in-platform transactions with Python and FastAPI for web services (APIs) deployed in AWS.
+  - Built analytics dashboards for strategic decisions using Streamlit and Dash.
+  - Built an machine learning based tool to identify non-legitimate users in platform using Python and standard tools for ML & Data Science (Pandas, sklearn, etc.).
+  - Implemented and deployed smart contracts in Ronin, Ethereum and Arbitrum for in-platform NFT token usage and payments, using primarily Python, Solidity and Hardhat.
+- **DEVELOPER ADVOCATE @ PLOOMBER.** _AUG 2021 – FEB 2023._
+  - Shared in person and online events about company's products and solutions.
+  - Built documentation, examples and community using primarily Python and Ploomber.
+- **ARTIFICIAL INTELLIGENCE DIGITAL SHERPA @ MICROSOFT MÉXICO.** _APR 2020 – JUL 2021._
+  - In charge of 2000+ community groups for certification processes in Azure cloud solutions.
+  - Built documentation, examples and community using primarily Python, Azure ML, and Cognitive Services.
+- **SR. MACHINE LEARNING ENGINEER @ VINDOO.AI.** _JAN 2020 – JAN 2022._
+  - Designed and deployed computer vision models in Google Cloud Platform.
+  - Developed computer vision solutions for company's product primarily with Python, OpenCV and TensorFlow. This includes an implementation of object detection models and deepsort for object tracking in video.
+  - In charge of model registry in GCP and orchestration system using Airflow.
+  - Built an interactive statistic system for strategic business decision making using Python and Streamlit.
+- **SR. MACHINE LEARNING CONSULTANT @ HUMAN CENTERED COMPUTING (HCT) MÉXICO** _JAN 2020 – JAN 2022._
+  - Served primarily as an occasional consultant.
+  - Co-designed product architecture and interactions between a computer vision smart solution and data using Python and an orchestration system.
+  - Developed and maintained the ML system for product services using TensorFlow and Streamlit.
+  - Developed and maintained monitoring system for real-time product status using a Telegram Bot and Streamlit.
+- **LEAD MACHINE LEARNING ENGINEER @ OMDENA.** _MAY 2019 – OCT 2019._
+  - Served as a machine learning developer in the [fire outbursts prevention challenge](https://medium.com/omdena/building-ai-for-good-by-the-people-for-the-people-d98ad78b5001) using Python, OpenCV, TensorFlow and the standard stack for data (numpy, pandas, etc.).
+  - Lead the image enhancement task for the challenge.
+  - Worked in the model implementation of UNet based solution developed during the challenge.
+  - Selected as a community builder at Omdena due to exemplary performance in their AI challenge on the tree identification challenge to prevent fire outbursts.
+- **OPEN DATA COORDINATOR @ LAB LEÓN, GOVERNMENT OF LEÓN.** _JUL 2018 – SEP 2019._
+  - Coordinated the implementation of tech prototypes for the city, designing, structuring and analyzing the impact.
+  - Improved the technical system for Open Data processes along different city departments.
+- **PYTHON DEVELOPER @ CLOUDLINUX.** _FEB 2019 - MAY 2019._
+  - Developed and deployed web scrapers to automate data extraction using Luigi and Python in production systems.
+- **DATA ANALYST AND AUTOMATION ANALYST @ UG.** _FEB 2019 – APR 2019._
+  - Served as a Data Analysis and Automation Analyst at the General Comptroller’s Office in the University of Guanajuato, Guanajuato.
+- **MACHINE LEARNING RESEARCH ASSISTANT @ CIMAT.** _FEB 2018 – FEB 2019_.
+  - Research assistant.
+  - Implemented deep learning models for computer vision systems in the automotive industry using Python, OpenCV, TensorFlow and Flask for the web service (API).
+- **MACHINE LEARNING RESEARCH INTERN @ HARVARD.** _JUN 2017 – AUG 2017._
+  - Implemented machine learning models for inference of molecule properties using Python with TensorFlow and Gaussian Processes in the Department of Chemistry and Chemical Biology.
+  - Developed a Python package on ML models applied to molecular properties, using GPFlow.
+- **WEB DEVELOPER @ UGMUN** _JAN 2018 – DEC 2018._
+  - UGEMUN is the UN Model at the University of Guanajuato.
+  - Develoeped and maintained the website of the event during the year.
+  - Served as a technical assistant for the 2018 edition.
+- **RESEARCH INTERNSHIP @ CIMAT, ZACATECAS UNIT.** _JAN 2018._
+  - Worked in the project "Classification of Difficulty Measurement in Game-Based Learning with Pupil Size and Game Data".
+  - Implemented machine learning models to classify behavior based on pupil size and game data.
+- **RESEARCH INTERNSHIP @ CIMAT, ZACATECAS UNIT.**  _DEC 2016 – JAN 2017._ 
+  - Worked in the project "Innovation and Technology Development as Strategy for a Better Health Management using IoT".
+  - Designed a proposal for an interconnected system.
+- **GOOGLE STUDENT AMBASSADOR LATAM @ GOOGLE MÉXICO.** _AUG 2014 – JUL 2015._
+  - Served as a Student Ambassador for Google.
+
+
+#### INTELLECTUAL PROPERTY / COPYRIGHT REGISTRATION:
+
+- **REGISTRATION NUMBER: 03-2017-071811472900-01.** COPYRIGHT. Title: _CitizenBot_. Category: _Computer Programs_. Authors: _Rodolfo Ferro Pérez, Ricardo Mirón Torres, Edgar René Vázquez González_. Rights Holders: _Rodolfo Ferro Pérez, Edgar René Vázquez González_. Mexico City, Mexico. _JUL 2017._
+
+
+#### TEACHING / COURSES:
+
+- **TEACHING ASSISTANT @ UNIVERSIDAD DE GUANAJUATO.** Teacher assistant and workshop instructor of the "Project Management" course. Division of Economic and Administrative Sciences, University of Guanajuato, Guanajuato Campus. _JAN 2017 – JUN 2017._
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop "Exploring the senses: Science and technology!", designed by Nobel Laureate in Physics Frank Wilczek. _AUG 2016._
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop "Accelerating science with multiple processors". Guanajuato, Guanajuato. _AUG 2015._
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop "Crystallography: The power of symmetry in matter". Guanajuato, Guanajuato. _JAN 2015._
+
+
+#### VOLUNTEERING:
+
+- **`def Podcast(mx):`** Podcast host at the very first podcast exclusively about Python in Mexico. _JUL 2017 – OCT 2018._
+- **HCC-CIMAT.** Organizer member of the Meetup HCC-CIMAT 2018. Centro de Investigación en Matemáticas (CIMAT), A.C., Zacatecas Unit. _AUG 2018._
+- **READING GROUP ON DEEP LEARNING.** Organizer of the Reading Group on Deep Learning at Centro de Investigación en Matemáticas (CIMAT), Guanajuato, Gto. _SEP 2017 – AUG 2018._
+- **FUTURE LAB.** Co-founder and Coordinator [of an innovation and scientific-technological development lab for social improvement](http://www.ugto.mx/noticias/noticias/11851-matematicas-aplicadas-para-transformar-el-mundo-el-objetivo-de-rodolfo-ferro-alumno-ug). Guanajuato, México. _APR 2017 – DEC 2020._
+- **GITHUB CAMPUS EXPERT.** Mexican member of the global GitHub Campus Experts program ([githubcampus.expert/RodolfoFerro/](https://githubcampus.expert/RodolfoFerro/)). GitHub Education. _OCT 2017 – JAN 2020_.
+- **BEEHACK / GUANAHACKS.** Organizing member of the first hackathon in Guanajuato Capital GuanaHacks / BeeHack. _OCT 2017 – DEC 2019._
+- **"LEÓN JOVEN" AMBASSADOR.** Youth Ambassador for the Municipal Youth Institute. León, Guanajuato. _MAY 2017 – JUL 2018._
+- **"CON-CIENCIA" RADIO HOST.** In charge of the "Con-Ciencia" segment on the program "El Aguijón UG", Radio Universidad de Guanajuato. _OCT 2016 – OCT 2017._
+- **GOOGLE DEVELOPER GROUP LEÓN.** Founding and core member of GDG León. _MAY 2016 – OCT 2018._
+- **SOCIEDAD CIENtÍFICA JUVENIL.** Member of SCJ León. _AUG 2016 – NOV 2017._
+- **ESPIRAL FORO UNIVERSITARIO.** Outreach Coordinator. University of Guanajuato. _AUG 2016 – OCT 2017._
+- **NÉBULA 2016.** Leader of a scientific entrepreneurship project (SciHack). _NOV 2016._
+- **MECATE 2016.** Participation as a maker in social entrepreneurship. _JUN 2016._
+- **CLUBES DE CIENCIA MÉXICO.** City coordinator and instructor. Guanajuato, México. _JAN 2015 – JAN 2018._
+- **MATEMORFOSIS.** Math workshops for children. Centro de Investigación en Matemáticas (CIMAT), A.C. _JAN 2014 - JUL 2014._
+
+
+#### TALKS, WORKSHOPS AND EVENTS:
+
+- **PYTHONDAY MÉXICO 2019.** Talk ["Data Science with SciPy"](https://github.com/RodolfoFerro/DataSciPy). CUCEA, Guadalajara, Jalisco. _DEC 2018._
+- **PYTHONDAY MÉXICO 2019.** Workshop ["Machine Learning as a Service (MLaaS): Serving Intelligent Solutions"](https://github.com/RodolfoFerro/MLaaS). CUCEA, Guadalajara, Jalisco. _NOV 2018._
+- **UNIVERSIDAD IBERO LEÓN.** Talk "AI in Modern Times" at Universidad Iberoamericana León, León, Gto. _NOV 2018._
+- **UTL HERE HACKATHON 2018.** Mentor and speaker with the talk "Web Services: Integrating Technological Solutions". UTL, León, Gto. _NOV 2018._
+- **UG TALKS.** Talk "Applied Technology." University of Guanajuato – Faculty of Mines, Guanajuato, Gto. _NOV 2018._
+- **PYTHON VIDEO GAME WORKSHOP @ MUNICIPAL YOUTH INSTITUTE (LEÓN).** Instructor of the workshop "Create your own video games with Python". Casa de la Juventud, León, Gto. _NOV 2018._
+- **ENMS León.** Speaker with the alk "Distinguishing Between Cats and Dogs: On AI in Modern Times". Escuela de nivel Medio Superior de León, Gto. _NOV 2018._
+- **DIVISIÓN DE DERECHO POLÍTICA Y GOBIERNO.** Participation with the talk "Innovating in the Public Sector: Technology and Automation." University of Guanajuato – Division of Law, Politics, and Government, Guanajuato, Gto. _OCT 2018._
+- **CONISOFT 2018.** Participated with the workshop ["Intro to Neural Networks with Keras"](https://github.com/RodolfoFerro/CONISOFT2018). Autonomous University of San Luis Potosí – Faculty of Engineering, SLP. _OCT 2018._
+- **MUNICIPAL YOUTH INSTITUTE.** Participation with the talk "AI in Modern Times". Casa de la Juventud, León, Gto. _OCT 2018._
+- **CHARLA N.I.C.E.** Participation woth the talk "How to Speak in Public and Survive the Attempt". ITESM León, León, Gto. _OCT 2018._
+- **HACKCHIAPAS 2018.** Technology mentor. Polytechnic University of Chiapas, Suchiapa, Chiapas. _OCT 2018._
+- **UGMUN 2018.** Speaker with the talk "In What World Do We Live? On Bots, IoT, AI and More...". University of Guanajuato – Division of Economic and Administrative Sciences, Guanajuato, Gto. _SEP 2018._
+- **MARATÓN IDEÓSFERA.** Mentor in technology and innovation. La Salle Innovation Park, León, Gto. _SEP 2018._
+- **HACKATUR TUI-MEXSOST 2018.** Mentor in Technology and Innovation. ITESM León, León, Gto. _SEP 2018._
+- **LINCEHACK 2018.** Technology Mentor and Workshop ["Creating APIs with Python"](https://github.com/RodolfoFerro/PythonBaseAPI). TecNM Celaya, Celaya, Gto. _SEP 2018._
+- **MEETUP HCC-CIMAT.** Participated with the workshop "Introduction to Deep Learning with Keras." CIMAT Zacatecas Unit. _AUG 2018._
+- **MEETUP HCC-CIMAT.** Participated with the talk "Emotion in the Face of the Masses." CIMAT Zacatecas Unit. _AUG 2018._
+- **TALENT NIGHTS GUANAJUATO.** Talk "When Machines Learn". León, Gto. _MAY 2018._
+- **MEX I CAN.** Panelist. ENMSG – University of Guanajuato, Guanajuato, Gto. _MAY 2018._
+- **"EL PRIMER PASO" TOUR.** Panelist. DCNE – University of Guanajuato, Guanajuato, Gto. _MAY 2018._
+- **FLISoL 2018.** Participated with the workshop ["Introduction to Neural Networks with Keras"](https://github.com/RodolfoFerro/FLISoL18) and keynote "FLISoL 2018: Tools, Community and More". _APR 2018._
+- **DCEA GUANAJUATO.** Speaker with the talk "In What World Do We Live? Bots, IoT, AI and More..." University of Guanajuato – Division of Economic and Administrative Sciences, Guanajuato, Gto. _MAR 2018._
+- **SEMANA CULTURAL ENMSL.** Speaker with the talk "In What World Do We Live?". Escuela de nivel Medio Superior de León (ENMSL), UG, León, Gto. _MAR 2018._
+- **1ER. SIMPOSIUM DE INGENIERÍA EN REDES Y TELECOMUNICACIONES.** Participated with the workshop "Let’s Botify Twitter w/Python". Polytechnic University of Juventino Rosas, Gto. _MAR 2018._
+- **1ER. ENCUENTRO MULTIDISCIPLINARIO POR MÉXICO 2018.** Participated with the talk "Small Actions Tend to Generate Exponential Changes". DICIS, UG, Salamanca, Gto. _MAR 2018._
+- **DDPG GUANAJUATO.** Participated with the talk "Technology: Its Social Power and Impact on Law". UG – Division of Law, Politics, and Government, Guanajuato, Gto. _MAR 2018._
+- **1ER. iTALK ICONMUNITY.** Participated in the panel "Doing and Sharing Science". ITESM León, León, Gto. _FEB 2018._
+- **<DEVNIGHTS/>.** Speaker with the talk "Hubot: Bringing ChatOps to Your Hands". Tepache Hacklab, León, Gto. _JAN 2018._
+- **FORUM EDUCATIVO VOCACIONAL Y PROFESIOGRÁFICO.** Speaker witht he talk "Present and Future: Where Are We Headed?". León, Gto. _NOV 2017._
+- **FORO DE INGENIERÍA QUÍMICA.** Participated with the talk "On Visualization of Molecules, Bots and More...". Mexican Institute of Chemical Engineers (Student Section), UG, Guanajuato. _NOV 2017._
+- **1ER. SEMANA DE LA CIENCIA – QUIUBOLE UG.** Participated with the talk "Present and Future: Where Are We Headed?". DCNE, UG, Guanajuato. _NOV 2017._
+- **2DA. SEMANA INTERNACIONAL DE EMPRENDIMIENTO E INNOVACIÓN DCEA.** Participated with the workshop "Mockups: Project Prototyping". DCEA, UG, Guanajuato Campus. _OCT 2017._
+- **PRIMER CONGRESO NACIONAL DE CIENCIA COMPUTACIONAL APLICADA.** Speaker with the talk "On Wizards, Programmers, and Other Superpowers". IEEE Student Branch, DICIS, Salamanca, Gto. _OCT 2017._
+- **<DEVNIGHTS/>.** Speaker with the talk "When Machines Learn". Tepache Hacklab, León, Gto. _SEP 2016._
+- **DCEA OPEN DAY.** Participated with the talk "Innovation and Entrepreneurship". Division of Economic and Administrative Sciences, UG, Guanajuato. _SEP 2017._
+- **YOUTHGTO.** Participated in the panel "Youth and the International Worldview". DCEA, UG, Guanajuato. _AUG 2017._
+- **EUGREKA – LUNES DE LA CIENCIA.** Participated witht he talk "Compiling the Future: Where Are We Headed?". Escuela de nivel Medio Superior de Celaya, UG, Celaya, Gto. _AUG 2017._
+- **PYTHONDAY MÉXICO 2017.** Participated with the workshop ["Create Your Twitterbot in 30 Minutes!"](https://github.com/RodolfoFerro/Twitterbot_en_30) ([video of the workshop](https://www.youtube.com/watch?v=x0VWnm9CAyE)). Telmexhub, Mexico City. _JUN 2017._
+- **6TO. FORO DE DIVULGACIÓN CIENTÍFICO Y TENOLÓGICO.** Participated with the talk "Science and Technology at the Reach of... Human Physiology?". Instituto Tecnológico de Celaya, Celaya, Gto. _MAY 2017._
+- **FLISoL 2017.** Participated with the workshop ["First Steps with Python: Image Processing"](https://github.com/RodolfoFerro/FLISoL17). _APR 2017._
+- **<DEVNIGHTS/>.** Speaker with the talk "Programming Video Games: Introduction to PyGame". Tepache Hacklab, León, Gto. _NOV 2016._
+- **FERIA DE NEGOCIOS E INNOVADORES 2016.** Participation with the talk "Project Development: From Zero to Hero". Instituto Tecnológico de Celaya, Celaya, Gto. _NOV 2016._
+- **FESTIVAL INTERNACIONAL CERVANTINO.** Participated witht the science Workshop for kids "Exploring the Senses: Science & Technology!". Prometeo, UNAM. Guanajuato, Gto. _OCT 2016._
+- **GOOGLE DEVELOPER GROUP.** Participated with the talk-workshop ["How to Simulate Valid Data from a Sample (with Pokémon GO data)"](https://github.com/RodolfoFerro/PokeGO). GDG León, León, Gto. _JUL 2016._
+- **DCI STUDENTS SEMINAR.** Speaker with the talk "Drive 101 – A Student-Oriented Approach". DICIS, UG, León, Gto. _AUG 2014._
+
+
+#### COMPETITIONS, AWARDS AND DISTINCTIONS:
+
+- **STATE YOUTH AWARD.** Category: Academia and Technology. Guanajuato, Mexico. _JUL 2018._
+- **1ST PLACE – HDI CHALLENGE @ TALENT HACKATHON.** Project "HIER: An Automated Solution for Insurance Services". Centro Fox, Guanajuato. _JUN 2018._
+- **2ND PLACE – 5TH CREATIVITY AND INNOVATION CONTEST (DCNE).** Project ["OmniChem"](https://rodolfoferro.xyz/omnichem/). DCNE, University of Guanajuato. _MAY 2018._
+- **1ST PLACE – SWITHC HACKATHON 2017.** Project ["DABOT: Disaster Attention Bot"](https://rodolfoferro.xyz/SWITCH17/), disaster response reporting system. León, Gto. _NOV 2017._
+- **1ST PLACE – IBM BLUEHACK MÉXICO HACKAPALOOZA.** Project ["Travis"](https://www.youtube.com/watch?v=bH80lD148BY), an intelligent shopping assistant using IBM Watson. IBM Tech Park, Guadalajara, Jal. _OCT 2017._
+- **MUNICIPAL YOUTH AWARD.** Category: Academia and Technology. Guanajuato, Mexico. _AUG 2017._
+- **1ST PLACE – 12TH INSTITUTIONAL CREATIVITY AND INNOVATION CONTEST.** Project "AdaBot", intelligent customer service bots. University of Guanajuato, Campus Guanajuato. _AUG 2017._
+- **1ST PLACE – CENTRO FOX HACKATHON 2017 "(Re)Programming Sustainability".** Project ["CitizenBot"](https://rodolfoferro.xyz/CitizenBot_HackCF/), intelligent citizen service bots. Centro Fox, Guanajuato. _MAY 2017._
+- **WINNER – GUANAJUATO TALENT-TIC 2017.** Project "Bring me in! (BriM!)", an autonomous and intelligent system for searching calls and opportunities. Guanajuato, Mexico. _MAR 2017._
+- **1ST PLACE – 1ST INSTITUTIONAL CONTEST "MY LIFE PROJECT".** University of Guanajuato. _NOV 2016._
+- **1ST PLACE – 6TH CREATIVITY AND INNOVAITON CONTEST (DCEA).** School of Economics and Administrative Sciences, University of Guanajuato. _NOV 2016._
+- **SILVER AWARD – iGEM 2016 GIANT JAMBOREE.** Hynes Convention Center, Boston, MA, USA. _OCT 2016._
+- **1ST PLACE – 4TH CREATIVITY AND INNOVATION CONTEST (DCNE).** DCNE, University of Guanajuato. _OCT 2016._
+- **1ST PACEL – HACKBAJÍO FINTECH.** ITESM Campus León, Gto. _APR 2016._

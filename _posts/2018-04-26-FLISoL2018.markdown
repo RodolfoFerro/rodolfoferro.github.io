@@ -19,7 +19,7 @@ description: Intro to ANNs w/Keras.
 
 > **Author:** Rodolfo Ferro Pérez <br/>
 > **Email:** [ferro@cimat.mx](mailto:ferro@cimat.mx) <br/>
-> **Twitter:** [@FerroRodolfo](http://twitter.com/FerroRodolfo) <br/>
+> **Twitter:** [@rodo_ferro](http://twitter.com/rodo_ferro) <br/>
 > **GitHub:** [RodolfoFerro](https://github.com/RodolfoFerro) <br/>
 
 ## About 🕹

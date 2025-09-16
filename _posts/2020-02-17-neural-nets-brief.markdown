@@ -69,3 +69,9 @@ description: "Una breve infografía sobre las redes neuronales artificiales."
   </ul>
   </li>
 </ul>
+
+PD. Esta información fue utilizada y publicada por [Clubes de Ciencia México](https://clubesdeciencia.mx/), a través de sus redes sociales:
+
+<center>
+  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fclubesdecienciamx%2Fposts%2Fpfbid0Vpz1xVUTLsUD8hmL5cFYfg5uCjASujuR59swRLW6xAGofX3yaiBcw8LZqNRgpa4yl&show_text=true&width=500" width="500" height="757" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</center>
