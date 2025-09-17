@@ -159,6 +159,19 @@ title: Resume
 
 #### TALKS, WORKSHOPS AND EVENTS:
 
+- **INNOVATECH GTO – UNITEC.** Speaker with the talk "A world of possibilities with AI". UNITEC Campus León. _AUG 2024._
+- **INNOVATECH GTO – UTL.** Speaker with the talk "The backrooms of AI". Universidad Tecnológica de León. _JUL 2024._
+- **"FORO EN ÓRBITA UG" (5TH FORUM).** Speaker with the talk ["Starting a business with Artificial Intelligence"](https://www.ugto.mx/colegionms/images//2023/orbita/orbita-2023-1.pdf). Colegio de Nivel Medio Superior de León. _OCT 2023._
+- **DCEA – CAMPUS GUANAJUATO.** Participated in the panel "Artificial intelligence to help you survive university". DCEA, Guanajuato. _MAY 2023._
+- **TALENT LAND 2023 – WORKSHOPS.** Participated with the workshop ["Demo class: An introduction to artificial neurons"](https://2023.talent-land.mx/eventos/teaching-machines-to-see-introduccion-a-computer-vision-con-deep-learning-rodolfo-ferro-angel-toledo/). Talent Land. _APR 2023._
+- **TALENT LAND 2023 – ARTIFICIAL INTELLIGENCE STAGE.** Speaker with the talk "The future is AI, you heard me, old man?". Talent Land. _APR 2023._
+- **TALENT LAND 2023 – ARTIFICIAL INTELLIGENCE STAGE.** Speaker with the talk "Build your path to an AI career from other fields". Talent Land. _APR 2023._
+- **DATA DAY 2022.** Participated with the talk ["ML without the Ops: Scalable experiments with Ploomber and AWS Batch"](https://sg.com.mx/dataday/sessions/2022mty/ml-sin-ops-experimentos-escalables-con-ploomber-y-aws-batch/). _JUL 2023._ 
+- **VALLE DE LA MENTEFACTURA.** Masterclass ["Hacks for a hack"](https://www.youtube.com/watch?v=Ru-lr1Lm1CQ). Guanajuato, México. _SEP 2022._
+- **TALENT LAND DIGITAL 2021 – TALENT HACKATHON.** Mentor in topics: AI, machine learning, deep learning, computer vision, data science. Talent Land. _JUL 2021._
+- **TALENT LAND DIGITAL 2021 – TALENT HACKATHON.** Masterclass ["Teamwork"](https://www.talent-republic.tv/imperdible/talent-hackathon-2021-el-gran-reto-de-los-talentos/). Talent Land. _JUL 2021._
+- **TALENT LAND 2020 – DEVELOPER LAND @ HOME.** Host of the panel ["Challenges and opportunities of Artificial Intelligence in our daily lives"](https://developerland.talent-republic.tv/2020/speakers/rodolfo-ferro/). Talent Land. _JUN 2020._
+- **PYCON COLOMBIA 2020.** Participated witht he workshop ["Deep Learning as a Service (DLaaS) – Building cloud-based intelligent solutions"](https://github.com/RodolfoFerro/PyConCo20/tree/full-code). EAFIT, Medellín, Colombia. _FEB 2020._
 - **PYTHONDAY MÉXICO 2019.** Talk ["Data Science with SciPy"](https://github.com/RodolfoFerro/DataSciPy). CUCEA, Guadalajara, Jalisco. _DEC 2018._
 - **PYTHONDAY MÉXICO 2019.** Workshop ["Machine Learning as a Service (MLaaS): Serving Intelligent Solutions"](https://github.com/RodolfoFerro/MLaaS). CUCEA, Guadalajara, Jalisco. _NOV 2018._
 - **UNIVERSIDAD IBERO LEÓN.** Talk "AI in Modern Times" at Universidad Iberoamericana León, León, Gto. _NOV 2018._
