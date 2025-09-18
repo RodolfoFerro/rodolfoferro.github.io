@@ -132,10 +132,23 @@ title: Resume
 
 #### TEACHING / COURSES:
 
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop ["Satellites and Neurons: Exploring the Invisible with AI"](https://rodolfoferro.xyz/satelitesyneuronas/). Aguascalientes, Mexico. _JUL 2025._
+- **NEURAL NETWORKS AND FOUNDATIONAL MODELS TUTOR (2ND GENERATION) @ CÓDIGO FACILITO.** Bootcamp teacher of the neural networks and foundational models module in the Machine Learning Bootcamp at Código Facilito. (More in [/courses](/courses) section.) _MAY 2025._
+- **DATA SCIENCE TUTOR & BOOTCAMP LEAD (5TH GENERATION) @ CÓDIGO FACILITO.** Bootcamp lead and teacher of the modules: deep learning and Streamlit, in the Data Science Bootcamp at Código Facilito. (More in [/courses](/courses) section.) _SEP 2024._
+- **DATA SCIENCE TUTOR & BOOTCAMP LEAD (4TH GENERATION) @ CÓDIGO FACILITO.** Bootcamp lead and teacher of the modules: deep learning and Streamlit, in the Data Science Bootcamp at Código Facilito. (More in [/courses](/courses) section.) _JUN 2024._
+- **AZURE COGNITIVE SERVICES TUTOR @ CÓDIGO FACILITO.** Bootcamp teacher of the Azure Cognitive Services module in the Intensive Azure AI 102 Bootcamp at Código Facilito. _APR 2024._
+- **NEURAL NETWORKS AND FOUNDATIONAL MODELS TUTOR (1ST GENERATION) @ CÓDIGO FACILITO.** Bootcamp teacher of the neural networks and foundational models module in the Machine Learning Bootcamp at Código Facilito. (More in [/courses](/courses) section.) _OCT 2023._
+- **DATA SCIENCE TUTOR & BOOTCAMP LEAD (3RD GENERATION) @ CÓDIGO FACILITO.** Bootcamp lead and teacher of the modules: deep learning, Polars and Streamlit, in the Data Science Bootcamp at Código Facilito. (More in [/courses](/courses) section.) _AUG 2023._
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop ["Sensory expansion: perceiving through technology"](https://rodolfoferro.xyz/expansion-sensorial/), designed by Nobel Laureate in Physics Frank Wilczek. Monterrey, Mexico. _AUG 2023._
+- **DEEP LEARNING TUTOR (1ST GENERATION) @ CÓDIGO FACILITO.** Bootcamp teacher of the deep learning module in the Advanced Data Science Bootcamp at Código Facilito. (More in [/courses](/courses) section.) _APR 2023._
+- **DATA SCIENCE TUTOR & BOOTCAMP LEAD (2ND GENERATION) @ CÓDIGO FACILITO.** Bootcamp lead and teacher of the deep learning modules in the Data Science Bootcamp at Código Facilito. (More in [/courses](/courses) section.) _OCT 2022._
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop "The Hitchhiker's Guide to an Interconnected World". Xalapa, Mexico. _AUG 2022._
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop ["Introduction to scientific programming with Python"](https://futurelab.mx/cdecmx/) for Clubes de Ciencia México "Global Challenges" online edition. _AUG 2021._
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop ["Revealing the Hidden Hyperspectrum with Artificial Neurons"](https://rodolfoferro.xyz/hyperspectrum/), designed by Nobel Laureate in Physics Frank Wilczek. Guanajuato, Mexico. _AUG 2019._
 - **TEACHING ASSISTANT @ UNIVERSIDAD DE GUANAJUATO.** Teacher assistant and workshop instructor of the "Project Management" course. Division of Economic and Administrative Sciences, University of Guanajuato, Guanajuato Campus. _JAN 2017 – JUN 2017._
-- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop "Exploring the senses: Science and technology!", designed by Nobel Laureate in Physics Frank Wilczek. _AUG 2016._
-- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop "Accelerating science with multiple processors". Guanajuato, Guanajuato. _AUG 2015._
-- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop "Crystallography: The power of symmetry in matter". Guanajuato, Guanajuato. _JAN 2015._
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop ["Exploring the senses: Science and technology!"](https://rodolfoferro.xyz/ExplorandoLosSentidos/), designed by Nobel Laureate in Physics Frank Wilczek. Guanajuato, Mexico. _AUG 2016._
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop ["Accelerating science with multiple processors"](https://rodolfoferro.xyz/Acelerando/). Guanajuato, Mexico. _AUG 2015._
+- **SCIENCE INSTRUCTOR @ CLUBES DE CIENCIA MÉXICO.** Instructor of the workshop "Crystallography: The power of symmetry in matter". Guanajuato, Mexico. _JAN 2015._
 
 
 #### VOLUNTEERING:
