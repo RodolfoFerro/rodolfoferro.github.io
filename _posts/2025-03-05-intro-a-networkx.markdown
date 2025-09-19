@@ -11,7 +11,7 @@ tag:
 - Graphs
 category: blog
 author: rodferro
-description: "Introcucción a grafos en Python con NetworkX"
+description: "Introducción a grafos en Python con NetworkX"
 ---
 
 <html lang="en">
