@@ -1,7 +1,7 @@
 ---
 title: "[Curso Intensivo] Fundamentos de la Inteligencia Artificial"
 layout: post
-date: 2025-09-25 00:00
+date: 2025-10-01 00:00
 published: true
 image: 
 headerImage: true
@@ -252,23 +252,81 @@ description: "[Curso Intensivo] Fundamentos de la Inteligencia Artificial"
 
 ## Paradigma basado en datos
 
-- **Definición general:**
-    - El aprendizaje automático (Machine Learning, ML) es un enfoque de la IA en el que los sistemas aprenden patrones y reglas directamente a partir de datos, en lugar de ser programados explícitamente con reglas.
-    - En lugar de escribir "si $X$, entonces $Y$", se provee al sistema con ejemplos y este ajusta un modelo matemático.
-- **Formalización básica:**
-    - Tenemos un conjunto de datos $D = \{ (x_i, y_i) \} ^N_{i=1}$, donde
-        - $x_i$ = entrada (ej. imagen, texto, vector numérico).
-        - $y_i$ = salida deseada (ej. etiqueta de clase, valor real).
-    - El modelo busca una función $f_{\theta}(x)$ con parámetros $\theta$ que aproxime la relación entre entrada y salida.
-    - Se ajusta $\theta$ minimizando un error
-    <center>
-        $\theta^* = \arg\!\min_{\theta} \mathcal{L}(f_{\theta}(x), y) $
-    </center>
-    donde $\mathcal{L}$ es la función de pérdida (ej. error cuadrático medio, entropía cruzada, etc.).
+#### Definición general
+- El aprendizaje automático (Machine Learning, ML) es un enfoque de la IA en el que los sistemas aprenden patrones y reglas directamente a partir de datos, en lugar de ser programados explícitamente con reglas.
+- En lugar de escribir "si $X$, entonces $Y$", se provee al sistema con ejemplos y este ajusta un modelo matemático.
+
+#### Formalización básica
+
+- Tenemos un conjunto de datos $D = \{ (x_i, y_i) \} ^N_{i=1}$, donde
+    - $x_i$ = entrada (ej. imagen, texto, vector numérico).
+    - $y_i$ = salida deseada (ej. etiqueta de clase, valor real).
+- El modelo busca una función $f_{\theta}(x)$ con parámetros $\theta$ que aproxime la relación entre entrada y salida.
+- Se ajusta $\theta$ minimizando un error
+<center>
+    $\theta^* = \arg\!\min_{\theta} \mathcal{L}(f_{\theta}(x), y) $
+</center>
+donde $\mathcal{L}$ es la función de pérdida (ej. error cuadrático medio, entropía cruzada, etc.).
 - **Ejemplos cotidianos:**
     - Netflix aprende tus gustos a partir de tu historial → recomendaciones personalizadas.
     - Gmail aprende a detectar spam observando ejemplos de correos no deseados.
     - Un banco usa datos de clientes para predecir riesgo crediticio.
+
+## Redes neuronales artificiales: idea general, perceptrón
+
+- **Inspiración biológica:** Basadas en la analogía con neuronas del cerebro: reciben señales, las combinan y producen una salida si superan cierto umbral.
+
+#### Modelo del perceptrón (neurona artificial)
+
+- **Entradas:** $x_1, x_2, ..., x_n$.
+- **Pesos:** $w_1, w_2, ..., w_n$.
+- **Operación:**
+    <center>
+    $z = \Sigma_{i=1}^n w_ix_i + b$ <br>
+    $y = \phi(z)$
+    </center>
+    donde $\phi$ es una función de activación (ej. escalón, sigmoide, ReLU, etc.).
+- **Regla de aprendizaje del perceptrón (simplificada):**
+    - Para una muestra $(x,y)$, si predicción $\neq$ etiqueta → actualizar pesos:
+    <center>
+    $w_i \leftarrow w_i + \eta (y - \hat{y})x_i$
+    </center>
+    donde $\eta$ es la tasa de aprendizaje.
+- **Ejemplo práctico:**
+    - Clasificar flores (Iris dataset) según medidas de pétalos y sépalos.
+    - Cada característica = entrada; el perceptrón aprende a distinguir clases.
+
+## Concepto de aprendizaje supervisado y no supervisado
+
+#### Aprendizaje supervisado
+
+- **Definición:** El modelo aprende a partir de ejemplos etiquetados $(x,y)$.
+- **Objetivo:** predecir la salida correcta para nuevas entradas.
+- **Ejemplos:**
+    - Clasificación de correos: spam (1) vs. no spam (0).
+    - Predicción de precios de casas a partir de tamaño, ubicación, etc.
+- **Tipos principales:**
+    - **Clasificación:** salida discreta (ej. "gato" o "perro").
+    - **Regresión:** salida continua (ej. precio en dólares).
+
+#### Aprendizaje no supervisado
+
+- **Definición:** El modelo trabaja con datos no etiquetados, buscando descubrir estructura o patrones ocultos.
+- **Ejemplos:**
+    - Agrupar clientes de un supermercado según hábitos de compra (clustering).
+    - Reducción de dimensionalidad para visualizar datos (ej. PCA).
+- **Técnicas comunes:**
+    - **Clustering (agrupamiento):** K-means, DBSCAN.
+    - **Reducción de dimensionalidad:** PCA, t-SNE, autoencoders.
+
+<br>
+> **Resumen del módulo:**
+> - En ML, los algoritmos aprenden a partir de datos en vez de reglas fijas.
+> - El perceptrón es la base de las redes neuronales modernas.
+> - Supervisado = con etiquetas, No supervisado = sin etiquetas.
+
+---
+
 
 ***
 
