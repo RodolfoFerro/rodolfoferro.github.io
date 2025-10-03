@@ -327,6 +327,95 @@ donde $\mathcal{L}$ es la función de pérdida (ej. error cuadrático medio, ent
 
 ---
 
+# Módulo 4. Aplicaciones y perspectivas de la IA
+
+## Aplicaciones principales de la IA
+
+#### Procesamiento de Lenguaje Natural (PLN)
+
+- **Definición:** Área de la IA que permite a las máquinas entender, interpretar y generar lenguaje humano.
+- **Ejemplos actuales:**
+    - Traductores automáticos (Google Translate, DeepL).
+    - Chatbots y asistentes virtuales (Siri, Alexa, ChatGPT).
+    - Análisis de sentimientos en redes sociales.
+- **Técnicas principales:**
+    - Modelos de lenguaje (n-gramas, redes neuronales, Transformers).
+    - Tokenización, embeddings (Word2Vec, BERT).
+
+#### Visión Artificial
+
+- **Definición:** Permite que las máquinas "vean" e interpreten imágenes o videos.
+- **Ejemplos actuales:**
+    - Reconocimiento facial en smartphones.
+    - Diagnóstico médico por imágenes (detección de tumores en radiografías).
+    - Vehículos autónomos que reconocen semáforos y peatones.
+- **Técnicas principales:**
+    - Redes convolucionales (CNN).
+    - Segmentación de imágenes, detección de objetos.
+
+#### Robótica
+
+- **Definición:** Combinación de IA y hardware para diseñar máquinas que perciben, deciden y actúan en el mundo físico.
+- **Ejemplos actuales:**
+    - Robots industriales en fábricas.
+    - Drones autónomos para entrega o mapeo.
+    - Robots humanoides (Boston Dynamics, Honda ASIMO).
+- **Tareas típicas de IA en robótica:**
+    - **Percepción:** visión, sensores LIDAR.
+    - **Planificación:** encontrar rutas o secuencias de acción.
+    - **Control:** ejecutar movimientos precisos.
+
+#### Sistemas Expertos
+
+- **Definición:** Programas que imitan la decisión de un experto humano en un dominio específico.
+- **Componentes:**
+    - Base de conocimientos (reglas, hechos).
+    - Motor de inferencia (razona con esas reglas).
+- **Ejemplos históricos:**
+    - **MYCIN:** diagnóstico médico.
+    - **DENDRAL:** análisis químico.
+- **Ejemplos actuales:**
+    - Asesoría legal automática.
+    - Diagnóstico de fallas técnicas en sistemas complejos.
+
+## Oportunidades y retos de la IA
+
+#### Oportunidades
+
+- **Avances en salud:** diagnóstico temprano de enfermedades, medicina personalizada.
+- **Educación personalizada:** sistemas de tutoría adaptativos.
+- **Industria y eficiencia:** automatización, optimización de procesos.
+- **Creatividad aumentada:** generación de arte, música, diseño asistido.
+
+#### Retos éticos, sesgos y riesgos
+
+- **Sesgos en datos y modelos:**
+    - Los algoritmos aprenden patrones de los datos → si los datos tienen prejuicios, la IA los replica.
+    - **Ejemplo:** sistemas de reclutamiento que discriminan género si se entrenan con datos históricos sesgados.
+- **Privacidad y vigilancia:**
+    - Uso masivo de datos personales (cámaras, geolocalización).
+    - Riesgo de vigilancia masiva o violación de derechos digitales.
+- **Riesgo de desplazamiento laboral:**
+    - Automatización de tareas repetitivas → pérdida de empleos en ciertos sectores.
+    - Al mismo tiempo, se generan nuevos roles (ingenieros de datos, auditores de IA).
+- **Seguridad y responsabilidad:**
+    - ¿Quién es responsable si un coche autónomo causa un accidente?
+    - Importancia de regulaciones claras.
+- **IA maliciosa o mal usada:**
+    - Deepfakes, manipulación política, ciberataques asistidos por IA.
+
+#### Perspectivas futuras
+
+- **IA explicable (XAI):** modelos más interpretables y transparentes.
+- **IA general (AGI):** sistemas con capacidades cognitivas comparables a las humanas (todavía hipotético).
+- **IA responsable:** marcos éticos y legales para su uso seguro.
+- **IA multimodal:** sistemas que integran texto, imagen, audio y video en un mismo modelo (ejemplo: GPT-4, Gemini, Claude).
+
+<br>
+> **Resumen del módulo:**
+> - La IA se aplica hoy en múltiples campos: lenguaje, visión, robótica, sistemas expertos.
+> - Las oportunidades son enormes, pero también existen riesgos éticos y sociales.
+> - Como futuros ingenieros en IA, deberán aprender no solo a desarrollar modelos, sino a considerar sus impactos en la sociedad.
 
 ***
 
