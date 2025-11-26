@@ -37,7 +37,7 @@ title: Resume
 </center>
 
 ---
-<i><b>Last update:</b> 18/09/2025.</i>
+<i><b>Last update:</b> 25/11/2025.</i>
 
 <i><b>Note:</b> There's a time gap (2019-2024) in which I didn't update a considerable amount of talks and workshops in the info below. If you're interested in inviting me to an event, please do not hesitate to contact me. :) </i>
 
