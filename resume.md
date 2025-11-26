@@ -46,7 +46,7 @@ title: Resume
 
 #### CURRENT ACTIVITIES:
 
-- **SR. MACHINE LEARNING | COMPUTER VISION ENGINEER.** ML/CV engineer at AIAEC LLC.
+- **SR. MACHINE LEARNING / COMPUTER VISION ENGINEER.** ML/CV engineer at AIAEC LLC.
 - **TECHNOLOGY/AI CONSULTANT.** Consultant on technologies related to AI, automation, and data.
 - **DATA SCIENCE TEACHER.** Tech lead in the data science bootcamp at Código Facilito, data science professor in the Data Science Diploma at ENES León (UNAM).
 
@@ -72,7 +72,7 @@ title: Resume
 
 #### PROFESSIONAL EXPERIENCE:
 
-- **SR. MACHINE LEARNING | COMPUTER VISION ENGINEER.** _OCT 2025 – PRESENT._
+- **SR. MACHINE LEARNING / COMPUTER VISION ENGINEER.** _OCT 2025 – PRESENT._
   - Developing a smart tool for internal use using computer vision and artificial intelligence.
 - **SR. SWE (DATA ENGINEER) @ BISONIC MÉXICO.** _MAR 2023 – SEP 2025._
   - Automated processes for in-platform transactions with Python and FastAPI for web services (APIs) deployed in AWS.
