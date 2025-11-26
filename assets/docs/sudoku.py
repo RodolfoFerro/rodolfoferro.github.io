@@ -332,23 +332,21 @@ class GeneticSudoku:
 
 if __name__ == "__main__":
     # Usage example
-    initial_state = np.array([[5, 0, 8, 4, 0, 2, 0, 0, 1],
-                              [3, 0, 0, 9, 5, 1, 0, 7, 8],
-                              [1, 0, 0, 6, 0, 0, 0, 0, 5],
-                              [0, 3, 4, 0, 8, 9, 0, 2, 0],
-                              [0, 0, 0, 1, 2, 3, 0, 9, 7],
-                              [0, 1, 9, 7, 4, 6, 0, 0, 3],
-                              [0, 0, 1, 0, 0, 0, 0, 6, 0],
-                              [0, 2, 6, 8, 0, 0, 0, 0, 4],
-                              [0, 7, 0, 0, 0, 0, 0, 1, 0]])
+    initial_state = np.array([[0, 0, 0, 8, 0, 0, 0, 3, 0],
+                              [8, 0, 0, 0, 9, 0, 2, 0, 6],
+                              [4, 7, 0, 0, 0, 5, 0, 0, 1],
+                              [6, 0, 5, 1, 2, 3, 7, 4, 9],
+                              [0, 0, 0, 5, 8, 0, 0, 0, 0],
+                              [0, 1, 9, 0, 4, 6, 3, 0, 8],
+                              [1, 9, 0, 0, 3, 8, 5, 2, 0],
+                              [0, 4, 0, 0, 5, 1, 8, 6, 0],
+                              [0, 0, 0, 0, 0, 0, 0, 0, 3]])
 
-    population_size = 10000
     sudoku = GeneticSudoku(initial_state)
-
-    solution = sudoku.evolve(population_size=5000,
+    solution = sudoku.evolve(population_size=10000,
                              max_generations=100,
-                             selection_rate=0.2,
-                             mutation_rate=0.2,
+                             selection_rate=0.6,
+                             mutation_rate=0.3,
                              include_parents=False,
                              verbose=True,
                              state=True)
