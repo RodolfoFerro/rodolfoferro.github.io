@@ -46,7 +46,7 @@ title: Resume
 
 #### CURRENT ACTIVITIES:
 
-- **SR. SWE (DATA ENGINEER).** Data and blockchain developer at Bisonic México.
+- **SR. MACHINE LEARNING | COMPUTER VISION ENGINEER.** ML/CV engineer at AIAEC LLC.
 - **TECHNOLOGY/AI CONSULTANT.** Consultant on technologies related to AI, automation, and data.
 - **DATA SCIENCE TEACHER.** Tech lead in the data science bootcamp at Código Facilito, data science professor in the Data Science Diploma at ENES León (UNAM).
 
@@ -72,12 +72,14 @@ title: Resume
 
 #### PROFESSIONAL EXPERIENCE:
 
-- **SR. SWE (DATA ENGINEER) @ BISONIC MÉXICO.** _MAR 2023 – PRESENT._
+- **SR. MACHINE LEARNING | COMPUTER VISION ENGINEER.** _OCT 2025 – PRESENT._
+  - Developing a smart tool for internal use using computer vision and artificial intelligence.
+- **SR. SWE (DATA ENGINEER) @ BISONIC MÉXICO.** _MAR 2023 – SEP 2025._
   - Automated processes for in-platform transactions with Python and FastAPI for web services (APIs) deployed in AWS.
   - Built analytics dashboards for strategic decisions using Streamlit and Dash.
   - Built an machine learning based tool to identify non-legitimate users in platform using Python and standard tools for ML & Data Science (Pandas, sklearn, etc.).
   - Implemented and deployed smart contracts in Ronin, Ethereum and Arbitrum for in-platform NFT token usage and payments, using primarily Python, Solidity and Hardhat.
-- **DEVELOPER ADVOCATE @ PLOOMBER.** _AUG 2021 – FEB 2023._
+- **DEVELOPER ADVOCATE @ PLOOMBER.** _AUG 2022 – FEB 2023._
   - Shared in person and online events about company's products and solutions.
   - Built documentation, examples and community using primarily Python and Ploomber.
 - **ARTIFICIAL INTELLIGENCE DIGITAL SHERPA @ MICROSOFT MÉXICO.** _APR 2020 – JUL 2021._
