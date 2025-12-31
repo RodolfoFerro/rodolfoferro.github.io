@@ -80,8 +80,8 @@ function calculate() {
 
         const row = document.createElement("tr");
         row.innerHTML = `
-        <td>${k}</td>
-        <td>${(p * 100).toFixed(2)}%</td>
+        <td>&nbsp; ${k}</td>
+        <td>&nbsp; ${(p * 100).toFixed(2)}%</td>
         `;
         table.appendChild(row);
     }

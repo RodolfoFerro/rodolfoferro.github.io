@@ -8,16 +8,14 @@
             <div class="accordion mb-4" id="instructionsAccordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="instructionsHeading">
-                    <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#instructionsCollapse"
-                        aria-expanded="false"
-                        aria-controls="instructionsCollapse"
-                    >
-                        ¿Cómo usar la calculadora?
-                    </button>
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#instructionsCollapse"
+                            aria-expanded="false"
+                            aria-controls="instructionsCollapse"
+                        >¿Cómo usar la calculadora?</button>
                     </h2>
 
                     <div
@@ -39,7 +37,7 @@
                             Define <strong>cuántas cartas se roban</strong> en la mano inicial (por defecto 7).
                         </li>
                         <li>
-                            Presiona <strong>Calcular</strong> para ver:
+                            Presiona <strong>"Calcular"</strong> para ver:
                             <ul>
                             <li>Probabilidades clave (cards)</li>
                             <li>La tabla detallada</li>
@@ -47,14 +45,13 @@
                             </ul>
                         </li>
                         <li>
-                            Usa <strong>Limpiar</strong> para probar otra configuración.
+                            Usa <strong>"Limpiar"</strong> para probar otra configuración.
                         </li>
                         </ol>
                     </div>
                     </div>
                 </div>
             </div>
-
 
             <div class="row g-3">
                 <div class="col-md-4">
@@ -79,15 +76,16 @@
                     Limpiar
                 </button>
             </div>
-
             <hr>
-
+            
             <div class="row my-4 d-none" id="summaryCards">
+                <h3 class="mb-3">🌀 Resultados</h3>
+
                 <div class="col-md-3">
                     <div class="card text-center card-primary">
                         <div class="card-body">
                             <h6 class="card-title">Exactamente 3 tierras</h6>
-                            <p class="card-text fs-5" id="p3">–</p>
+                            <p class="card-text" id="p3">–</p>
                         </div>
                     </div>
                 </div>
@@ -95,26 +93,26 @@
                 <div class="col-md-3">
                     <div class="card text-center card-success">
                         <div class="card-body">
-                            <h6 class="card-title">Mano jugable (2–4)</h6>
-                            <p class="card-text fs-5" id="p24">–</p>
+                            <h6 class="card-title">Mano jugable (2-4 tierras)</h6>
+                            <p class="card-text" id="p24">–</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3">
-                    <div class="card text-center card-warning">
+                    <div class="card text-center card-screw">
                         <div class="card-body">
-                            <h6 class="card-title">Mana screw (≤1)</h6>
-                            <p class="card-text fs-5" id="p01">–</p>
+                            <h6 class="card-title">Mana screw (≤1 tierras)</h6>
+                            <p class="card-text" id="p01">–</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3">
-                    <div class="card text-center card-danger">
+                    <div class="card text-center card-flood">
                         <div class="card-body">
-                            <h6 class="card-title">Mana flood (≥5)</h6>
-                            <p class="card-text fs-5" id="p5">–</p>
+                            <h6 class="card-title">Mana flood (≥5 tierras)</h6>
+                            <p class="card-text" id="p5">–</p>
                         </div>
                     </div>
                 </div>
@@ -125,8 +123,8 @@
                 <table class="table table-sm table-striped">
                     <thead>
                     <tr>
-                        <th>Tierras en mano</th>
-                        <th>Probabilidad</th>
+                        <th>&nbsp; Tierras en mano</th>
+                        <th>&nbsp; Probabilidad</th>
                     </tr>
                     </thead>
                     <tbody id="resultTable"></tbody>
@@ -147,3 +145,20 @@
         <script src="/assets/js/mtg-land-calculator.js"></script>
     </div>
 </div>
+
+<style>
+    {% if site.dark-theme == "auto" %}
+        {% capture scss_sheet %}
+            {% include style.scss %}
+            @media (prefers-color-scheme: dark) {
+                {% include style-dark.scss %}
+            }
+        {% endcapture %}
+    {% elsif site.dark-theme %}
+        {% capture scss_sheet %}{% include style-dark.scss %}{% endcapture %}
+    {% else %}
+        {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
+    {% endif %}
+
+    {{ scss_sheet | scssify }}
+</style>

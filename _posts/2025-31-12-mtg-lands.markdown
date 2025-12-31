@@ -1,17 +1,17 @@
 ---
-title: "[MTG] Calculadora de tierras"
-subtitle: Let's adjust that y=m*x+b equation...
+title: "[MTG] Calculadora de robo de tierras"
+subtitle: Una herramienta para el cálculo de probabilidades del robo de tierras en mano inicial.
 layout: post
 date: 2025-12-31 10:00
 tag:
-  - Magic the Gathering
-  - MTG
   - Probability
   - Distribution
+  - Magic the Gathering
+  - MTG
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
-description: A simple linear regression with TensorFlow 2.0
+description: Una herramienta para el cálculo de probabilidades del robo de tierras en mano inicial.
 category: blog
 author: rodferro
 ---
@@ -19,6 +19,10 @@ author: rodferro
 <link rel="stylesheet" href="/assets/css/mtg-calculator.css">
 {% include mtg-land-calculator.html %}
 
+
+En *Magic: The Gathering*, una de las preguntas más recurrentes al construir un mazo es:
+
+> ¿Cuántas tierras debería incluir para que mi mano inicial sea jugable de forma consistente?
 
 ***
 

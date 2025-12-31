@@ -1,16 +1,11 @@
-/* Tailwind styled colors */
+/* ======================================================
+   Tailwind-inspired color palette
+   ====================================================== */
 :root {
   --tw-purple-600: #7c3aed;
-  --tw-purple-100: #ede9fe;
-
   --tw-teal-600: #0d9488;
-  --tw-teal-100: #ccfbf1;
-
-  --tw-amber-600: #edd81e;
-  --tw-amber-100: #fef3c7;
-
+  --tw-blue-600: #2e72ee;
   --tw-rose-600: #e11d48;
-  --tw-rose-100: #ffe4e6;
 
   --tw-slate-900: #0f172a;
   --tw-slate-700: #334155;
@@ -18,92 +13,98 @@
 }
 
 
-/* Wrapper to ignore theme's inherited width */
+/* ======================================================
+   Layout & isolation
+   ====================================================== */
 .mtg-calculator-wrapper {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
 }
 
-/* Make wider container */
 .mtg-calculator {
-  max-width: 1100px; /* prueba 1000–1200 */
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  max-width: 1000px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
-/* Styled cards */
+
+/* ======================================================
+   Cards
+   ====================================================== */
 .mtg-calculator .card {
   border: 1px solid var(--tw-slate-100);
-  border-radius: 0.75rem;      /* rounded-lg */
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08); /* shadow-sm */
-  margin-bottom: 3px;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+  margin-bottom: 0.75rem;
+
+  color: #fff;
 }
 
-.mtg-calculator .card.card-primary {
-  background-color: var(--tw-purple-600);
-  color: white;
-}
+.mtg-calculator .card-primary { background-color: var(--tw-purple-600); }
+.mtg-calculator .card-success { background-color: var(--tw-teal-600); }
+.mtg-calculator .card-screw   { background-color: var(--tw-rose-600); }
+.mtg-calculator .card-flood   { background-color: var(--tw-blue-600); }
 
-.mtg-calculator .card.card-success {
-  background-color: var(--tw-teal-600);
-  color: white;
-}
-
-.mtg-calculator .card.card-warning {
-  background-color: var(--tw-amber-600);
-  color: white;
-}
-
-.mtg-calculator .card.card-danger {
-  background-color: var(--tw-rose-600);
-  color: white;
-}
-
-.mtg-calculator .card.card-primary,
-.mtg-calculator .card.card-success,
-.mtg-calculator .card.card-warning,
-.mtg-calculator .card.card-danger {
-  color: #ffffff;
-}
-
-.mtg-calculator .card.card-primary .card-title,
-.mtg-calculator .card.card-primary .card-text,
-.mtg-calculator .card.card-success .card-title,
-.mtg-calculator .card.card-success .card-text,
-.mtg-calculator .card.card-warning .card-title,
-.mtg-calculator .card.card-warning .card-text,
-.mtg-calculator .card.card-danger .card-title,
-.mtg-calculator .card.card-danger .card-text {
+.mtg-calculator .card-title {
+  font-weight: 400;
+  font-size: 1.2rem;
   color: inherit;
 }
 
-/* Styled buttons */
+.mtg-calculator .card-text {
+  font-weight: 300;
+  color: inherit;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+
+/* ======================================================
+   Buttons
+   ====================================================== */
+.mtg-calculator .btn {
+  font-weight: 300;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+}
+
 .mtg-calculator .btn-primary {
   background-color: var(--tw-purple-600);
   border: none;
-  border-radius: 0.5rem; /* rounded-md */
-  font-weight: 600;
 }
 
 .mtg-calculator .btn-primary:hover {
-  background-color: #6d28d9; /* purple-700 */
+  background-color: #6d28d9;
 }
 
 .mtg-calculator .btn-outline-secondary {
   border-color: var(--tw-slate-700);
   color: var(--tw-slate-700);
-  border-radius: 0.5rem;
 }
 
 .mtg-calculator .btn-outline-secondary:hover {
   background-color: var(--tw-slate-100);
+  color: #000;
 }
 
-/* Styled inputs */
+
+/* ======================================================
+   Forms
+   ====================================================== */
+.mtg-calculator .form-label {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
 .mtg-calculator .form-control {
+  font-weight: 300;
+  font-size: 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid var(--tw-slate-100);
-  font-size: 0.95rem;
 }
 
 .mtg-calculator .form-control:focus {
@@ -112,49 +113,50 @@
 }
 
 
-/* Typography and spacing */
+/* ======================================================
+   Typography
+   ====================================================== */
+.mtg-calculator h2,
 .mtg-calculator h3 {
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
-.mtg-calculator .form-label {
-  font-weight: 600;
-  font-size: 0.9rem;
-}
 
-.mtg-calculator .form-control {
-  border-radius: 6px;
-}
-
-.mtg-calculator .btn {
-  border-radius: 6px;
-  padding: 0.6rem 1.2rem;
-}
-
-/* Cleaner table */
+/* ======================================================
+   Tables
+   ====================================================== */
 .mtg-calculator table {
-  border-radius: 0.75rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 
-.mtg-calculator thead {
-  background-color: var(--tw-slate-100);
-  color: var(--tw-slate-700);
+.mtg-calculator thead th {
+  font-weight: 400;
+  background-color: var(--tw-purple-600);
+  color: var(--tw-slate-100);
 }
 
 .mtg-calculator tbody tr:hover {
-  background-color: #f8fafc; /* slate-50 */
+  background-color: #f8fafc;
 }
 
-/* Styled accordion */
+
+/* ======================================================
+   Accordion
+   ====================================================== */
 .mtg-calculator .accordion-item {
-  border-radius: 0.75rem;
   border: 1px solid var(--tw-slate-100);
+  border-radius: 0.75rem;
 }
 
 .mtg-calculator .accordion-button {
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  border-radius: 0.75rem;
 }
 
 .mtg-calculator .accordion-button:not(.collapsed) {
@@ -162,12 +164,7 @@
   color: var(--tw-slate-900);
 }
 
-.mtg-calculator .accordion-button {
-  font-weight: 600;
-  border-radius: 10px;
-}
-
-.mtg-calculator .accordion-button:not(.collapsed) {
-  background-color: #f5f7fa;
-  color: #1d3557;
+.mtg-calculator .accordion-body {
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
