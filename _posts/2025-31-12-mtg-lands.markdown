@@ -54,20 +54,94 @@ Para poder proponer una manera de resolver estas preguntas, es necesario conside
 
 Ahora, resultará muy relevante señalar que robar una mano inicial en Magic tiene dos características importantes:
 
-1. **Las cartas se roban sin reemplazo.** Esto significa que las cartas no se regresan, lo que no mentiene una probabilidad constante, sino que va cambiando dependiendo del resultado en el robo de cada carta.
+1. **Las cartas se roban sin reemplazo.** Esto significa que las cartas no se regresan, lo que no mantiene una probabilidad constante, sino que va cambiando dependiendo del resultado en el robo de cada carta.
 2. **El orden no importa, solo la composición de la mano.** Esto es: no importa si robaste tu primera tierra en tu primera o segunda carta, sino que nos interesa conocer cuántas tierras en total robamos en las 7 cartas de la mano inicial.
 
 Esto es relevante porque descarta modelos como la distribución binomial (que asume independencia) y nos lleva directamente a una distribución clásica en probabilidad discreta, la **distribución hipergeométrica**.
 
-# La distribución hipergeométrica
+# El modelo ideal para robo de tierras
+
+Si lo pensamos, robar una carta del mazo y verificar si es o no una tierra nos llevará a 1 de 2 posibles resultados: _**"éxito"**_ o _**"fracaso"**_ (respectivamente). Esto podría hacernos pensar en experimentos de alguna manera similares, como lanzar una moneda y observar el resultado.
+
+Experimentos como este último reciben el nombre de _ensayos de Bernoulli_, donde podemos realizar múltiples veces el ensayo, observar el resultado y utilizar algún conocimiento matemático para responder preguntas como _"¿cuál es la probabilidad de obtener 3 éxitos (3 caras) en 7 lanzamientos?"_ (por ejemplo utilizando una distribución binomial) o _"¿cuántas veces debo lanzar la moneda hasta obtener el prrimer éxito (1 cara)?"_ (por ejemplo utilizando una distribución geométrica). Sin embargo, hay una diferencia **radical** (a mi parecer) que puede ser sutil y llevar a algunas personas a la confusión.
+
+Antes de continuar con esta diferencia radical y mostrar una mejor manera de modelar el robo de una carta y verificar si es o no una tierra, me gustaría agregar un apartado que posiblemente ayude a clarificar algunas confusiones que también suelen ser comunes cuando pensamos en probabilidades.
+
+## "Probabilidad" es diferente de resultados en un experimento
+
+Es importante señalar que la cantidad de posibles resultados y la probabilidad de obtener dichos resultados son cosas competamente distintas. Algunas veces, el hecho de tener 2 posibles resultados nos hace pensar que la probabilidad es de $p=0.5$ siempre para cada uno de estos 2 psibles resultados, pero no es así (salvo que la distribución sea uniforme, como en el caso de una moneda).
+
+A primera vista, el caso de una moneda es ideal en el sentido de que tenemos 2 posibles resultados y que la probabilidad, _idealmente_, es de $p=0.5$ (es decir, del 50%) para cada cara, pero habrá muchos experimentos donde no será así.
+
+Por ejemplo, pensemos en el experimento de sacar una pelota de una bolsa con 500 pelotas donde hay dos posibles colores de pelota, blanco y negro. Si la distribución de colores es uniforme y tenemos 250 pelotas blancas y 250 pelotas negras, la probabilidad sería $p_B=0.5$ y $p_N=0.5$ (respectivamente) y el experimento sería similar al de lanzar una moneda, pero... _¿Qué sucedería si fuesen 499 pelotas blancas y solo 1 pelota negra?_
+
+En este caso, aunque los posibles resultados siguen siendo 2, la probabilidad de obtenerlos ha cambiado completamente, pues ahora las probabilidades de sacar uno u otro color serían $p_B=\frac{499}{500}=0.998$ y $p_N=\frac{1}{500}=0.002$ y el experimento no sería un 50-50 (de facto, esto ahora se volvería un absurdo).
+
+## La distribución hipergeométrica
+
+Regresando a la diferencia radical que se presenta entre robar tierras y los ensayos de Bernoulli, al inicio de este post se mencionaron dos características importantes durante el robo de una mano inicial:
+
+1. **Las cartas se roban sin reemplazo.** A diferencia de lanzar una moneda y contar los resultados de _"éxitos"_ obtenidos (p.e. caras), donde en cada lanzamiento utilizamos la misma moneda y no nos importa el resultado anterior porque la probabilidad es constante (no cambia y siempre es $p=0.5$); cuando robamos una carta no sucede lo mismo. En este caso sí importan los resultados anteriores, es decir, no son ensayos independientes. Además, las probabilidades de robo no son constantes, pues cambian y de hecho se ajustan de acuerdo al resultado obtenido. Por ejemplo, pensemos que si mi mazo es de $N=99$ cartas y contiene $L=37$ tierras, para robar mi primera carta de la mano inicial, la probabilidad de robar una tierra sería $p=37/99=0.\overline{37}$. Supongamos que robo una tierra en mi primera carta, ahora la probabilidad de robar mi segunda tierra en la segunda carta sería $p=36/98 \approx 0.3673$. Pensemos ahora que en la primera carta no robé una tierra, la probabilidad de robar mi primera tierra en la segunda carta sería $p=37/98 \approx 0.3775$. Como podemos observar, la probabilidad va cambiando porque las cartas robadas no se devuelven al mazo y robamos de nuevo (en estadística, esto es denominado como reemplazo en un muestreo aleatorio), sino que vamos robando hasta construir los 7 robos de mano inicial. 
+2. **El orden no importa, solo la composición de la mano.** Como mencionamos al inicio, si bien los ensayos no son independientes y la probabilidad va cambiando durante cada robo de carta, no nos interesa si las tierras las robamos durante la priemera, segunda, o hasta la séptima carta, sino que nos interesa conocer al final cuántas tierras robamos en las 7 cartas de la mano inicial.
+
+Esto nos lleva a omitir las primeras aproximaciones en el uso de modelos como la distribución binomial o geométrica, que parte de ensayos Bernoulli, proponiendo una mejor manera de modelar este tipo de experimentos, utlizando una **distribución hipergeométrica**.
+
+En términos generales, para esta distribución:
+- Tenemos una población de tamaño $N$
+- De ella, $K$ elementos son _"éxitos"_
+- Tomamos una muestra de tamaño $n$ 
+- La variable aleatoria $X$ cuenta cuántos éxitos aparecen en la muestra
+
+El modelo para esta distribución, es decir, la función probabilidad de observar exactamente $k$ éxitos es:
+
+$$
+\mathbb{P}(X = k) =
+\frac{\binom{K}{k} \binom{N - K}{n - k}}{\binom{N}{n}}
+$$
+
+Esta será la forma de medir la probabilidad y en breve veremos cómo se utiliza explorando el caso práctico con el formato _commander_. Si quisieras leer un poco más sobre esta distribución, te recomiendo [este website de Wolfram](https://mathworld.wolfram.com/HypergeometricDistribution.html).
 
 # El caso de commander
 
+Para el caso de _**commander**_, es decir, traduciendo lo anterior a nuestro contexto, para esta distribución tendríamos que:
+- Nuestro tamaño de población es $N=99$, pues es el tamaño del mazo.
+- Dado que robar una tierra representa un éxito, tendríamos $L$ posibles _"éxitos"_, así, $K=L$ (recordemos que $L$ es el número de tierras que tenemos en el mazo). Para fines prácticos, podemos suponer un caso de $L=37$ tierras en nuestro mazo.
+- La muestra que tomaremos será de $n=7$, nuestra mano inicial.
+- De ahí nos interesa conocer $X$, cuántas cartas robamos en nuestra primera mano.
+
+Entonces:
+
+$$
+\boxed{
+\mathbb{P}(X = k) =
+\frac{\binom{L}{k} \binom{99 - L}{7 - k}}{\binom{99}{7}},
+\quad k = 0,1,\dots,7
+}
+$$
+
+Esta fórmula cuenta:
+- Todas las manos posibles de 7 cartas (denominador)
+- Solo aquellas con exactamente $ k $ tierras (numerador)
+
+Fijando $L=37$ (37 tierras en el mazo), podríamos pensar en casos específicos, como conocer la probabilidad de robar exactamente 2 tierras de una mano inicial, así, tendríamos que $k=2$ y la formulación se traduce a:
+
+$$
+\mathbb{P}(X = 2) =
+\frac{\binom{37}{2} \binom{99 - 37}{7 - 2}}{\binom{99}{7}} \approx 0.2895
+$$
+
+Con esto, ya tenemos una manera de calcular probabilidades para el robo de tierras en nuestra mano inicial.
+
 # ¿Qué probabilidades nos interesan realmente?
+
+
 
 # Interpretación de resultados (más allá de los números)
 
 # Conclusiones
+
+
+
 
 ***
 
