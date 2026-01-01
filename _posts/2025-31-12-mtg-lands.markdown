@@ -107,9 +107,9 @@ Para el caso de _**commander**_, es decir, traduciendo lo anterior a nuestro con
 - Nuestro tamaño de población es $N=99$, pues es el tamaño del mazo.
 - Dado que robar una tierra representa un éxito, tendríamos $L$ posibles _"éxitos"_, así, $K=L$ (recordemos que $L$ es el número de tierras que tenemos en el mazo). Para fines prácticos, podemos suponer un caso de $L=37$ tierras en nuestro mazo.
 - La muestra que tomaremos será de $n=7$, nuestra mano inicial.
-- De ahí nos interesa conocer $X$, cuántas cartas robamos en nuestra primera mano.
+- De ahí nos interesa conocer $X$, cuántas tierras robamos en nuestra primera mano.
 
-Entonces:
+Entonces la fórmula se traduce a:
 
 $$
 \boxed{
@@ -134,12 +134,56 @@ Con esto, ya tenemos una manera de calcular probabilidades para el robo de tierr
 
 # ¿Qué probabilidades nos interesan realmente?
 
+Aunque la fórmula nos da la distribución completa, en la práctica solemos buscar resultados más puntuales. 
 
+Por ejemplo, en mi caso, me interesa maximizar la probabilidad de que en mi mano inicial robe exactamente 3 cartas. No más, no menos. Para mí, en la mayoría de los mazos que juego, esta mano representa mi mano ideal. Sin embargo, vale la pena evaluar otros posibles casos, como conocer la probabilidad de tener una "mano jugable", es decir, que en mi mano inicial haya robado de 2 a 4 tierras y también conocer, con la cantidad de tierras que tengo en mi mazo, cuáles son las probabilidades de un _mana screw_ (que haya robado solo 1 tierra o ninguna) y de un _mana flood_ (que haya robado 5 tierras o más). 
+
+Esto lo podemos calcular fácilmente aplicando reglas de probabilidad con la fórmula anterior. Supongamos $L=37$:
+
+- **La probabilidad para mi "mano ideal":**
+
+$$
+\begin{align} 
+  \mathbb{P}(X = 3) &= \frac{\binom{37}{3} \binom{99 - 37}{7 - 3}}{\binom{99}{7}} \\
+  &\approx 0.2912 \text{(29.12\%)}
+\end{align}
+$$
+
+- **La probabilidad para una "mano jugable":**
+
+$$
+\begin{align} 
+  \mathbb{P}(2 \le X \le 4) &= \sum_{k=2}^{4} \mathbb{P}(X = k) \\
+  &= \mathbb{P}(X = 2) + \mathbb{P}(X = 3) + \mathbb{P}(X = 4) \\
+  &\approx 0.7484 \text{(74.84\%)}
+\end{align}
+$$
+
+- **La probabilidad para un _mana screw_:**
+
+$$
+\begin{align} 
+  \mathbb{P}(X \le 1) &= \sum_{k=0}^{1} \mathbb{P}(X = k) \\
+  &= \mathbb{P}(X = 0) + \mathbb{P}(X = 1) \\
+  &\approx 0.1858 \text{(18.58\%)}
+\end{align}
+$$
+
+- **La probabilidad para un _mana flood_:**
+
+$$
+\begin{align} 
+  \mathbb{P}(X \ge 5) &= \sum_{k=5}^{7} \mathbb{P}(X = k) \\
+  &= \mathbb{P}(X = 5) + \mathbb{P}(X = 6) + \mathbb{P}(X = 7) \\
+  &\approx 0.0657 \text{(6.57\%)}
+\end{align}
+$$
+
+Estas cantidades resumen muy bien el comportamiento del mazo en la mano inicial, dado un número de tierras dentro de mis 99.
 
 # Interpretación de resultados (más allá de los números)
 
 # Conclusiones
-
 
 
 
