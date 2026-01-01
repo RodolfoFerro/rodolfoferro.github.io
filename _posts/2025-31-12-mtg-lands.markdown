@@ -142,49 +142,56 @@ Esto lo podemos calcular fácilmente aplicando reglas de probabilidad con la fó
 
 - **La probabilidad para mi "mano ideal":**
 
-$$
-\begin{align} 
-  \mathbb{P}(X = 3) &= \frac{\binom{37}{3} \binom{99 - 37}{7 - 3}}{\binom{99}{7}} \\
-  &\approx 0.2912 \text{(29.12\%)}
-\end{align}
-$$
+  $$
+  \begin{align} 
+    \mathbb{P}(X = 3) &= \frac{\binom{37}{3} \binom{99 - 37}{7 - 3}}{\binom{99}{7}} \\
+    &\approx 0.2912
+  \end{align}
+  $$
+
+  Es decir, la probabilidad de robar mi "mano ideal" es de 29.12% si tengo 37 tierras en mi mazo.
 
 - **La probabilidad para una "mano jugable":**
 
-$$
-\begin{align} 
-  \mathbb{P}(2 \le X \le 4) &= \sum_{k=2}^{4} \mathbb{P}(X = k) \\
-  &= \mathbb{P}(X = 2) + \mathbb{P}(X = 3) + \mathbb{P}(X = 4) \\
-  &\approx 0.7484 \text{(74.84\%)}
-\end{align}
-$$
+  $$
+  \begin{align} 
+    \mathbb{P}(2 \le X \le 4) &= \sum_{k=2}^{4} \mathbb{P}(X = k) \\
+    &= \mathbb{P}(X = 2) + \mathbb{P}(X = 3) + \mathbb{P}(X = 4) \\
+    &\approx 0.7484
+  \end{align}
+  $$
+
+  Es decir, la probabilidad de robar una "mano jugable" es de 74.84% si tengo 37 tierras en mi mazo.
 
 - **La probabilidad para un _mana screw_:**
 
-$$
-\begin{align} 
-  \mathbb{P}(X \le 1) &= \sum_{k=0}^{1} \mathbb{P}(X = k) \\
-  &= \mathbb{P}(X = 0) + \mathbb{P}(X = 1) \\
-  &\approx 0.1858 \text{(18.58\%)}
-\end{align}
-$$
+  $$
+  \begin{align} 
+    \mathbb{P}(X \le 1) &= \sum_{k=0}^{1} \mathbb{P}(X = k) \\
+    &= \mathbb{P}(X = 0) + \mathbb{P}(X = 1) \\
+    &\approx 0.1858
+  \end{align}
+  $$
+
+  Es decir, la probabilidad de obtener un _mana screw_ es de 18.58% si tengo 37 tierras en mi mazo.
 
 - **La probabilidad para un _mana flood_:**
 
-$$
-\begin{align} 
-  \mathbb{P}(X \ge 5) &= \sum_{k=5}^{7} \mathbb{P}(X = k) \\
-  &= \mathbb{P}(X = 5) + \mathbb{P}(X = 6) + \mathbb{P}(X = 7) \\
-  &\approx 0.0657 \text{(6.57\%)}
-\end{align}
-$$
+  $$
+  \begin{align} 
+    \mathbb{P}(X \ge 5) &= \sum_{k=5}^{7} \mathbb{P}(X = k) \\
+    &= \mathbb{P}(X = 5) + \mathbb{P}(X = 6) + \mathbb{P}(X = 7) \\
+    &\approx 0.0657
+  \end{align}
+  $$
 
-Estas cantidades resumen muy bien el comportamiento del mazo en la mano inicial, dado un número de tierras dentro de mis 99.
+  Es decir, la probabilidad de  obtener un _mana flood_ es de 6.57% si tengo 37 tierras en mi mazo.
+
+Estas cantidades resumen muy bien el comportamiento del mazo en la mano inicial, dado un número de tierras dentro de mis 99. A partir de aquí, podemos comenzar a explorar y comprender mejor estos resultados cuando modificamos la cantidad base de tierras en nuestro mazo.
 
 # Interpretación de resultados (más allá de los números)
 
 # Conclusiones
-
 
 
 ***
