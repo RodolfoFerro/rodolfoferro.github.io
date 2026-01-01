@@ -12,6 +12,7 @@ tag:
 category: blog
 author: rodferro
 description: Charla y taller de introducción a Python para la Semana de la Ingeniería Química 2019, Univeridad de Guanajuato.
+hidden: true # don't count this post in blog pagination
 ---
 
 # Semana de la Ingeniería Química 2019, Universidad de Guanajuato

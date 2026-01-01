@@ -12,6 +12,7 @@ tag:
 category: course
 author: rodferro
 description: Introducción a Deep Learning (Bootcamp Código Facilito, 2023)
+hidden: true # don't count this post in blog pagination
 ---
 
 Los bootcamps de Introducción y Avanzado de Ciencia de Datos en Código Facilito incorporan dos sesiones sobre Deep Learning cada uno:

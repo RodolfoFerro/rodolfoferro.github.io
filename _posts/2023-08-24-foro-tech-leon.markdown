@@ -45,4 +45,4 @@ Puedes revisar los slides dando [click aquí](https://docs.google.com/presentati
 * Cualquier uso de estos documentos o sus contenidos están permitidos a través de la licencia provista y sus condiciones.
 * Para cualquier aclaración, puedes contactar al autor: https://rodolfoferro.xyz/
 
-**Copyright (c) 2023 Rodolfo Ferro**
+**Copyright (c) 2026 Rodolfo Ferro**

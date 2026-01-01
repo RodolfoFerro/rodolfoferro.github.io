@@ -81,4 +81,4 @@ If any error is raised, congrats! Now you're all set to go.
 #### Want to see an awesome fractal? Check this one:
 ![Built from Mandelbrot set using Python](https://github.com/RodolfoFerro/FLISoL17/blob/master/imgs/mandel.png?raw=true)
 
-**Copyright (c) 2017 Rodolfo Ferro**
+**Copyright (c) 2026 Rodolfo Ferro**

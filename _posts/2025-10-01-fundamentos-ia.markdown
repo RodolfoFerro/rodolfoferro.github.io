@@ -10,7 +10,7 @@ tag:
 - Machine Learning
 - Graphs
 category: course
-hidden: true # don't count this post in blog pagination
+hidden: false # don't count this post in blog pagination
 externalLink: false
 author: rodferro
 description: "[Curso Intensivo] Fundamentos de la Inteligencia Artificial"
@@ -424,4 +424,4 @@ donde $\mathcal{L}$ es la función de pérdida (ej. error cuadrático medio, ent
 * Cualquier uso de estos documentos o sus contenidos están permitidos a través de la licencia provista y sus condiciones.
 * Para cualquier aclaración, puedes contactar al autor: <https://rodolfoferro.xyz/>
 
-**Copyright (c) 2025 Rodolfo Ferro**
+**Copyright (c) 2026 Rodolfo Ferro**

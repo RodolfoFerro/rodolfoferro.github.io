@@ -9,7 +9,7 @@ tag:
   - Neural Networks
 headerImage: false
 projects: true
-hidden: false # don't count this post in blog pagination
+hidden: true # don't count this post in blog pagination
 description: Link al notebook de mi taller Introducción (básica) a las neuronas artificiales.
 category: project
 author: rodferro

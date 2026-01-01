@@ -132,4 +132,4 @@ if __name__ == '__main__':
 * Any usage of these documents or their contents is granted according to the provided license and its conditions.
 * For any question, you can contact the author via email or Twitter.
 
-**Copyright (c) 2018 Rodolfo Ferro**
+**Copyright (c) 2026 Rodolfo Ferro**

@@ -107,4 +107,4 @@ El repositorio y taller están (en parte) autocontenidos, a través de los scrip
 * Cualquier uso de estos documentos o sus contenidos están permitidos a través de la licencia provista y sus condiciones.
 * Para cualquier aclaración, puedes contactar al autor: https://rodolfoferro.xyz/
 
-**Copyright (c) 2019 Rodolfo Ferro**
+**Copyright (c) 2026 Rodolfo Ferro**

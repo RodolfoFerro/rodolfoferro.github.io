@@ -113,4 +113,4 @@ Para abrir el cuaderno de trabajo, puedes dar click en el siguiente botón:
 * Cualquier uso de estos documentos o sus contenidos están permitidos a través de la licencia provista y sus condiciones.
 * Para cualquier aclaración, puedes contactar al autor: https://rodolfoferro.xyz/
 
-**Copyright (c) 2023-2025 Rodolfo Ferro**
+**Copyright (c) 2023-2026 Rodolfo Ferro**

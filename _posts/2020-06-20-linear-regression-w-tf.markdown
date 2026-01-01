@@ -9,7 +9,7 @@ tag:
   - Neural Networks
   - TensorFlow
 headerImage: false
-projects: true
+projects: false
 hidden: false # don't count this post in blog pagination
 description: A simple linear regression with TensorFlow 2.0
 category: blog

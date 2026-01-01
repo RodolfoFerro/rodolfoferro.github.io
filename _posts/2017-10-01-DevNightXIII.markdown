@@ -12,6 +12,7 @@ headerImage: false
 category: blog
 author: rodferro
 description: Cuando las máquinas aprenden
+hidden: true # don't count this post in blog pagination
 ---
 
 Post de la charla "Cuando las máquinas aprenden" para la XIII Edición de las DevNights de Tepache Hacklab.
