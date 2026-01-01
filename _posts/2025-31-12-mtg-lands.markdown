@@ -48,7 +48,7 @@ Nuestro problema de interés radica en poder calcular (de alguna manera) la ocur
 Para poder proponer una manera de resolver estas preguntas, es necesario considerar un escenario específico. Si bien lo que se presentará a continuación es consistente para otros formatos, consideraremos el caso de **commander**, donde:
 
 - El mazo tiene $N=99$ cartas
-- De ellas, $K$ son tierras (por supuesto: $K \leq N$)
+- De ellas, $L$ son las tierras en el mazo (por supuesto: $L < N$)
 - Robaremos una mano inicial de $n=7$ cartas
 - Y finalmente, nos interesa saber cuántas tierras aparecen en esa mano
 
@@ -58,6 +58,16 @@ Ahora, resultará muy relevante señalar que robar una mano inicial en Magic tie
 2. **El orden no importa, solo la composición de la mano.** Esto es: no importa si robaste tu primera tierra en tu primera o segunda carta, sino que nos interesa conocer cuántas tierras en total robamos en las 7 cartas de la mano inicial.
 
 Esto es relevante porque descarta modelos como la distribución binomial (que asume independencia) y nos lleva directamente a una distribución clásica en probabilidad discreta, la **distribución hipergeométrica**.
+
+# La distribución hipergeométrica
+
+# El caso de commander
+
+# ¿Qué probabilidades nos interesan realmente?
+
+# Interpretación de resultados (más allá de los números)
+
+# Conclusiones
 
 ***
 
