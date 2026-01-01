@@ -19,8 +19,6 @@ author: rodferro
 <link rel="stylesheet" href="/assets/css/mtg-calculator.css">
 {% include mtg-land-calculator.html %}
 
----
-
 # Me quedo... ¿O no? (Introducción)
 
 Llevo alrededor de 1 año jugando _**commander**_, un formato de _**Magic: The Gathering**_ (MTG). Este es un formato _singleton_ (salvo tierras básicas) con un mazo conformado por 99 cartas y 1 comandante que sigue una identidad de color(es). Puedes leer más al respecto en el [sitio oficial](https://magic.wizards.com/en/formats/commander).
