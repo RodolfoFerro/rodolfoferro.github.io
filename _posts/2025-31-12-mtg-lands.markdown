@@ -1,6 +1,6 @@
 ---
-title: "[MTG] Calculadora de robo de tierras"
-subtitle: Una herramienta para el cálculo de probabilidades del robo de tierras en una mano inicial.
+title: "Calculadora de tierras: Un enfoque probabilístico en MTG"
+subtitle: En este post se presenta un análisis y una herramienta para el cálculo de probabilidades del robo de tierras en una mano inicial.
 layout: post
 date: 2025-12-31 10:00
 tag:
@@ -11,7 +11,7 @@ tag:
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
-description: Una herramienta para el cálculo de probabilidades del robo de tierras en una mano inicial.
+description: En este post se presenta un análisis y una herramienta para el cálculo de probabilidades del robo de tierras en una mano inicial.
 category: blog
 author: rodferro
 ---
@@ -19,25 +19,45 @@ author: rodferro
 <link rel="stylesheet" href="/assets/css/mtg-calculator.css">
 {% include mtg-land-calculator.html %}
 
+---
 
-### ME QUEDO... ¿O NO? (INTRODUCCIÓN)
+# Me quedo... ¿O no? (Introducción)
 
-_**Magic: The Gathering**_ (MTG) es un juego de cartas coleccionables (TCG) que cuenta con varios formatos de juego: estándar (el formato competitivo-rotativo), pauper, moderno, commander, etc. En mi caso, yo juego _**commander**_, que es un formato _singleton_ (lleva cartas a 1 sola copia, salvo tierras básicas) con un mazo conformado por 99 cartas y 1 comandante con una identidad de color(es). Esto significa que el mazo se arma con cartas del color de la identidad del comandante.
+Llevo alrededor de 1 año jugando _**commander**_, un formato de _**Magic: The Gathering**_ (MTG). Este es un formato _singleton_ (salvo tierras básicas) con un mazo conformado por 99 cartas y 1 comandante que sigue una identidad de color(es). Puedes leer más al respecto en el [sitio oficial](https://magic.wizards.com/en/formats/commander).
 
-Dado que commander es un formato con una cantidad considerable de cartas en el mazo (99), al momento de _"cocinar"_ un mazo es importante tener en cuenta el número de tierras que agregamos, pues generalmente éstas conforman el motor principal para generar maná (el recurso que necesitamos para castear hechizos); claro, si no consideramos _"mana stones"_ o _"mana dorks"_.
+Dada la cantidad de cartas (99), al momento de _"cocinar"_ un mazo es importante tener en cuenta el número de tierras por agregar, pues generalmente éstas conforman el motor principal de maná, claro, sin considerar _"mana stones"_ o _"mana dorks"_. Además, es importante mencionar que MTG utiliza el [_"London mulligan"_](https://magic.wizards.com/en/news/announcements/london-mulligan-2019-06-03), siendo que este tipo de mulligan va penalizando al ir regresando cantidad de cartas de tu mano inicial al fondo del mazo de acuerdo a la cantidad de mulligans que hayas realizado.
 
-Por otro lado, MTG es un TCG que te permite realizar uno o más _**"London mulligan"**_, si tu mano inicial no te convence o si no tienes suficientes recursos para generar maná progresivamente o consistentemente conforme avanza el juego, siengo que este tipo de mulligan te va penalizando al ir regresando cantidad de cartas de tu mano inicial al fondo del mazo de acuerdo a la cantidad de mulligans que hayas realizado. Esta penalización nos hace querer tener una _"buena mano incial"_, donde de manera consistente a veces buscamos tener cierta cantidad de tierras para con ello poder ir progresando en el juego (de nuevo, por ahora no estamos considerando _mana stones_ o _mana dorks_). Esta cantidad de tierras iniciales puede depender de nuestra estrategia o de nuestra curva de maná, es decir, del grafico acumulado para el costo de nuestras cartas en el mazo.
+Lo anterior usualmente nos hace querer tener una _**"buena mano incial"**_, casi siempre definida por la cantidad de tierras (y quizás algunos hechizos no tan costosos) para poder ir progresando de manera consistente durante los primeros turnos en un juego.
 
-En general, habrá ocasiones que busquemos tener 2 tierras en nuestra mano inicial, algunas otras 4, etc. Esto nos lleva a plantearnos la pregunta recurrente al inciar una partida y robar nuestra mano inicial (7 cartas) tras mezclar el mazo:
+Por supuesto, esta cantidad de tierras iniciales puede depender de nuestra estrategia o de nuestra curva de maná, así como de si también contamos con _"mana stones"_ o _"mana dorks"_ (que en este caso no estaremos considerando). En general, habrá ocasiones en que busquemos robar 3 tierras en nuestra mano inicial, algunas otras veces al menos 2, etc. Esto nos lleva a plantearnos la pregunta recurrente al inciar una partida y robar nuestra mano inicial:
 
-> _**"¿Me quedo o no me quedo?"**_ (Con la mano incial.)
+> _**"¿Me quedo o no me quedo con esta mano?"**_
 
-Si buscáramos tener siempre una respuesta favorable a esta pregunta, es decir, que siempre (o casi siempre) podamos decir "sí me quedo con esta mano", habría que considerar el armado de nuestro mazo y cuántas tierras tenermos, replanteando esta pregunta recurrente en otra similar que nos lleve a poder decidir quedarnos con nuestra mano inicial:
-
-> ¿Cuántas tierras debería incluir en mi mazo para que mi mano inicial sea jugable de forma consistente?
+Esta pregunta busca siempre tener una respuesta favorable, por lo que vale la pena quizás ir un poco más atrás y responder otra relacionada (y posiblemente más importante): **¿Cuántas tierras debería incluir en mi mazo para que mi mano inicial sea jugable de forma consistente?**
 
 Aunque muchas respuestas podrían basarse en experiencia, quizás en heurísticas o simplemente en recomendaciones generales (_"juega entre 36 y 38 tierras"_), el objetivo de este post es explorar el problema desde un **punto de vista probabilístico**, utilizando un modelo matemático sencillo e interactivo que sirva como herramienta que puedas utilizar para tu armado de mazos.
 
+# Un experimento aleatorio bien definido
+
+Nuestro problema de interés radica en poder calcular (de alguna manera) la ocurrencia de robar un número de tierras en una mano incial. Más específicamente, nos interesa responder preguntas como:
+
+- ¿Cuál es la probabilidad de robar exactamente 3 tierras en la mano inicial?
+- ¿Cuál es la probailidad de robar una mano "jugable" (por ejemplo, robar entre 2 y 4 tierras)?
+- ¿Qué tan probable es el *mana screw* o el *mana flood*? (Es decir, robar 0 o 1 tierra y 5 o más, respectivamente.)
+
+Para poder proponer una manera de resolver estas preguntas, es necesario considerar un escenario específico. Si bien lo que se presentará a continuación es consistente para otros formatos, consideraremos el caso de **commander**, donde:
+
+- El mazo tiene $N=99$ cartas
+- De ellas, $L$ son tierras (por supuesto: $L \leq N$)
+- Robaremos una mano inicial de 7 cartas
+- Y finalmente, nos interesa saber cuántas tierras aparecen en esa mano
+
+Ahora, resultará muy relevante señalar que robar una mano inicial en Magic tiene dos características importantes:
+
+1. **Las cartas se roban sin reemplazo.** Esto significa que las cartas no se regresan, lo que no mentiene una probabilidad constante, sino que va cambiando dependiendo del resultado en el robo de cada carta.
+2. **El orden no importa, solo la composición de la mano.** Esto es: no importa si robaste tu primera tierra en tu primera o segunda carta, sino que nos interesa conocer cuántas tierras en total robamos en las 7 cartas de la mano inicial.
+
+Esto es relevante porque descarta modelos como la distribución binomial (que asume independencia) y nos lleva directamente a una distribución clásica en probabilidad discreta, la **distribución hipergeométrica**.
 
 ***
 
