@@ -67,7 +67,7 @@ Antes de continuar con esta diferencia radical y mostrar una mejor manera de mod
 
 ## "Probabilidad" es diferente de resultados en un experimento
 
-Es importante señalar que la cantidad de posibles resultados y la probabilidad de obtener dichos resultados son cosas competamente distintas. Algunas veces, el hecho de tener 2 posibles resultados nos hace pensar que la probabilidad es de $p=0.5$ siempre para cada uno de estos 2 psibles resultados, pero no es así (salvo que la distribución sea uniforme, como en el caso de una moneda).
+Es importante señalar que la cantidad de posibles resultados y la probabilidad de obtener dichos resultados son cosas competamente distintas. Algunas veces, el hecho de tener 2 posibles resultados nos hace pensar que la probabilidad es de $p=0.5$ siempre para cada uno de estos 2 posibles resultados, pero no es así (salvo que la distribución sea uniforme, como en el caso de una moneda).
 
 A primera vista, el caso de una moneda es ideal en el sentido de que tenemos 2 posibles resultados y que la probabilidad, _idealmente_, es de $p=0.5$ (es decir, del 50%) para cada cara, pero habrá muchos experimentos donde no será así.
 
