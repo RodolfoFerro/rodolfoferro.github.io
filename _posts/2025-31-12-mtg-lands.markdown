@@ -99,7 +99,7 @@ $$
 \frac{\binom{K}{k} \binom{N - K}{n - k}}{\binom{N}{n}}
 $$
 
-Esta será la forma de medir la probabilidad y en breve veremos cómo se utiliza explorando el caso práctico con el formato _commander_. Si quisieras leer un poco más sobre esta distribución, te recomiendo [este website de Wolfram](https://mathworld.wolfram.com/HypergeometricDistribution.html).
+Esta será la forma de calcular la probabilidad y en breve veremos cómo se utiliza explorando el caso práctico con el formato _commander_. Si quisieras leer un poco más sobre esta distribución, te recomiendo [este website de Wolfram](https://mathworld.wolfram.com/HypergeometricDistribution.html).
 
 # El caso de commander
 
@@ -191,8 +191,45 @@ Estas cantidades resumen muy bien el comportamiento del mazo en la mano inicial,
 
 # Interpretación de resultados (más allá de los números)
 
+La parte interactiva de este post reside en la calculadora presentada al inicio. Esta calculadora recibe 3 parámetros para poder realizar los cálculos de probabilidades como hemos hecho hasta ahora. Los parámetros son: cantidad de cartas en el mazo ($N$), cantidad de tierras en el mazo ($L$) y el número de cartas robadas ($n$).
+
+La calculadora nos devuele un cálculo de probabilidades de interés, una tabla con la probabilidad para cada valor de $k$ (con $k \in \\{ 1, 2, ..., 7 \\}$) y un gráfico con la probabilidad para cada dicho $k$. Este último gráfico nos permite identificar mejor (de manera visual) las probabilidades para cada uno de los valores de $k$. Recordemos que $k$ representa el número de tierras robadas en la mano inicial.
+
+Por ejemplo, veamos el caso para 37 tierras en el mazo:
+
+![37 lands](../assets/images/mtg-lands-37.png)
+
+Ahora, veamos el caso para 43 tierras en el mazo:
+
+![43 lands](../assets/images/mtg-lands-43.png)
+
+Finalmente, veamos el caso para 17 tierras en el mazo:
+
+![17 lands](../assets/images/mtg-lands-17.png)
+
+Algunas observaciones útiles al experimentar con la calculadora:
+
+- Aumentar el número de tierras **reduce el riesgo de _mana screw_**, pero incrementa la **probabilidad de _mana flood_**
+- La probabilidad de **robar exactamente 3 tierras suele maximizarse alrededor de 36–38 tierras**, considerando que a la vez nos interesa minimizar también la cantidad de tierras en el mazo para disponer de esos espacios para otras cartas
+- No existe una configuración "perfecta", sino que generalmente tenemos un **trade-off**, que puede depender de la estrategia y quizás considerar otros elementos como la presencia de _mana stones_ o _mana dorks_, o tener una curva de maná "baja" u optimizada para tu estrategia
+
+Esto refleja una idea central presente en el diseño de algunos juegos y en probabilidad:
+> Optimizar una métrica casi siempre implica sacrificar otra.
+
 # Conclusiones
 
+Como hemos visto, este análisis se enfoca únicamente en la **mano inicial**, y no considera:
+
+- _Ramp_, cantrips o robos adicionales
+- Alguna curva de mana específica
+
+Aun así, el modelo es útil como una **línea base objetiva** sobre la cual podemos tomar decisiones informadas al momento de armar un mazo. En este sentido, el análisis probabilístico aquí presentado nos ayuda a:
+
+- Entender y mejorar nuestras decisiones de construcción de mazos
+- Diseñar mazos más consistentes
+- Cuestionar heurísticas comunes, es decir, lo que conocemos como _"rules of thumb"_
+
+¡Espero que este post te haya resultado interesante y la herramienta te sea de utilidad!
 
 ***
 
