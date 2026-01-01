@@ -2,7 +2,7 @@
 title: "Calculadora de tierras: Un enfoque probabilístico en MTG"
 subtitle: En este post se presenta un análisis y una herramienta para el cálculo de probabilidades del robo de tierras en una mano inicial.
 layout: post
-date: 2025-12-31 10:00
+date: 2026-01-01 16:00
 tag:
   - Probability
   - Simulation
@@ -144,7 +144,7 @@ Esto lo podemos calcular fácilmente aplicando reglas de probabilidad con la fó
 
   $$
   \begin{align} 
-    \mathbb{P}(X = 3) &= \frac{\binom{37}{3} \binom{99 - 37}{7 - 3}}{\binom{99}{7}} \\
+    \mathbb{P}(X = 3) &= \frac{\binom{37}{3} \binom{99 - 37}{7 - 3}}{\binom{99}{7}} \\\\
     &\approx 0.2912
   \end{align}
   $$
@@ -155,8 +155,9 @@ Esto lo podemos calcular fácilmente aplicando reglas de probabilidad con la fó
 
   $$
   \begin{align} 
-    \mathbb{P}(2 \le X \le 4) &= \sum_{k=2}^{4} \mathbb{P}(X = k) \\
-    &= \mathbb{P}(X = 2) + \mathbb{P}(X = 3) + \mathbb{P}(X = 4) \\
+    \mathbb{P}(2 \le X \le 4) &= \sum_{k=2}^{4} \mathbb{P}(X = k) \\\\
+    &= \mathbb{P}(X = 2) + \mathbb{P}(X = 3) \\
+    &\hspace{0.5cm} + \mathbb{P}(X = 4) \\\\
     &\approx 0.7484
   \end{align}
   $$
@@ -167,8 +168,8 @@ Esto lo podemos calcular fácilmente aplicando reglas de probabilidad con la fó
 
   $$
   \begin{align} 
-    \mathbb{P}(X \le 1) &= \sum_{k=0}^{1} \mathbb{P}(X = k) \\
-    &= \mathbb{P}(X = 0) + \mathbb{P}(X = 1) \\
+    \mathbb{P}(X \le 1) &= \sum_{k=0}^{1} \mathbb{P}(X = k) \\\\
+    &= \mathbb{P}(X = 0) + \mathbb{P}(X = 1) \\\\
     &\approx 0.1858
   \end{align}
   $$
@@ -179,8 +180,9 @@ Esto lo podemos calcular fácilmente aplicando reglas de probabilidad con la fó
 
   $$
   \begin{align} 
-    \mathbb{P}(X \ge 5) &= \sum_{k=5}^{7} \mathbb{P}(X = k) \\
-    &= \mathbb{P}(X = 5) + \mathbb{P}(X = 6) + \mathbb{P}(X = 7) \\
+    \mathbb{P}(X \ge 5) &= \sum_{k=5}^{7} \mathbb{P}(X = k) \\\\
+    &= \mathbb{P}(X = 5) + \mathbb{P}(X = 6) \\
+    &\hspace{0.5cm} + \mathbb{P}(X = 7) \\\\
     &\approx 0.0657
   \end{align}
   $$
@@ -195,19 +197,33 @@ La parte interactiva de este post reside en la calculadora presentada al inicio.
 
 La calculadora nos devuele un cálculo de probabilidades de interés, una tabla con la probabilidad para cada valor de $k$ (con $k \in \\{ 1, 2, ..., 7 \\}$) y un gráfico con la probabilidad para cada dicho $k$. Este último gráfico nos permite identificar mejor (de manera visual) las probabilidades para cada uno de los valores de $k$. Recordemos que $k$ representa el número de tierras robadas en la mano inicial.
 
-Por ejemplo, veamos el caso para 37 tierras en el mazo:
+Por ejemplo, veamos el caso para $L=37$ tierras en el mazo:
 
 ![37 lands](../assets/images/mtg-lands-37.png)
 
-Ahora, veamos el caso para 43 tierras en el mazo:
+De la calculadora podemos observar que hemos obtenido las probablidades de interés que previamente calculamos, sin embargo podemos observar que también se ha obtenido una tabla de probabilidades. Esta tabla contiene los valores para cada valor de $k$ de manera individual. Por ejemplo, podemos observar que para $k=0$, es decir, que se hayan robado 0 cartas en la primera mano, la probabilidad de ocurrencia es de $\approx 0.0330$, es decir, del 3.30%. Similarmente para el resto de valores $k$ de 1 a 7.
+
+Algo interesante que podemos observar es que del gráfico, parece ser que el valor de $k$ con la probabilidad más alta de ocurrencia es en $k=3$ (muy ligeramente por encima de $k=2$, pues las barras se perciben muy similares). Esto nos indica que para $L=37$ tierras en el mazo, la probabilidad de obtener 2 o 3 tierras exactamente es similar, pero ligeramente mayor en 3.
+
+Ahora, veamos un caso con más tierras en el mazo, considerando $L=43$ tierras:
 
 ![43 lands](../assets/images/mtg-lands-43.png)
 
-Finalmente, veamos el caso para 17 tierras en el mazo:
+En este resultado, nuevamente observamos las probabilidades calculadas. Algo interesante, en contraste con el caso de $L=37$, es que la probabilidad de obtener exactamente 3 tierras y de tener una "mano jugable" han aumentado debido a tener más tierras en el mazo. Sin embargo, aunque la probabilidad del _mana screw_ ha disminuido, también podemos observar que la probabilidad del _mana flood_ ha aumentado.
+
+En cuanto al gráfico de barras, a diferencia del anterior, hay un mayor contraste que nos permite identificar de mejor manera la barra más alta en el valor de $k=3$. La interpretación es similar al caso anterior, pero otra forma de ver también este resultado es el siguiente: podemos pensar que el valor más probable a obtener es el que tiene una barra más alta, siendo 3 para este caso. De aquí, podemos pensar que si tenemos $L=43$ tierras, el número más probable de tierras que podríamos obtener de robar 7 cartas es 3. 
+
+Muchas veces lo que buscamos es maximizar la probabilidad de obtener $k$ tierras (p.e. obtener $k=3$ tierras), mientras que al mismo tiempo buscamos tener el mínimo número de tierras en el mazo para poder disponer de dichos espacios para otros hechizos.
+
+Finalmente, veamos un caso más contrastado, con $L=17$ tierras en el mazo:
 
 ![17 lands](../assets/images/mtg-lands-17.png)
 
-Algunas observaciones útiles al experimentar con la calculadora:
+Del gráfico para este caso es muy sencillo identificar la barra más alta, es decir, el valor más probable de ocurrir. En este caso es $k=1$, lo que interpretamos como que será muy probable robar 1 sola tierra en mano inicial si tenemos 17 tierras en el mazo. 
+
+De la tabla de probabilidades podemos observar que los valores más probables de ocurrir son 1, 0 y 2 (en ese orden); y de los valores de probabilidades relevantes podemos notar que la probabilidad de obtener un _mana screw_ es un valor considerablemente alto, con un 65.52% de probabilidad. Esto nos indica que probablemente más de la mitad de las veces robemos sólo 1 tierra o ninguna. En su contraparte podemos observar que la probabilidad de obtener un _mana flood_ es de 0.14%, es decir, muy rara vez podríamos llegar a obtener 5 o más tierras en nuestra mano inicial.
+
+Algunas observaciones útiles al experimentar con la calculadora y analizar los resultados anteriores:
 
 - Aumentar el número de tierras **reduce el riesgo de _mana screw_**, pero incrementa la **probabilidad de _mana flood_**
 - La probabilidad de **robar exactamente 3 tierras suele maximizarse alrededor de 36–38 tierras**, considerando que a la vez nos interesa minimizar también la cantidad de tierras en el mazo para disponer de esos espacios para otras cartas
@@ -220,16 +236,20 @@ Esto refleja una idea central presente en el diseño de algunos juegos y en prob
 
 Como hemos visto, este análisis se enfoca únicamente en la **mano inicial**, y no considera:
 
-- _Ramp_, cantrips o robos adicionales
+- _Ramp_, _cantrips_ o posibles robos adicionales que pudiéramos tener de mano inicial
 - Alguna curva de mana específica
 
 Aun así, el modelo es útil como una **línea base objetiva** sobre la cual podemos tomar decisiones informadas al momento de armar un mazo. En este sentido, el análisis probabilístico aquí presentado nos ayuda a:
 
 - Entender y mejorar nuestras decisiones de construcción de mazos
 - Diseñar mazos más consistentes
-- Cuestionar heurísticas comunes, es decir, lo que conocemos como _"rules of thumb"_
+- Cuestionar heurísticas o sugerencias comunes, como el clásico _"38 es mi número magico, bro"_
 
-¡Espero que este post te haya resultado interesante y la herramienta te sea de utilidad!
+Al final, con este análisis pretendo compartir un poco de formalismo matemático que puede ser empleado para el armado de mazos.
+
+En fin, espero que este post te haya resultado interesante y que la herramienta te sea de utilidad.
+
+¡Éxito en tu armado de mazos y feliz año nuevo! 🥳
 
 ***
 
