@@ -25,7 +25,7 @@ Llevo alrededor de 1 año jugando _**commander**_, un formato de _**Magic: The G
 
 Dada la cantidad de cartas (99), al momento de _"cocinar"_ un mazo es importante tener en cuenta el número de tierras por agregar, pues generalmente éstas conforman el motor principal de maná, claro, sin considerar _"mana stones"_ o _"mana dorks"_. Además, es importante mencionar que MTG utiliza el [_"London mulligan"_](https://magic.wizards.com/en/news/announcements/london-mulligan-2019-06-03), siendo que este tipo de mulligan va penalizando al ir regresando cantidad de cartas de tu mano inicial al fondo del mazo de acuerdo a la cantidad de mulligans que hayas realizado.
 
-Lo anterior usualmente nos hace querer tener una _**"buena mano incial"**_, casi siempre definida por la cantidad de tierras (y quizás algunos hechizos no tan costosos) para poder ir progresando de manera consistente durante los primeros turnos en un juego.
+Lo anterior usualmente nos hace querer tener una _**"buena mano inicial"**_, casi siempre definida por la cantidad de tierras (y quizás algunos hechizos no tan costosos) para poder ir progresando de manera consistente durante los primeros turnos en un juego.
 
 Por supuesto, esta cantidad de tierras iniciales puede depender de nuestra estrategia o de nuestra curva de maná, así como de si también contamos con _"mana stones"_ o _"mana dorks"_ (que en este caso no estaremos considerando). En general, habrá ocasiones en que busquemos robar 3 tierras en nuestra mano inicial, algunas otras veces al menos 2, etc. Esto nos lleva a plantearnos la pregunta recurrente al inciar una partida y robar nuestra mano inicial:
 
@@ -37,10 +37,10 @@ Aunque muchas respuestas podrían basarse en experiencia, quizás en heurística
 
 # Un experimento aleatorio bien definido
 
-Nuestro problema de interés radica en poder calcular (de alguna manera) la ocurrencia de robar un número de tierras en una mano incial. Más específicamente, nos interesa responder preguntas como:
+Nuestro problema de interés radica en poder calcular (de alguna manera) la ocurrencia de robar un número de tierras en una mano inicial. Más específicamente, nos interesa responder preguntas como:
 
 - ¿Cuál es la probabilidad de robar exactamente 3 tierras en la mano inicial?
-- ¿Cuál es la probailidad de robar una mano "jugable" (por ejemplo, robar entre 2 y 4 tierras)?
+- ¿Cuál es la probabilidad de robar una mano "jugable" (por ejemplo, robar entre 2 y 4 tierras)?
 - ¿Qué tan probable es el *mana screw* o el *mana flood*? (Es decir, robar 0 o 1 tierra y 5 o más, respectivamente.)
 
 Para poder proponer una manera de resolver estas preguntas, es necesario considerar un escenario específico. Si bien lo que se presentará a continuación es consistente para otros formatos, consideraremos el caso de **commander**, donde:
@@ -61,13 +61,13 @@ Esto es relevante porque descarta modelos como la distribución binomial (que as
 
 Si lo pensamos, robar una carta del mazo y verificar si es o no una tierra nos llevará a 1 de 2 posibles resultados: _**"éxito"**_ o _**"fracaso"**_ (respectivamente). Esto podría hacernos pensar en experimentos de alguna manera similares, como lanzar una moneda y observar el resultado.
 
-Experimentos como este último reciben el nombre de _ensayos de Bernoulli_, donde podemos realizar múltiples veces el ensayo, observar el resultado y utilizar algún conocimiento matemático para responder preguntas como _"¿cuál es la probabilidad de obtener 3 éxitos (3 caras) en 7 lanzamientos?"_ (por ejemplo utilizando una distribución binomial) o _"¿cuántas veces debo lanzar la moneda hasta obtener el prrimer éxito (1 cara)?"_ (por ejemplo utilizando una distribución geométrica). Sin embargo, hay una diferencia **radical** (a mi parecer) que puede ser sutil y llevar a algunas personas a la confusión.
+Experimentos como este último reciben el nombre de _ensayos de Bernoulli_, donde podemos realizar múltiples veces el ensayo, observar el resultado y utilizar algún conocimiento matemático para responder preguntas como _"¿cuál es la probabilidad de obtener 3 éxitos (3 caras) en 7 lanzamientos?"_ (por ejemplo utilizando una distribución binomial) o _"¿cuántas veces debo lanzar la moneda hasta obtener el primer éxito (1 cara)?"_ (por ejemplo utilizando una distribución geométrica). Sin embargo, hay una diferencia **radical** (a mi parecer) que puede ser sutil y llevar a algunas personas a la confusión.
 
 Antes de continuar con esta diferencia radical y mostrar una mejor manera de modelar el robo de una carta y verificar si es o no una tierra, me gustaría agregar un apartado que posiblemente ayude a clarificar algunas confusiones que también suelen ser comunes cuando pensamos en probabilidades.
 
 ## "Probabilidad" es diferente de resultados en un experimento
 
-Es importante señalar que la cantidad de posibles resultados y la probabilidad de obtener dichos resultados son cosas competamente distintas. Algunas veces, el hecho de tener 2 posibles resultados nos hace pensar que la probabilidad es de $p=0.5$ siempre para cada uno de estos 2 posibles resultados, pero no es así (salvo que la distribución sea uniforme, como en el caso de una moneda).
+Es importante señalar que la cantidad de posibles resultados y la probabilidad de obtener dichos resultados son cosas completamente distintas. Algunas veces, el hecho de tener 2 posibles resultados nos hace pensar que la probabilidad es de $p=0.5$ siempre para cada uno de estos 2 posibles resultados, pero no es así (salvo que la distribución sea uniforme, como en el caso de una moneda).
 
 A primera vista, el caso de una moneda es ideal en el sentido de que tenemos 2 posibles resultados y que la probabilidad, _idealmente_, es de $p=0.5$ (es decir, del 50%) para cada cara, pero habrá muchos experimentos donde no será así.
 
@@ -80,9 +80,9 @@ En este caso, aunque los posibles resultados siguen siendo 2, la probabilidad de
 Regresando a la diferencia radical que se presenta entre robar tierras y los ensayos de Bernoulli, al inicio de este post se mencionaron dos características importantes durante el robo de una mano inicial:
 
 1. **Las cartas se roban sin reemplazo.** A diferencia de lanzar una moneda y contar los resultados de _"éxitos"_ obtenidos (p.e. caras), donde en cada lanzamiento utilizamos la misma moneda y no nos importa el resultado anterior porque la probabilidad es constante (no cambia y siempre es $p=0.5$); cuando robamos una carta no sucede lo mismo. En este caso sí importan los resultados anteriores, es decir, no son ensayos independientes. Además, las probabilidades de robo no son constantes, pues cambian y de hecho se ajustan de acuerdo al resultado obtenido. Por ejemplo, pensemos que si mi mazo es de $N=99$ cartas y contiene $L=37$ tierras, para robar mi primera carta de la mano inicial, la probabilidad de robar una tierra sería $p=37/99=0.\overline{37}$. Supongamos que robo una tierra en mi primera carta, ahora la probabilidad de robar mi segunda tierra en la segunda carta sería $p=36/98 \approx 0.3673$. Pensemos ahora que en la primera carta no robé una tierra, la probabilidad de robar mi primera tierra en la segunda carta sería $p=37/98 \approx 0.3775$. Como podemos observar, la probabilidad va cambiando porque las cartas robadas no se devuelven al mazo y robamos de nuevo (en estadística, esto es denominado como reemplazo en un muestreo aleatorio), sino que vamos robando hasta construir los 7 robos de mano inicial. 
-2. **El orden no importa, solo la composición de la mano.** Como mencionamos al inicio, si bien los ensayos no son independientes y la probabilidad va cambiando durante cada robo de carta, no nos interesa si las tierras las robamos durante la priemera, segunda, o hasta la séptima carta, sino que nos interesa conocer al final cuántas tierras robamos en las 7 cartas de la mano inicial.
+2. **El orden no importa, solo la composición de la mano.** Como mencionamos al inicio, si bien los ensayos no son independientes y la probabilidad va cambiando durante cada robo de carta, no nos interesa si las tierras las robamos durante la primera, segunda, o hasta la séptima carta, sino que nos interesa conocer al final cuántas tierras robamos en las 7 cartas de la mano inicial.
 
-Esto nos lleva a omitir las primeras aproximaciones en el uso de modelos como la distribución binomial o geométrica, que parte de ensayos Bernoulli, proponiendo una mejor manera de modelar este tipo de experimentos, utlizando una **distribución hipergeométrica**.
+Esto nos lleva a omitir las primeras aproximaciones en el uso de modelos como la distribución binomial o geométrica, que parte de ensayos Bernoulli, proponiendo una mejor manera de modelar este tipo de experimentos, utilizando una **distribución hipergeométrica**.
 
 En términos generales, para esta distribución:
 - Tenemos una población de tamaño $N$
@@ -193,13 +193,13 @@ Estas cantidades resumen muy bien el comportamiento del mazo en la mano inicial,
 
 La parte interactiva de este post reside en la calculadora presentada al inicio. Esta calculadora recibe 3 parámetros para poder realizar los cálculos de probabilidades como hemos hecho hasta ahora. Los parámetros son: cantidad de cartas en el mazo ($N$), cantidad de tierras en el mazo ($L$) y el número de cartas robadas ($n$).
 
-La calculadora nos devuele un cálculo de probabilidades de interés, una tabla con la probabilidad para cada valor de $k$ (con $k \in \\{ 1, 2, ..., 7 \\}$) y un gráfico con la probabilidad para cada dicho $k$. Este último gráfico nos permite identificar mejor (de manera visual) las probabilidades para cada uno de los valores de $k$. Recordemos que $k$ representa el número de tierras robadas en la mano inicial.
+La calculadora nos devuelve un cálculo de probabilidades de interés, una tabla con la probabilidad para cada valor de $k$ (con $k \in \\{ 1, 2, ..., 7 \\}$) y un gráfico con la probabilidad para cada dicho $k$. Este último gráfico nos permite identificar mejor (de manera visual) las probabilidades para cada uno de los valores de $k$. Recordemos que $k$ representa el número de tierras robadas en la mano inicial.
 
 Por ejemplo, veamos el caso para $L=37$ tierras en el mazo:
 
 ![37 lands](../assets/images/mtg-lands-37.png)
 
-De la calculadora podemos observar que hemos obtenido las probablidades de interés que previamente calculamos, sin embargo podemos observar que también se ha obtenido una tabla de probabilidades. Esta tabla contiene los valores para cada valor de $k$ de manera individual. Por ejemplo, podemos observar que para $k=0$, es decir, que se hayan robado 0 cartas en la primera mano, la probabilidad de ocurrencia es de $\approx 0.0330$, es decir, del 3.30%. Similarmente para el resto de valores $k$ de 1 a 7.
+De la calculadora podemos observar que hemos obtenido las probabilidades de interés que previamente calculamos, sin embargo podemos observar que también se ha obtenido una tabla de probabilidades. Esta tabla contiene los valores para cada valor de $k$ de manera individual. Por ejemplo, podemos observar que para $k=0$, es decir, que se hayan robado 0 cartas en la primera mano, la probabilidad de ocurrencia es de $\approx 0.0330$, es decir, del 3.30%. Similarmente para el resto de valores $k$ de 1 a 7.
 
 Algo interesante que podemos observar es que del gráfico, parece ser que el valor de $k$ con la probabilidad más alta de ocurrencia es en $k=3$ (muy ligeramente por encima de $k=2$, pues las barras se perciben muy similares). Esto nos indica que para $L=37$ tierras en el mazo, la probabilidad de obtener 2 o 3 tierras exactamente es similar, pero ligeramente mayor en 3.
 
@@ -241,7 +241,7 @@ Aun así, el modelo es útil como una **línea base objetiva** sobre la cual pod
 
 - Entender y mejorar nuestras decisiones de construcción de mazos
 - Diseñar mazos más consistentes
-- Cuestionar heurísticas o sugerencias comunes, como el clásico _"38 es mi número magico, bro"_
+- Cuestionar heurísticas o sugerencias comunes, como el clásico _"38 es mi número mágico, bro"_
 
 Al final, con este análisis pretendo compartir un poco de formalismo matemático que puede ser empleado para el armado de mazos.
 
