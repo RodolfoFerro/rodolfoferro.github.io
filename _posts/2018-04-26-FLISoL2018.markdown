@@ -11,6 +11,7 @@ tag:
   - ANNs
 image: ../assets/posts/logo_v0.1.png
 headerImage: false
+hidden: true # don't count this post in blog pagination
 category: blog
 author: rodferro
 description: Intro to ANNs w/Keras.

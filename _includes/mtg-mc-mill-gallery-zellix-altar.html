@@ -1,0 +1,65 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<div class="container py-5">
+    <div class="row g-4 justify-content-center">
+        <!-- Altar of the Brood -->
+        <div class="col-6 col-lg-4">
+            <div class="tilt-box-wrap">
+                <!-- Zonas invisibles -->
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+
+                <!-- Altar of the Brood -->
+                <div class="tilt-box">
+                    <img src="https://gatherer-static.wizards.com/Cards/medium/7D0C3ACE463DCADD71AC41CD241AE8CFD32B4F7D0E2949BFB63020E0C4AAE716.webp" class="d-block w-100" alt="Altar of the Brood">
+                </div>
+
+            </div>
+        </div>
+        <!-- Zellix, Sanity Flayer -->
+        <div class="col-6 col-lg-4">
+            <div class="tilt-box-wrap">
+                <!-- Zonas invisibles -->
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+                <div class="t_over"></div>
+
+                <!-- Zellix, Sanity Flayer -->
+                <div class="tilt-box">
+                    <img src="https://gatherer-static.wizards.com/Cards/medium/489070BB0D721A090FEAFDE8EA23A27609BDBE1335FECB6C3F1BAAEB19C1A28A.webp" class="d-block w-100" alt="Zellix, Sanity Flayer">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    {% if site.dark-theme == "auto" %}
+        {% capture scss_sheet %}
+            {% include style.scss %}
+            @media (prefers-color-scheme: dark) {
+                {% include style-dark.scss %}
+            }
+        {% endcapture %}
+    {% elsif site.dark-theme %}
+        {% capture scss_sheet %}{% include style-dark.scss %}{% endcapture %}
+    {% else %}
+        {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
+    {% endif %}
+
+    {{ scss_sheet | scssify }}
+</style>

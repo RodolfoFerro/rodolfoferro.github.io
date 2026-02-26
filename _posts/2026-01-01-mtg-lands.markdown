@@ -7,7 +7,6 @@ tag:
   - Probability
   - Simulation
   - Magic the Gathering
-  - MTG
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
@@ -249,7 +248,7 @@ En fin, espero que este post te haya resultado interesante y que la herramienta 
 
 ¡Éxito en tu armado de mazos y feliz año nuevo! 🥳
 
-***
+<div class="breaker"></div>
 
 ### SOBRE EL USO DE INFORMACIÓN TOTAL O PARCIAL: 🔐
 * Estos documentos fueron originalmente creados por el autor.
