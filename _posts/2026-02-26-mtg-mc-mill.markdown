@@ -61,7 +61,7 @@ De **Altar of the Brood** podemos leer:
 De **Zellix, Sanity Flayer** podemos leer:
 > "_Mente Colmena_ - Siempre que un jugador _millee_ una o más cartas de criatura, crea un token criatura Horror negra 1/1."
 
-<span class="evidence">**Este caso base es el que <u>desata mi curiosidad por entender mejor las interacciones de <i>milleo</i></u>.**</span> En breve te compartiré por qué.
+<span class="evidence">**Este caso base es el que desata mi curiosidad por entender mejor las interacciones de _milleo_.**</span> En breve te compartiré por qué.
 
 Consideremos el siguiente caso:
 1. Ambas cartas están en campo.
@@ -70,7 +70,9 @@ Consideremos el siguiente caso:
 4. Como entró un permamente bajo mi control se dispara el **Altar**, haciendo que mis oponentes _milleen_ una carta.
 5. Si esa carta _milleada_ es una criatura, regresamos al paso 3.
 
-Si lo pensamos, quizáaas bajo ciertas condiciones muy particulares podríamos tener un combo infinito de creación de tokens/_milleo_, de nuevo, sólo quizás... 🤔
+Si lo pensamos, quizáaas bajo ciertas condiciones muy particulares podríamos tener un combo infinito$^*$ de creación de tokens/_milleo_. De nuevo, sólo quizás... 🤔
+
+<small>$^*$En este caso consideraremos como combo infinito a aquel en el que logramos _millear_ toda la biblioteca de nuestro(s) rival(es) y a la vez _triggereamos_ a **Zellix**, creando "infinitos" tokens Horror 1/1.</small>
 
 Mi pregunta principal en mente es: **¿bajo qué condiciones podría tener un combo infinito?** Esto me lleva a plantearme una segunda pregunta: **¿cómo puedo verificar cuántas veces se _triggerea_ una habilidad así?** Quizás entendiendo esta segunda pregunta pueda responder la primera. 
 
@@ -91,13 +93,13 @@ Formalmente, si $X$ es una variable aleatoria difícil de analizar de forma exac
 
 $$\bar{X} = \mathbb{E}[X] = \frac{1}{n} \sum_{i=1}^{n} X_i,$$
 
-donde cada $X_i$ es una realización independiente del proceso simulado. De aquí notemos que asumimos que cada $X_i$ es una variable aleatoria inependiente e identicamente distribuida (_i.i.d._).
+donde cada $X_i$ es una realización independiente del proceso simulado. De aquí notemos que asumimos que cada $X_i$ es una variable aleatoria independiente e identicamente distribuida (_i.i.d._).
 
 <span class="evidence">En nuestro contexto, cada simulación representa una secuencia de _triggers_ disparados dentro de una partida hipotética bajo ciertas condiciones iniciales del mazo, la cual se detiene una vez se deja de _millear_ una criatura.</span>
 
 Es decir, con esto podemos simular un mazo de 99 cartas con $C$ criaturas y simular que _milleamos_, contar cuántas veces se encadenó el combo **Altar** + **Zellix** y hacer esto miles de veces para calcular un promedio de estos resultados.
 
-Hasta este punto espero haber explicado bien la idea de lo que queremos realizar, en la próxima publicación estaré compartiendo detalles de los resultados obtenidos de los experimentos simulados.
+Hasta este punto espero haber explicado bien la idea de lo que queremos realizar, en la próxima publicación estaré compartiendo detalles de los resultados obtenidos sobre los experimentos simulados, así como cualquier detalle adicional de los mismos.
 
 ##### SPOILER:
 <div class="spoiler"><p>Bajo ciertas condiciones, <b>sí</b> se podría alcanzar un combo de <i>milleo</i> de todo el mazo rival a partir de <b>Altar</b> + <b>Zellix</b>. Mantente en sintonía para conocer bajo qué condiciones puede ocurrir.</p></div>
