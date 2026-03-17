@@ -33,11 +33,11 @@ title: Resume
 
 <!-- CV Button -->
 <center>
-  <a class="button-cv" role="button" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume%20(2025).pdf" target="_blank">Download PDF</a>
+  <a class="button-cv" role="button" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume%20(2026).pdf" target="_blank">Download PDF</a>
 </center>
 
 ---
-<i><b>Last update:</b> 25/11/2025.</i>
+<i><b>Last update:</b> 17/03/2026.</i>
 
 <i><b>Note:</b> There's a time gap (2019-2024) in which I didn't update a considerable amount of talks and workshops in the info below. If you're interested in inviting me to an event, please do not hesitate to contact me. :) </i>
 
@@ -48,7 +48,7 @@ title: Resume
 
 - **SR. MACHINE LEARNING / COMPUTER VISION ENGINEER.** ML/CV engineer at AIAEC LLC.
 - **TECHNOLOGY/AI CONSULTANT.** Consultant on technologies related to AI, automation, and data.
-- **DATA SCIENCE TEACHER.** Tech lead in the data science bootcamp at Código Facilito, data science professor in the Data Science Diploma at ENES León (UNAM).
+- **DATA SCIENCE/MACHINE LEARNING PROFESSOR.** AI/ML professor at EdgeHub School of Innovation, and data science professor in the Data Science Diploma at ENES León (UNAM).
 
 
 #### EDUCATION:
