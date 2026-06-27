@@ -37,7 +37,7 @@ title: Resume
 </center>
 
 ---
-<i><b>Last update:</b> 17/03/2026.</i>
+<i><b>Last update:</b> 27/06/2026.</i>
 
 <i><b>Note:</b> There's a time gap (2019-2024) in which I didn't update a considerable amount of talks and workshops in the info below. If you're interested in inviting me to an event, please do not hesitate to contact me. :) </i>
 
@@ -46,7 +46,7 @@ title: Resume
 
 #### CURRENT ACTIVITIES:
 
-- **SR. MACHINE LEARNING / COMPUTER VISION ENGINEER.** ML/CV engineer at AIAEC LLC.
+- **SR. AI & AUTOMATION SPECIALIST.** AI and automation dev at Vira Doctores.
 - **TECHNOLOGY/AI CONSULTANT.** Consultant on technologies related to AI, automation, and data.
 - **DATA SCIENCE/MACHINE LEARNING PROFESSOR.** AI/ML professor at EdgeHub School of Innovation, and data science professor in the Data Science Diploma at ENES León (UNAM).
 
@@ -72,8 +72,14 @@ title: Resume
 
 #### PROFESSIONAL EXPERIENCE:
 
-- **SR. MACHINE LEARNING / COMPUTER VISION ENGINEER.** _OCT 2025 – PRESENT._
-  - Developing a smart tool for internal use using computer vision and artificial intelligence.
+- **SR. AI & AUTOMATION SPECIALIST.** _MAY 2026 - PRESENT._
+  - In charge of automation processes for the main product.
+  - In charge of data exploration and AI processes for data driven decisions and AI based services.
+- **SR. MACHINE LEARNING / COMPUTER VISION ENGINEER.** _OCT 2025 – MAY 2026._
+  - Designed and developed computer vision systems that integrate Large Language Models (LLMs) for multimodal visual understanding and intelligent document/scene analysis.
+  - Built and evaluated deep learning models (CNNs, transformer-based architectures) for production-scale visual recognition tasks.
+  - Contributed to the ML lifecycle: data collection, annotation strategies, model training, evaluation, deployment, and production monitoring.
+  -Developed Python-based services and APIs (FastAPI) to expose CV/ML inference pipelines at scale.
 - **SR. SWE (DATA ENGINEER) @ BISONIC MÉXICO.** _MAR 2023 – SEP 2025._
   - Automated processes for in-platform transactions with Python and FastAPI for web services (APIs) deployed in AWS.
   - Built analytics dashboards for strategic decisions using Streamlit and Dash.
