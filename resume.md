@@ -2,42 +2,18 @@
 layout: page
 title: Resume
 ---
+<h1 class="title">Résumé</h1>
+<p class="lede">curl -O resume.pdf</p>
 
-<style>
-.button-cv {
-  background-color: #c2fbd7;
-  border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: 0;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
+<div class="term-panel">
+    <div class="l1">→ GET /assets/docs/Rodolfo Ferro - Resume (2026).pdf</div>
+    <div class="l2"><span class="ok">200 OK</span> · listo para descarga</div>
+</div>
 
-.button-cv:hover {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
-}
-</style>
-
-# Resume
-
-<!-- CV Button -->
-<center>
-  <a class="button-cv" role="button" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume%20(2026).pdf" target="_blank">Download PDF</a>
-</center>
+<a class="cv-btn" role="button" href="/assets/docs/Rodolfo%20Ferro%20-%20Resume%20(2026).pdf" target="_blank">Descargar CV</a>
 
 ---
-<i><b>Last update:</b> 01/07/2026.</i>
+<i><b>Last update:</b> 15/09/2026.</i>
 
 <i><b>Note:</b> There's a time gap (2019-2024) in which I didn't update a considerable amount of talks and workshops in the info below. If you're interested in inviting me to an event, please do not hesitate to contact me. :) </i>
 
@@ -47,12 +23,14 @@ title: Resume
 #### CURRENT ACTIVITIES:
 
 - **HEAD OF AI.** Driving AI and data initiatives for smart workflows at Vira Doctores.
+- **MASTER IN APPLIED ARTIFICIAL INTELLIGENCE.** Cunrrently persuing a master's degree at Tec de Monterrey.
 - **TECHNOLOGY/AI CONSULTANT.** Consultant on technologies related to AI, automation, and data.
 - **DATA SCIENCE/MACHINE LEARNING PROFESSOR.** AI/ML professor at EdgeHub School of Innovation, and data science professor in the Data Science Diploma at ENES León (UNAM).
 
 
 #### EDUCATION:
 
+- **MASTER IN APPLIED ARTIFICIAL INTELLIGENCE.** Tec de Monterrey (ITESM). _AUG 2026 – PRESENT._
 - **STATISTICAL METHODS SPECIALIST.** Centro de Investigación en Matemáticas (CIMAT), A.C., Unidad Aguascalientes. _AUG 2024 – JUL 2025._
 - **COMPUTER SYSTEMS ENGINEER.** Universidad Virtual del Estado de Guanajuato (UVEG). _JAN 2021 – JUL 2023._
 - **BACHELOR IN MATHEMATICS.** Department of Mathematics, Divison of Natural and Exact Sciences. Universidad de Guanajuato, Campus Guanajuato. _AUG 2011 – DEC 2017._
@@ -246,7 +224,7 @@ title: Resume
 
 - **STATE YOUTH AWARD.** Category: Academia and Technology. Guanajuato, Mexico. _JUL 2018._
 - **1ST PLACE – HDI CHALLENGE @ TALENT HACKATHON.** Project "HIER: An Automated Solution for Insurance Services". Centro Fox, Guanajuato. _JUN 2018._
-- **2ND PLACE – 5TH CREATIVITY AND INNOVATION CONTEST (DCNE).** Project ["OmniChem"](https://rodolfoferro.xyz/omnichem/). DCNE, University of Guanajuato. _MAY 2018._
+- **2ND PLACE – 5TH CREATIVITY AND INNOVATION CONTEST (DCNE).** Project "OmniChem". DCNE, University of Guanajuato. _MAY 2018._
 - **1ST PLACE – SWITHC HACKATHON 2017.** Project ["DABOT: Disaster Attention Bot"](https://rodolfoferro.xyz/SWITCH17/), disaster response reporting system. León, Gto. _NOV 2017._
 - **1ST PLACE – IBM BLUEHACK MÉXICO HACKAPALOOZA.** Project ["Travis"](https://www.youtube.com/watch?v=bH80lD148BY), an intelligent shopping assistant using IBM Watson. IBM Tech Park, Guadalajara, Jal. _OCT 2017._
 - **MUNICIPAL YOUTH AWARD.** Category: Academia and Technology. Guanajuato, Mexico. _AUG 2017._

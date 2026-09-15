@@ -1,48 +1,24 @@
-<nav class="{% if page.title == " Home" %}nav-home{% else %}nav{% endif %}">
-    <ul class="list">
-        {% if page.title != "Home" %}
-        <li class="item">
-            <a class="link" href="{{ site.url }}/">Home</a>
-        </li>
-        {% endif %}
+<nav class="site-nav" id="siteNav">
+    <a class="idx-link" href="/"{% if page.title == "Home" %} aria-current="page"{% endif %}><span class="box">{% if page.title == "Home" %}[x]{% else %}[ ]{% endif %}</span> home</a>
 
-        {% if site.blog == true %}
-        {% if page.title != "Blog" %}
-        <li class="item">
-            <a class="link" href="{{ site.url }}/blog">Blog</a>
-        </li>
-        {% endif %}
-        {% endif %}
+    {% if site.blog == true %}
+    <a class="idx-link" href="/blog"{% if page.title == "Blog" %} aria-current="page"{% endif %}><span class="box">{% if page.title == "Blog" %}[x]{% else %}[ ]{% endif %}</span> blog</a>
+    {% endif %}
 
-        {% if site.projects == true %}
-        {% if page.title != "Projects" %}
-        <li class="item">
-            <a class="link" href="{{ site.url }}/projects">Projects</a>
-        </li>
-        {% endif %}
-        {% endif %}
+    {% if site.projects == true %}
+    <a class="idx-link" href="/projects"{% if page.title == "Projects" %} aria-current="page"{% endif %}><span class="box">{% if page.title == "Projects" %}[x]{% else %}[ ]{% endif %}</span> projects</a>
+    {% endif %}
 
-        {% if site.courses == true %}
-        {% if page.title != "Courses" %}
-        <li class="item">
-            <a class="link" href="{{ site.url }}/courses">Courses</a>
-        </li>
-        {% endif %}
-        {% endif %}
+    {% if site.talks == true %}
+    <a class="idx-link" href="/talks"{% if page.title == "Talks" %} aria-current="page"{% endif %}><span class="box">{% if page.title == "Talks" %}[x]{% else %}[ ]{% endif %}</span> talks</a>
+    {% endif %}
 
-        {% if site.about == true %}
-        {% if page.title != "About" %}
-        <li class="item">
-            <a class="link" href="{{ site.url }}/about">About</a>
-        </li>
-        {% endif %}
-        {% endif %}
+    {% if site.about == true %}
+    <a class="idx-link" href="/about"{% if page.title == "About" %} aria-current="page"{% endif %}><span class="box">{% if page.title == "About" %}[x]{% else %}[ ]{% endif %}</span> about</a>
+    {% endif %}
 
-        {% if site.resume == true %}
-        <li class="item">
-            <a class="link"
-                href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Resume</a>
-        </li>
-        {% endif %}
-    </ul>
+    {% if site.resume == true %}
+    <a class="idx-link"
+        href="{% if site.resume-external %}{{ site.resume-url }}{% else %}/{{ site.resume-url }}{% endif %}"{% if page.title == "Resume" %} aria-current="page"{% endif %}><span class="box">{% if page.title == "Resume" %}[x]{% else %}[ ]{% endif %}</span> résumé</a>
+    {% endif %}
 </nav>

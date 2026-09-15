@@ -1,0 +1,93 @@
+<div class="terminal" id="homeTerminal">
+    <div class="terminal-bar">
+        <span class="terminal-dots"><span></span><span></span><span></span></span>
+        <span class="terminal-path">guest@{{ site.title | downcase | remove: ' ' }}:~</span>
+    </div>
+    <div class="terminal-body" id="termOutput" aria-live="polite"></div>
+    <div class="terminal-input-row">
+        <span class="p">$</span>
+        <input class="terminal-input" id="termInput" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal — escribe help y presiona enter" placeholder="escribe 'help' y presiona enter" />
+    </div>
+</div>
+
+<script>
+(function(){
+    var termOutput = document.getElementById('termOutput');
+    var termInput = document.getElementById('termInput');
+    var homeTerminal = document.getElementById('homeTerminal');
+    if (!termOutput || !termInput || !homeTerminal) return;
+
+    var promptUser = 'guest@{{ site.title | downcase | remove: " " }}';
+    var sections = {
+        home: '/',
+        blog: '/blog',
+        projects: '/projects',
+        talks: '/talks',
+        about: '/about',
+        resume: '{% if site.resume-external %}{{ site.resume-url }}{% else %}/{{ site.resume-url }}{% endif %}'
+    };
+
+    function termPrint(text, cls){
+        var line = document.createElement('div');
+        line.className = 'terminal-line' + (cls ? ' ' + cls : '');
+        line.textContent = text;
+        termOutput.appendChild(line);
+        termOutput.scrollTop = termOutput.scrollHeight;
+    }
+
+    function runCommand(raw){
+        var cmd = raw.trim();
+        termPrint(promptUser + ':~$ ' + cmd);
+        if (!cmd) return;
+        var parts = cmd.split(/\s+/);
+        var head = parts[0].toLowerCase();
+        var arg = (parts[1] || '').toLowerCase();
+
+        if (head === 'help'){
+            termPrint('comandos: help, whoami, ls, cd <sección>, theme <auto|light|dark>, date, contact, clear', 'out');
+        } else if (head === 'whoami'){
+            termPrint('{{ site.title }} — {{ site.roles | first }}', 'out');
+        } else if (head === 'ls'){
+            termPrint(Object.keys(sections).join('  '), 'out');
+        } else if (head === 'cd' && sections[arg]){
+            termPrint('→ cd ' + arg, 'out');
+            setTimeout(function(){ location.href = sections[arg]; }, 250);
+        } else if (sections[head]){
+            termPrint('→ abriendo ' + head + '...', 'out');
+            setTimeout(function(){ location.href = sections[head]; }, 250);
+        } else if (head === 'contact'){
+            termPrint('github.com/{{ site.github }} · linkedin.com/in/{{ site.linkedin }} · {{ site.email }}', 'out');
+        } else if (head === 'theme'){
+            if (['auto', 'light', 'dark'].indexOf(arg) !== -1){
+                if (arg === 'auto') document.documentElement.removeAttribute('data-theme');
+                else document.documentElement.setAttribute('data-theme', arg);
+                try { localStorage.setItem('rodo-theme', arg); } catch (e) {}
+                var btn = document.getElementById('themeToggle');
+                if (btn) btn.textContent = '[' + arg + ']';
+                termPrint('theme → ' + arg, 'out');
+            } else {
+                termPrint('uso: theme auto|light|dark', 'out');
+            }
+        } else if (head === 'date'){
+            termPrint(new Date().toString(), 'out');
+        } else if (head === 'clear'){
+            termOutput.innerHTML = '';
+        } else if (head === 'sudo'){
+            termPrint('nice try — este sitio es estático. :)', 'out');
+        } else {
+            termPrint('command not found: ' + head + ' — prueba "help"', 'out');
+        }
+    }
+
+    termPrint('bienvenido — escribe "help" para ver los comandos disponibles.', 'out');
+    termInput.addEventListener('keydown', function(e){
+        if (e.key === 'Enter'){
+            runCommand(termInput.value);
+            termInput.value = '';
+        }
+    });
+    homeTerminal.addEventListener('click', function(e){
+        if (e.target.tagName !== 'A') termInput.focus();
+    });
+})();
+</script>

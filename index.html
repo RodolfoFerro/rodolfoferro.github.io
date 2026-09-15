@@ -3,41 +3,46 @@ layout: page
 title: Home
 ---
 
-<style>
-  .mybutton{
-    background:#1aa2ab;
-    color:#fff;
-    border:none;
-    position:relative;
-    height:40px;
-    font-size:0.7em;
-    padding:0 2em;
-    cursor:pointer;
-    transition:800ms ease all;
-    outline:none;
-  }
-  .mybutton:hover{
-    background:#fff;
-    color:#1aa2ab;
-  }
-  .mybutton:before,button:after{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    height:2px;
-    width:0;
-    background: #1aa2ab;
-    transition:400ms ease all;
-  }
-  .mybutton:after{
-    right:inherit;
-    top:inherit;
-    left:0;
-    bottom:0;
-  }
-  .mybutton:hover:before,button:hover:after{
-    width:100%;
-    transition:800ms ease all;
-  }
-</style>
+<h1 class="title">{{ site.title }}</h1>
+<p class="lede">{{ site.bio }}</p>
+
+<div class="hero-grid">
+    {% include photo-frame.html size="hero" %}
+    {% include terminal.html %}
+</div>
+
+<div class="status-panel">
+    {% include roles-checklist.html %}
+</div>
+
+{% include social-links.html %}
+
+{% assign latest_project = nil %}
+{% assign latest_post = nil %}
+{% for post in site.posts %}
+    {% if latest_project == nil and post.projects and post.hidden != true %}
+        {% assign latest_project = post %}
+    {% endif %}
+    {% if latest_post == nil and post.category == 'blog' and post.hidden != true %}
+        {% assign latest_post = post %}
+    {% endif %}
+{% endfor %}
+{% if latest_project or latest_post %}
+<div class="teasers">
+    {% if latest_project %}
+    <a class="teaser" href="{% if latest_project.externalLink %}{{ latest_project.externalLink }}{% else %}{{ latest_project.url }}{% endif %}">
+        <div class="cap">LATEST PROJECT</div>
+        <div class="t">{{ latest_project.title }}</div>
+        <div class="more">→ ver proyecto</div>
+    </a>
+    {% endif %}
+
+    {% if latest_post %}
+    <a class="teaser" href="{{ latest_post.url }}">
+        <div class="cap">LATEST POST</div>
+        <div class="t">{{ latest_post.title }}</div>
+        <div class="more">→ ver post</div>
+    </a>
+    {% endif %}
+</div>
+{% endif %}

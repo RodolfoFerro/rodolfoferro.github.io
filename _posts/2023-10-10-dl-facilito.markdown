@@ -24,6 +24,9 @@ Los bootcamps de Introducción y Avanzado de Ciencia de Datos en Código Facilit
 
 Para las sesiones sólo se necesitan conocimientos básicos sobre programación en Python. Parte de los objetivos es que posterior al taller se cuente con material y conocimientos para poder extender y profundizar en el tema. Para el taller se proporciona código base y se utilizará Google Colab.
 
+<!-- Borrador agregado — verifica antes de publicar -->
+El hilo conductor de las 4 sesiones va de lo más simple a lo más complejo: primero el perceptrón (una sola neurona) y cómo aprende ajustando sus pesos, luego cómo apilar neuronas en capas y entrenarlas con TensorFlow, después redes convolucionales (para trabajar con imágenes, aprovechando su estructura espacial) y cerramos con autoencoders (redes que aprenden a comprimir y reconstruir su propia entrada, útiles para reducción de dimensionalidad y detección de anomalías).
+
 > El repositorio oficial con los contenidos: https://github.com/RodolfoFerro/dl-facilito-g2
 
 

@@ -19,6 +19,9 @@ Post de la charla "Cómo simular datos válidos a partir de una muestra (con dat
 Repositorio de la charla: [https://github.com/RodolfoFerro/PokeGO](https://github.com/RodolfoFerro/PokeGO).
 ¡Para más detalle de la charla, revisa los slides!
 
+<!-- Borrador agregado — verifica detalles del evento antes de publicar -->
+La pregunta que motivó la charla fue: si solo tengo una muestra de datos (y no la población completa), ¿cómo genero datos sintéticos adicionales que se comporten de manera consistente con lo que ya observé? La respuesta que exploramos fue el remuestreo: usar la distribución empírica de la muestra original para simular nuevas observaciones "válidas", en vez de asumir de entrada una distribución teórica. Usamos datos de avistamientos de Pokémon GO como ejemplo porque eran datos públicos, geolocalizados y con categorías (especies) fáciles de visualizar.
+
 * **Slides de la charla:**
   <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQk1fSWHdXWas1TyJ_7W8avuLwF4hiyREK4xewGMeEP6A0DvEqgxddc2e8FQu08SQ7FBuLPsMadNHqY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="350" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 

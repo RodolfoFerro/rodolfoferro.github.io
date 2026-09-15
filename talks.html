@@ -1,0 +1,18 @@
+---
+layout: page
+title: Talks
+---
+<h1 class="title">Talks</h1>
+<p class="lede">man ./talks — pláticas, talleres y cursos.</p>
+
+<div class="rows">
+    {% for post in site.posts %}
+        {% if post.category == 'course' or post.category == 'talk' %}
+            {% unless post.hidden %}
+                {% assign badge = "COURSE" %}
+                {% if post.category == "talk" %}{% assign badge = "TALK" %}{% endif %}
+                {% include blog-post.html badge=badge %}
+            {% endunless %}
+        {% endif %}
+    {% endfor %}
+</div>

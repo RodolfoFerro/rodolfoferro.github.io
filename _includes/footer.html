@@ -1,13 +1,16 @@
-<footer class="footer-main">
-    {{ site.title }} © {{ site.time | date: '%Y' }}
+<footer class="site-footer">
+    <div class="status-strip">
+        {% if site.status %}<span><span class="dot">●</span> <b>STATUS:</b> {{ site.status }}</span>{% endif %}
+        {% if site.location %}<span><b>LOC:</b> {{ site.location }}</span>{% endif %}
+        {% if site.timezone %}<span><b>TZ:</b> {{ site.timezone }}</span>{% endif %}
+        <span><b>BUILD:</b> jekyll</span>
+    </div>
 
-    <a class="link" href="{{ site.url }}/feed.xml" target="_blank" alt="anchor link to rss feed" aria-label="anchor link to rss feed">
-        <i class="fa-solid fa-rss"></i>
-    </a>
+    <div class="footer-main">
+        <span class="copyright">{{ site.title }} © {{ site.time | date: '%Y' }}</span>
 
-    <p class="extra">
-        <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a>
-        by
-        <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>
-    </p>
+        <a class="link" href="/feed.xml" target="_blank" alt="anchor link to rss feed" aria-label="anchor link to rss feed">
+            <i class="fa-solid fa-rss"></i>
+        </a>
+    </div>
 </footer>

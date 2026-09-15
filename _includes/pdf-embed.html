@@ -1,0 +1,7 @@
+<div class="pdf-embed">
+    <div class="pdf-embed-bar">
+        <span class="pdf-embed-name">{{ include.name | default: "slides.pdf" }}</span>
+        <a class="pdf-embed-link" href="{{ include.src }}" target="_blank" rel="noopener">↗ abrir en pestaña nueva</a>
+    </div>
+    <iframe class="pdf-embed-frame" src="{{ include.src }}" loading="lazy" title="{{ include.name | default: 'PDF embebido' }}"></iframe>
+</div>

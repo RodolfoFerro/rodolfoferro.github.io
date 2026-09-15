@@ -16,6 +16,9 @@ description: Introducción a Streamlit (Bootcamp de Ciencia de Datos en Código 
 
 El Bootcamp sobre Ciencia de Datos en Código Facilito incorpora una sesión de introducción a Streamlit para la realización de dashboards.
 
+<!-- Borrador agregado — verifica antes de publicar -->
+Streamlit convierte un script de Python normal en una app web interactiva sin necesidad de escribir HTML, CSS o JavaScript: defines widgets (sliders, selects, uploaders) y gráficas con unas cuantas líneas, y Streamlit se encarga de renderizarlos y de volver a correr el script cada vez que el usuario interactúa. En la sesión armamos un dashboard funcional partiendo de un dataset real.
+
 Para la sesión sólo se necesitan conocimientos básicos sobre programación en Python. Parte de los objetivos es que posterior al taller se cuente con material y conocimientos para poder extender y practicar a través de ejercicios. Para el taller se proporciona código base y se utilizará Visual Studio Code y tu navegador de preferencia.
 
 

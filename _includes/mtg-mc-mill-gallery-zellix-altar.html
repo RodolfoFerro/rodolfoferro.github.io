@@ -18,7 +18,7 @@
 
                 <!-- Altar of the Brood -->
                 <div class="tilt-box">
-                    <img src="https://gatherer-static.wizards.com/Cards/medium/7D0C3ACE463DCADD71AC41CD241AE8CFD32B4F7D0E2949BFB63020E0C4AAE716.webp" class="d-block w-100" alt="Altar of the Brood">
+                    <img src="https://gatherer-static.wizards.com/Cards/medium/7D0C3ACE463DCADD71AC41CD241AE8CFD32B4F7D0E2949BFB63020E0C4AAE716.webp" class="d-block w-100" draggable="false" alt="Altar of the Brood">
                 </div>
 
             </div>
@@ -39,7 +39,7 @@
 
                 <!-- Zellix, Sanity Flayer -->
                 <div class="tilt-box">
-                    <img src="https://gatherer-static.wizards.com/Cards/medium/489070BB0D721A090FEAFDE8EA23A27609BDBE1335FECB6C3F1BAAEB19C1A28A.webp" class="d-block w-100" alt="Zellix, Sanity Flayer">
+                    <img src="https://gatherer-static.wizards.com/Cards/medium/489070BB0D721A090FEAFDE8EA23A27609BDBE1335FECB6C3F1BAAEB19C1A28A.webp" class="d-block w-100" draggable="false" alt="Zellix, Sanity Flayer">
                 </div>
 
             </div>
@@ -47,19 +47,6 @@
     </div>
 </div>
 
-<style>
-    {% if site.dark-theme == "auto" %}
-        {% capture scss_sheet %}
-            {% include style.scss %}
-            @media (prefers-color-scheme: dark) {
-                {% include style-dark.scss %}
-            }
-        {% endcapture %}
-    {% elsif site.dark-theme %}
-        {% capture scss_sheet %}{% include style-dark.scss %}{% endcapture %}
-    {% else %}
-        {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
-    {% endif %}
-
-    {{ scss_sheet | scssify }}
-</style>
+<!-- loaded again here (not just where the post links it) so it always
+     cascades after bootstrap.min.css above, regardless of include order -->
+<link rel="stylesheet" href="/assets/css/mtg-mc-mill-gallery.css">

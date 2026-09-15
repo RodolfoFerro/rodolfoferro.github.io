@@ -1,0 +1,26 @@
+---
+title: "Trabajando con Notebooks, datos y Python"
+layout: post
+date: 2025-06-16 00:00
+published: true
+image:
+headerImage: false
+tag:
+- Python
+- Jupyter
+- Data
+category: talk
+hidden: false # don't count this post in blog pagination
+externalLink: false
+author: rodferro
+description: "Charla para Python FEST 2025 (Código Facilito) sobre trabajar con notebooks, datos y Python."
+# TODO: verificar fecha exacta de la charla
+---
+
+Charla para **Python FEST 2025**, organizado por Código Facilito: **"Trabajando con Notebooks, datos y Python"**.
+
+Puedes ver la presentación en vivo dando [click aquí](https://rodolfoferro.xyz/python-fest-2025/) o puedes consultarla en directo a continuación.
+
+<iframe src="https://rodolfoferro.xyz/python-fest-2025/" width="100%" height="500px" frameborder="0"></iframe>
+
+Repositorio: [github.com/RodolfoFerro/python-fest-2025](https://github.com/RodolfoFerro/python-fest-2025)

@@ -1,46 +1,60 @@
-.nav,
-.nav-home
-    > .list
-        list-style: none
-        margin: 0
-        padding: 0 13px 0
+.site-nav
+    display: flex
+    gap: 4px
+    flex-wrap: wrap
+    margin-left: auto
 
-        > .item
-            display: inline-block
+    > .idx-link
+        font-family: $fontMonospace
+        font-size: 1.3rem
+        text-decoration: none !important
+        color: var(--text-dim)
+        padding: 6px 10px
+        border: 1px solid transparent
+        border-radius: 3px
+        letter-spacing: 0.02em
+        transition: color .12s ease, border-color .12s ease, background .12s ease
 
-        > .item > .link
-            display: inline-block
-            font-weight: $thin-font
-            font-size: 1.4rem
-            padding: 20px 10px
-            text-decoration: none
+        > .box
+            color: var(--text-faint)
 
-.nav
-    position: absolute
-    right: 0
-    top: 0
+        &:hover,
+        &:focus-visible
+            color: var(--text)
+            border-color: var(--rule)
 
-    > .list
-        padding: 0 13px 0
+        &:focus-visible
+            outline: 2px solid var(--signal)
+            outline-offset: 1px
 
-        > .item > .link
-            font-size: 1.4rem
-            padding: 20px 10px
+        &[aria-current="page"]
+            color: var(--text)
+            border-color: var(--rule)
+            background: var(--bg-inset)
 
-.nav-home
-    margin-top: 40px
-    text-align: center
+            > .box
+                color: var(--signal)
 
-    > .list
-        padding: 0
+@media #{$below}
+    .site-nav
+        display: none
+        order: 5
+        flex-basis: 100%
+        flex-direction: column
+        gap: 0
+        margin-left: 0
+        margin-top: 4px
+        border-top: 1px solid var(--rule)
 
-        > .item > .link
-            font-size: 2rem
-            padding: 7px 15px
-            margin: 0
-            border-radius: 4%
-            transition: all .4s ease-in-out
-            width: 70px
+        &.open
+            display: flex
 
-            &:hover
-                color: $alpha
+        > .idx-link
+            width: 100%
+            border-radius: 0
+            border: none
+            border-bottom: 1px solid var(--rule)
+            padding: 13px 4px
+
+            &[aria-current="page"]
+                background: none

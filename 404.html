@@ -1,14 +1,30 @@
 ---
 layout: default
-permalink: /404.html 
+permalink: /404.html
+title: "404"
 ---
 
-<section class="lost-container">
-  <h1>Uh oh!</h1>
-  <div class="link">
-    <img class="selfie" alt="{{ site.title }}" src="{{ site.url }}/assets/images/error.gif" />
-  </div>
-  <br />
-  <br />
-  <a href="/">Take me home!</a>
+<section class="crash">
+    <div class="crash-inner">
+        <div class="crash-code">0x00000194 — PAGE_FAULT</div>
+
+        <h1 class="crash-glitch" data-text="404">404</h1>
+
+        <p class="crash-msg">la página que buscas no existe (o fue movida).</p>
+
+        <div class="term-panel crash-term">
+            <div class="l1">$ cd <span id="crashPath">{{ page.url }}</span></div>
+            <div class="l2">bash: cd: No such file or directory</div>
+            <div class="l2">$ <span class="crash-cursor">_</span></div>
+        </div>
+
+        <a class="crash-home" href="/">→ cd ~</a>
+    </div>
 </section>
+
+<script>
+    (function(){
+        var el = document.getElementById('crashPath');
+        if (el && location.pathname) { el.textContent = location.pathname; }
+    })();
+</script>

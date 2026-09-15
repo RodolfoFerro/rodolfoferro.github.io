@@ -22,6 +22,9 @@ description: Twitterbot en 30 minutos - PythonDayMX
 
 El pasado 10 de junio se realizó el PythonDayMX 2017 en el TelmexHub de la Ciudad de México, donde tuve la oportunidad de ser tallerista. En dicho taller compartí cómo crear un Twitterbot en 30 minutos, así que con gusto te comparto la transmisión del taller.
 
+<!-- Borrador agregado — verifica detalles del evento antes de publicar -->
+La idea del taller era desmitificar qué hay detrás de una cuenta automatizada en Twitter: un bot no es más que un programa que usa las credenciales de una cuenta para leer y publicar a través de la API de Twitter. Con Tweepy (el cliente de Python para esa API) armamos, paso a paso, un bot capaz de autenticarse, escuchar menciones o palabras clave y responder o publicar contenido de forma automática — todo en los 30 minutos del taller.
+
 El repositorio del taller se encuentra en el siguiente enlace: [https://github.com/RodolfoFerro/Twitterbot_en_30](https://github.com/RodolfoFerro/Twitterbot_en_30)
 
 Cualquier cosa, te leo en los comentarios.

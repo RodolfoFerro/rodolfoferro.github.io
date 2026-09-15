@@ -7,10 +7,9 @@ image: "https://pbs.twimg.com/media/C9SbRNyWAAAHpAj.jpg"
 headerImage: false
 tag:
 - Python
-- Mayavi
-- 3D
-- Mandelbrot set
-- Fractals
+- Optimization
+- Numerical methods
+- Simplex method
 category: blog
 author: rodferro
 description: Nelder-Mead Method.

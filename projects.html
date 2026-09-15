@@ -2,17 +2,26 @@
 layout: page
 title: Projects
 ---
-<section class="list">
+<h1 class="title">Projects</h1>
+<p class="lede">ls -la ./projects --sort=-date</p>
+
+<div class="grid">
     {% for post in site.posts %}
         {% if post.projects %}
             {% if post.hidden != true %}
-                <div class="item {% if post.star %}star{% endif %}">
-                    <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                        <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                        <h3 class="title">{{ post.title }}</h3>
-                    </a>
-                </div>
+                <a class="card" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ post.url }}{% endif %}">
+                    <div class="cap">
+                        <span><time datetime="{{ post.date | date: '%d-%m-%Y' }}">{{ post.date | date: "%Y-%m-%d" }}</time></span>
+                        {% if post.externalLink %}<span>↗ demo</span>{% endif %}
+                    </div>
+                    <div class="t">{{ post.title }}</div>
+                    {% if post.tag %}
+                    <div class="tags">
+                        {% for t in post.tag %}<span class="tag">{{ t }}</span>{% endfor %}
+                    </div>
+                    {% endif %}
+                </a>
             {% endif %}
         {% endif %}
     {% endfor %}
-</section>
+</div>

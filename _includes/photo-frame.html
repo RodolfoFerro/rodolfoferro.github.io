@@ -1,0 +1,3 @@
+<div class="photo-frame{% if include.size %} photo-frame--{{ include.size }}{% endif %}">
+    <img src="{% if site.external-image %}{{ site.picture }}{% else %}/{{ site.picture }}{% endif %}" alt="{{ site.title }}" />
+</div>

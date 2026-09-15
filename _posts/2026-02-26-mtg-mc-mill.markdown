@@ -16,8 +16,6 @@ category: blog
 author: rodferro
 ---
 
-<link rel="stylesheet" href="/assets/css/mtg-mc-mill-gallery.css">
-
 # Motivación
 
 Desde que juego [Commander en MTG](https://magic.wizards.com/en/formats/commander), llevo explorando varias estrategias de _milleo_ (o _"moler cartas"_, en español). Estas estrategias prácticamente nos llevan a buscar combos que nos permitan hacer que el oponente tire cartas desde el tope de su biblioteca directamente al cementerio, haciendo que pierda recursos importantes. La principal _win condition_ de esta estrategia consiste en _"millear"_ el deck completo, para que cuando sea turno de robo del oponente y no tenga qué robar, pierda directamente.

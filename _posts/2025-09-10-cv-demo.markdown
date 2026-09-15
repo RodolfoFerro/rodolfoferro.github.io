@@ -1,0 +1,43 @@
+---
+title: "Clasificador de figuras CAD y tickets con One-Shot Learning"
+subtitle: "cv-demo — clasificación de imágenes con one-shot learning y extracción de texto vía OCR."
+layout: post
+date: 2025-09-10 00:00
+published: true
+image:
+headerImage: false
+tag:
+- Python
+- Computer Vision
+- One-Shot Learning
+- OCR
+projects: true
+hidden: false # don't count this post in blog pagination
+description: "Sistema de clasificación de imágenes con one-shot learning (red siamesa) + OCR, expuesto como API."
+category: project
+author: rodferro
+externalLink: false
+---
+
+Sistema de clasificación de imágenes pensado para un caso muy concreto: dado un documento escaneado, distinguir automáticamente si es una **figura geométrica/CAD** (como un cilindro) o un **ticket de compra** — y si es un ticket, extraer el texto que contiene. La idea es que un mismo pipeline reciba cualquiera de los dos tipos de documento y decida, sin reentrenar nada, cómo procesarlo.
+
+<center>
+  <img src="https://raw.githubusercontent.com/RodolfoFerro/cv-demo/main/assets/samples.png" alt="Ejemplos de las dos clases: figura CAD (cilindro) y ticket" width="90%">
+</center>
+
+Para lograrlo sin necesitar miles de ejemplos por clase se usa **one-shot learning**: en vez de un clasificador tradicional, una red siamesa aprende a comparar pares de imágenes y decidir si pertenecen a la misma clase, entrenando con relativamente pocos ejemplos por categoría.
+
+<center>
+  <img src="https://raw.githubusercontent.com/RodolfoFerro/cv-demo/main/assets/overview.png" alt="Arquitectura del servicio web de cv-demo" width="90%">
+</center>
+
+**Pipeline:**
+
+1. Preprocesamiento con OpenCV (escala de grises, binarización de Otsu, transformaciones morfológicas, normalización a `[0, 1]`).
+2. Red siamesa entrenada para few-shot learning (pesos en `siamese.weights.h5`).
+3. Si la imagen es un ticket, se activa OCR con Pytesseract para extraer el texto.
+4. API con Flask/FastAPI: `/inference` para clasificación, `/inference-ocr` para clasificación + texto detectado.
+
+Datos de entrenamiento tomados de datasets públicos de Kaggle ("3D Geometric Objects in 2D plane" y "Find it again!").
+
+Repositorio: [github.com/RodolfoFerro/cv-demo](https://github.com/RodolfoFerro/cv-demo)

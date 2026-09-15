@@ -24,6 +24,9 @@ description: My fractal Twitter bot.
 
 I really like to try integrating different technologies, so I gave myself the task of trying to build a Twitter bot using Tweepy. The result: I built a bot that everyday at 11:00 UTC (6:00 in Mexico) it generates a random complex number, then it iterates it in a function in order to generate a Julia set, and finally the bot Tweets the fractal generated. You can check it out at <a href="https://twitter.com/JuliaSetBot" target="_blank">@JuliaSetBot</a>.
 
+<!-- Draft addition — please verify/adjust before treating as final -->
+A Julia set comes from iterating a simple complex function, usually f(z) = z^2 + c, over a grid of complex numbers z, for a fixed constant c. Depending on whether each point "escapes" to infinity or stays bounded after many iterations, you color it accordingly — and that's what produces the fractal pattern. Different values of c give wildly different shapes, which is why picking a random c every day keeps the bot's output interesting.
+
 An example of what it does is embed here:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Random complex: 0.147 +0.87i <br>Iterations: 50<br>Fractal generated on: Mon Dec 18 23:08:34 2017 UTC. <a href="https://t.co/BPRwrp1oBO">pic.twitter.com/BPRwrp1oBO</a></p>&mdash; Julia Sets (@JuliaSetBot) <a href="https://twitter.com/JuliaSetBot/status/942894390900674561?ref_src=twsrc%5Etfw">December 18, 2017</a></blockquote>

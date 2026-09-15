@@ -17,6 +17,42 @@
 
 
 /* ======================================================
+   Undo Bootstrap's reboot leaking into the rest of the post
+   (bootstrap.min.css loads after the site's own stylesheet, so its
+   body/link resets otherwise win and force a light-mode look site-wide)
+   ====================================================== */
+body {
+  font: 16px "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+body a:not(.sim-container a) {
+  color: var(--signal);
+}
+
+/* Bootstrap's reboot sets `:root { color-scheme: light }` unconditionally,
+   which forces browser-native form control chrome (spinners, focus rings)
+   to light regardless of our theme. Restore it to track our theme. */
+:root {
+  color-scheme: light dark;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+.tilt-box-wrap,
+.tilt-box,
+.t_over {
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ======================================================
    Wrapper
    ====================================================== */
 
@@ -24,7 +60,7 @@
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   padding: 4rem 1rem;
-  background-color: #ffffff;
+  background-color: var(--bg, #ffffff);
 }
 
 .sim-container {
@@ -35,9 +71,10 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  border: 1px solid var(--rule, rgba(15, 23, 42, 0.08));
   border-radius: 0.75rem;
-  background-color: #ffffff;
+  background-color: var(--bg-raised, #ffffff);
+  color: var(--text, inherit);
   box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
@@ -92,14 +129,14 @@
 }
 
 .sim-btn-outline {
-  border: 1px solid var(--sim-slate-700);
-  color: var(--sim-slate-700);
-  background-color: var(--sim-slate-100);
+  border: 1px solid var(--text-dim, var(--sim-slate-700));
+  color: var(--text-dim, var(--sim-slate-700));
+  background-color: var(--bg-inset, var(--sim-slate-100));
 }
 
 .sim-btn-outline:hover {
-  background-color: #d8dde1;
-  color: #000;
+  background-color: var(--rule, #d8dde1);
+  color: var(--text, #000);
 }
 
 /* ======================================================
@@ -159,6 +196,12 @@
   height: 100%;
   object-fit: cover;
   border-radius: 7px;
+  /* clicking/pressing on a draggable <img> makes Chrome paint a white
+     drag-preview backdrop behind its containing .row — same family of
+     bug as the calculator's autofill highlight, different trigger */
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
 }
 
 /* --- Zonas hover invisibles --- */

@@ -15,7 +15,6 @@ category: blog
 author: rodferro
 ---
 
-<link rel="stylesheet" href="/assets/css/mtg-calculator.css">
 {% include mtg-land-calculator.html %}
 
 # Me quedo... ¿O no? (Introducción)

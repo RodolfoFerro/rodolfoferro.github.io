@@ -1,0 +1,201 @@
+// shared page-head, used by home/blog/projects/talks/about
+.title
+    font-size: clamp(3.2rem, 6vw, 5.1rem)
+    font-weight: 600
+    letter-spacing: -0.01em
+    text-transform: uppercase
+    line-height: 1.05
+    margin: 10px 0 4px
+
+.lede
+    color: var(--text-dim)
+    font-size: 1.5rem
+    max-width: 62ch
+    margin: 0 0 30px
+
+// ---- home ----
+.hero-grid
+    display: grid
+    grid-template-columns: 300px minmax(0, 1fr)
+    gap: 26px
+    align-items: start
+    margin-bottom: 30px
+
+    @media #{$below}
+        grid-template-columns: 1fr
+
+
+.status-panel
+    border: 1px solid var(--rule)
+    background: var(--bg-raised)
+    border-radius: 4px
+    padding: 18px 20px
+    margin-bottom: 26px
+
+.status-row
+    display: flex
+    gap: 10px
+    padding: 5px 0
+    font-size: 1.4rem
+
+    > .box
+        color: var(--signal)
+        flex-shrink: 0
+
+    > .dim
+        color: var(--text-dim)
+
+.teasers
+    display: grid
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    gap: 14px
+    margin-top: 30px
+
+    @media #{$mobile}
+        grid-template-columns: 1fr
+
+.teaser
+    min-width: 0
+    border: 1px solid var(--rule)
+    border-radius: 4px
+    padding: 16px 18px
+    text-decoration: none !important
+    display: block
+    color: inherit
+    transition: border-color .12s ease, background .12s ease
+
+    &:hover,
+    &:focus-visible
+        border-color: var(--text-dim)
+        background: var(--bg-inset)
+
+    .cap
+        font-size: 1.05rem
+        letter-spacing: 0.1em
+        color: var(--text-faint)
+
+    .t
+        font-size: 1.5rem
+        margin-top: 6px
+
+    .more
+        font-size: 1.1rem
+        color: var(--signal)
+        margin-top: 10px
+        text-decoration: underline
+
+// ---- blog / talks rows ----
+// NOTE: ".row" and ".card" below are scoped to their own wrapper
+// (".rows > .row", ".grid > .card") on purpose — both class names are
+// also Bootstrap grid/component classes, and the MTG posts embed
+// Bootstrap widgets on the same page. An unscoped ".row" or ".card"
+// here previously leaked this site's hover/background styling onto
+// Bootstrap's unrelated .row/.card elements inside those widgets.
+.rows
+    border-top: 1px solid var(--rule)
+
+    > .row
+        display: grid
+        grid-template-columns: 100px minmax(0, 1fr)
+        gap: 4px 16px
+        align-items: baseline
+        padding: 14px 8px
+        margin: 0 -8px
+        text-decoration: none !important
+        color: inherit
+        border-bottom: 1px solid var(--rule)
+        transition: background .1s ease, color .1s ease
+
+        &:hover,
+        &:focus-visible
+            background: var(--signal)
+            color: var(--on-signal)
+
+            .row-date,
+            .tag,
+            .tag--badge
+                color: inherit
+                border-color: currentColor
+
+        .row-date,
+        .tag
+            transition: border-color .1s ease, color .1s ease
+
+.row-date
+    color: var(--text-dim)
+    font-size: 1.25rem
+    font-variant-numeric: tabular-nums
+
+.row-title
+    font-size: 1.5rem
+
+.row-tags
+    grid-column: 2
+    display: flex
+    gap: 6px
+    flex-wrap: wrap
+    margin-top: 6px
+
+.tag
+    font-size: 1.1rem
+    color: var(--text-faint)
+    border: 1px solid var(--rule)
+    border-radius: 2px
+    padding: 1px 6px
+
+.tag--badge
+    color: var(--text)
+    border-color: var(--text-faint)
+    text-transform: uppercase
+    letter-spacing: 0.04em
+
+@media #{$mobile}
+    .rows > .row
+        grid-template-columns: 1fr
+
+    .row-tags
+        grid-column: 1
+
+// ---- projects grid ----
+.grid
+    display: grid
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    gap: 16px
+
+    @media #{$mobile}
+        grid-template-columns: 1fr
+
+    > .card
+        position: relative
+        border: 1px solid var(--rule)
+        border-radius: 2px
+        padding: 20px
+        text-decoration: none !important
+        display: block
+        color: inherit
+        background: var(--bg-raised)
+        transition: border-color .12s ease
+        @extend %corner-marks
+
+        .cap
+            font-size: 1.1rem
+            letter-spacing: 0.08em
+            color: var(--text-faint)
+            display: flex
+            justify-content: space-between
+
+        .t
+            font-size: 1.7rem
+            margin: 12px 0 8px
+            line-height: 1.3
+
+        .tags
+            display: flex
+            gap: 6px
+            flex-wrap: wrap
+            margin-top: 10px
+
+        .ext
+            margin-top: 12px
+            font-size: 1.1rem
+            color: var(--text-dim)

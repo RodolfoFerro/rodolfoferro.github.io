@@ -1,0 +1,61 @@
+// monochrome design tokens (light default; dark redefines below)
+:root {
+  --bg: #F4F4F5;
+  --bg-raised: #FFFFFF;
+  --bg-inset: #E7E7EA;
+  --text: #101012;
+  --text-dim: #6A6A70;
+  --text-faint: #A6A6AC;
+  --rule: #D9D9DC;
+  --signal: #000000;
+  --on-signal: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0A0A0B;
+    --bg-raised: #131316;
+    --bg-inset: #1C1C1F;
+    --text: #EDEDEF;
+    --text-dim: #8B8B92;
+    --text-faint: #4C4C52;
+    --rule: #28282C;
+    --signal: #FFFFFF;
+    --on-signal: #0A0A0B;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0A0A0B;
+  --bg-raised: #131316;
+  --bg-inset: #1C1C1F;
+  --text: #EDEDEF;
+  --text-dim: #8B8B92;
+  --text-faint: #4C4C52;
+  --rule: #28282C;
+  --signal: #FFFFFF;
+  --on-signal: #0A0A0B;
+}
+
+// legacy component files (author, disqus, footer, header, nav, others,
+// related, share, side-by-side, social-links, spoiler, pages/*) are still
+// written against these Sass variables — point them at the tokens above
+// instead of rewriting every component.
+$fontSans: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+$fontMonospace: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+$alpha: var(--text);
+$beta: var(--text);
+$gama: var(--text-faint);
+$delta: var(--signal);
+$epsilon: var(--rule);
+$omega: var(--bg);
+$zeta: var(--text);
+$kappa: var(--bg-inset);
+
+$thin-font: 400;
+
+$mobile: "only screen and (max-width: 400px)";
+$tablet: "only screen and (min-width: 400px) and (max-width: 1050px)";
+$above: "only screen and (min-width: 780px)";
+$below: "only screen and (max-width: 780px)";

@@ -1,0 +1,39 @@
+---
+title: "Detector de parpadeo y somnolencia en tiempo real"
+subtitle: "eye-blink — landmarks faciales con dlib y OpenCV para detectar cuándo cierras los ojos."
+layout: post
+date: 2024-02-08 00:00
+published: true
+image:
+headerImage: false
+tag:
+- Python
+- Computer Vision
+- OpenCV
+- dlib
+projects: true
+hidden: false # don't count this post in blog pagination
+description: "Detector de parpadeos y somnolencia en tiempo real usando landmarks faciales."
+category: project
+author: rodferro
+externalLink: false
+---
+
+Detector de parpadeos en tiempo real: usa `dlib` para ubicar los landmarks faciales (los puntos de referencia alrededor de los ojos) y OpenCV para procesar el video de la cámara, calculando qué tan abiertos o cerrados están los ojos cuadro a cuadro. Sirve como base para detectar estados de somnolencia o nivel de atención.
+
+<center>
+  <img src="https://raw.githubusercontent.com/RodolfoFerro/eye-blink/main/assets/demo.png" alt="Detección de somnolencia en tiempo real" width="90%">
+</center>
+
+**Uso:**
+
+```bash
+git clone https://github.com/RodolfoFerro/eye-blink.git
+cd eye-blink
+pip install -r requirements.txt
+python main.py
+```
+
+Los parámetros de detección son ajustables desde `tools/config.py`.
+
+Repositorio: [github.com/RodolfoFerro/eye-blink](https://github.com/RodolfoFerro/eye-blink)

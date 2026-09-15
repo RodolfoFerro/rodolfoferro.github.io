@@ -1,0 +1,26 @@
+---
+title: "Reconocimiento de expresiones faciales en el navegador"
+subtitle: "face-demo — FER 100% client-side con TensorFlow.js, sin backend."
+layout: post
+date: 2023-08-24 00:00
+published: true
+image:
+headerImage: false
+tag:
+- JavaScript
+- TensorFlow.js
+- Computer Vision
+- Facial Expression Recognition
+projects: true
+hidden: false # don't count this post in blog pagination
+description: "Demo de reconocimiento de expresiones faciales (FER) corriendo completamente en el navegador con TensorFlow.js."
+category: project
+author: rodferro
+externalLink: https://rodolfoferro.xyz/face-demo/
+---
+
+Demo de reconocimiento de expresiones faciales que corre **completamente en el navegador**, sin backend: el modelo se carga y corre con TensorFlow.js directamente sobre el feed de tu cámara.
+
+Pruébalo en vivo: [rodolfoferro.xyz/face-demo](https://rodolfoferro.xyz/face-demo/)
+
+Repositorio: [github.com/RodolfoFerro/face-demo](https://github.com/RodolfoFerro/face-demo)

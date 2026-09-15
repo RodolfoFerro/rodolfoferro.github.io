@@ -25,6 +25,9 @@ El foro busca compartir sobre temas tecnológicos de actualidad y cómo aprovech
 Para la sesión, NO se necesitan conocimientos básicos sobre ningún tipo, sólo un contexto general del panorama sobre IA es suficiente. El taller puede seguirse de mejor manera con un dispositivo con conexión a internet (preferentemente tablet o computadora) para poder replicar los ejercicios. Parte de los objetivos es que posterior al taller se cuente con material y conocimientos para poder replicar y practicar lo aprendido.
 
 
+<!-- Borrador agregado — verifica antes de publicar -->
+La primera sesión (ml4good) revisa casos reales donde el machine learning se usa para atacar problemas sociales y ambientales — salud, agricultura, conservación — en vez de solo optimizar métricas de negocio. La segunda es un taller práctico de modelos generativos de imágenes: cómo funcionan a grandes rasgos (difusión, generación condicionada por texto) y cómo usarlos para generar tus propias imágenes con IA.
+
 ## 👾 ml 4 good - Casos de estudio sobre IA en diferentes sectores
 
 Puedes revisar los slides dando [click aquí](https://docs.google.com/presentation/d/e/2PACX-1vQsHkJ1Oa2lwbbybYevYF5InJjoCRJuYN-WWTl5XpU-vzQ96LDQAJhewfvmG-WnY98n4WxTz246nbRb/pub?start=false&loop=false&delayms=3000) o puedes consultarlos en directo a continuación.

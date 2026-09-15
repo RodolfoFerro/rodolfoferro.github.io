@@ -1,5 +1,4 @@
 .post
-    margin-top: 125px
 
     > .title
         text-align: center
@@ -40,6 +39,19 @@
 
         a
             text-decoration: none
+
+    // anchor-link pilcrows from notebook exports (nbconvert): hide until
+    // the heading is hovered, like GitHub does
+    h1, h2, h3, h4
+        .anchor-link
+            color: var(--text-faint)
+            text-decoration: none !important
+            opacity: 0
+            margin-left: 8px
+            transition: opacity .12s ease
+
+        &:hover .anchor-link
+            opacity: 1
 
     > .title-image
         max-height: 120px

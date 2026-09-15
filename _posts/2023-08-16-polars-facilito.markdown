@@ -16,6 +16,9 @@ description: Introducción a Polars (Bootcamp de Ciencia de Datos en Código Fac
 
 El Bootcamp sobre Ciencia de Datos en Código Facilito incorpora una sesión de introducción a Polars.
 
+<!-- Borrador agregado — verifica antes de publicar -->
+Polars es una librería de DataFrames para Python (con motor en Rust) pensada para ser mucho más rápida que pandas en datasets grandes, gracias a evaluación perezosa (lazy) y paralelización automática. En la sesión vemos su sintaxis básica, la diferencia entre modo eager y lazy, y en qué casos conviene migrar de pandas a Polars.
+
 Para la sesión sólo se necesitan conocimientos básicos sobre programación en Python. Parte de los objetivos es que posterior al taller se cuente con material y conocimientos para poder extender y practicar a través de ejercicios. Para el taller se proporciona código base y se utilizará Google Colab.
 
 

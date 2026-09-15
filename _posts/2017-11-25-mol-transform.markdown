@@ -20,6 +20,9 @@ externalLink: false
 Molecular transformations for graphic displaying using Cartesian coordinates.<br>
 Repository: [https://github.com/RodolfoFerro/mol_transform](https://github.com/RodolfoFerro/mol_transform)
 
+<!-- Borrador agregado — verifica antes de publicar -->
+Molecule coordinate files (`.xyz`) don't always come centered or scaled the way you need them for a specific visualization or downstream calculation. `mol_transform` is a small command-line tool that takes a `.xyz` file and re-centers, translates or scales the atomic positions, writing the result to a new file — useful as a quick preprocessing step before plotting or feeding the structure into another tool.
+
 ## How to use it
 
 #### Generalities:

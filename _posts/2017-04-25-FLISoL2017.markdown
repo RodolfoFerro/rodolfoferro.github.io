@@ -16,7 +16,7 @@ description: Primeros pasos con Python
 
 > **Author:** Rodolfo Ferro Pérez <br/>
 > **Email:** [ferro@cimat.mx](mailto:ferro@cimat.mx) <br/>
-> **Twitter:** [@FerroRodolfo](http://twitter.com/FerroRodolfo) <br/>
+> **Twitter:** [@rodo_ferro](https://twitter.com/rodo_ferro) <br/>
 
 ## About 🕹
 

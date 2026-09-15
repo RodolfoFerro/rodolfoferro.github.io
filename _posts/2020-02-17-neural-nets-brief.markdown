@@ -20,18 +20,18 @@ description: "Una breve infografía sobre las redes neuronales artificiales."
     list-style: none;
   }  
   li {
-    position: 'absolute';
+    position: relative;
     padding-left: 15px;
     line-height: 16px;
   }
   li.cyclone:before {
     content: '🌀';
-    position: 'relative';
+    position: relative;
     margin-left: -25px;
   }
   li.star:before {
     content: '⭐️';
-    position: 'relative';
+    position: relative;
     margin-left: -25px;
   }
 </style>

@@ -14,6 +14,51 @@
 
 
 /* ======================================================
+   Undo Bootstrap's reboot leaking into the rest of the post
+   (bootstrap.min.css loads after the site's own stylesheet, so its
+   body/link resets otherwise win and force a light-mode look site-wide)
+   ====================================================== */
+body {
+  font: 16px "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+body a:not(.mtg-calculator a) {
+  color: var(--signal);
+}
+
+/* Bootstrap's reboot sets `:root { color-scheme: light }` unconditionally,
+   which can't be scoped to .mtg-calculator (it's the root element) — that
+   forces browser-native form control chrome (number input spinners, focus
+   rings) to light regardless of our theme. Restore it to track our theme. */
+:root {
+  color-scheme: light dark;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+.mtg-calculator .form-control,
+.mtg-calculator .form-control:hover,
+.mtg-calculator .form-control:focus {
+  background-color: var(--bg-raised, #fff) !important;
+  color: var(--text, inherit) !important;
+}
+
+/* Chrome applies a white background to the nearest .row when a
+   number input inside it gains real focus (autofill/spellcheck
+   heuristic) — not reproducible via devtools, only a real click. */
+.mtg-calculator .row,
+.mtg-calculator [class*="col-"] {
+  background-color: transparent !important;
+}
+
+
+/* ======================================================
    Layout & isolation
    ====================================================== */
 .mtg-calculator-wrapper {
@@ -29,15 +74,23 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  border: 1px solid var(--rule, rgba(15, 23, 42, 0.08));
   border-radius: 0.75rem;
-  background-color: #ffffff;
+  background-color: var(--bg-raised, #ffffff);
+  color: var(--text, #0f172a);
   box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
 .mtg-calculator hr {
   margin-top: 0.75rem;
   margin-bottom: 1rem;
+  border-color: var(--rule, rgba(15, 23, 42, 0.15));
+}
+
+.mtg-calculator h2,
+.mtg-calculator h3,
+.mtg-calculator label {
+  color: var(--text, inherit);
 }
 
 @media (max-width: 768px) {
@@ -103,13 +156,13 @@
 }
 
 .mtg-calculator .btn-outline-secondary {
-  border-color: var(--tw-slate-700);
-  color: var(--tw-slate-700);
+  border-color: var(--text-dim, var(--tw-slate-700));
+  color: var(--text-dim, var(--tw-slate-700));
 }
 
 .mtg-calculator .btn-outline-secondary:hover {
-  background-color: var(--tw-slate-100);
-  color: #000;
+  background-color: var(--bg-inset, var(--tw-slate-100));
+  color: var(--text, #000);
 }
 
 
@@ -125,7 +178,9 @@
   font-weight: 300;
   font-size: 1.5rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--tw-slate-100);
+  border: 1px solid var(--rule, var(--tw-slate-100));
+  background-color: var(--bg-raised, #fff);
+  color: var(--text, inherit);
 }
 
 .mtg-calculator .form-control:focus {
@@ -152,6 +207,12 @@
   font-size: 1.5rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  color: var(--text, inherit);
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: var(--bg-inset, #f1f5f9);
+  --bs-table-striped-color: var(--text, inherit);
+  --bs-table-color: var(--text, inherit);
+  --bs-table-border-color: var(--rule, #dee2e6);
 }
 
 .mtg-calculator thead th {
@@ -161,7 +222,8 @@
 }
 
 .mtg-calculator tbody tr:hover {
-  background-color: #f8fafc;
+  background-color: var(--bg-inset, #f8fafc);
+  color: var(--text, inherit);
 }
 
 
@@ -169,8 +231,10 @@
    Accordion
    ====================================================== */
 .mtg-calculator .accordion-item {
-  border: 1px solid var(--tw-slate-100);
+  border: 1px solid var(--rule, var(--tw-slate-100));
   border-radius: 0.75rem;
+  background-color: var(--bg-raised, #fff);
+  color: var(--text, inherit);
 }
 
 .mtg-calculator .accordion-button {
@@ -178,14 +242,28 @@
   font-size: 1.5rem;
   line-height: 1.3;
   border-radius: 0.75rem;
+  background-color: var(--bg-raised, #fff);
+  color: var(--text, inherit);
 }
 
 .mtg-calculator .accordion-button:not(.collapsed) {
-  background-color: var(--tw-slate-100);
-  color: var(--tw-slate-900);
+  background-color: var(--bg-inset, var(--tw-slate-100));
+  color: var(--text, var(--tw-slate-900));
+  box-shadow: inset 0 -1px 0 var(--rule, transparent);
 }
 
 .mtg-calculator .accordion-body {
   font-size: 1.4rem;
   line-height: 1.6;
+  background-color: var(--bg-raised, #fff);
+  color: var(--text, inherit);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .mtg-calculator .accordion-button::after {
+    filter: invert(1);
+  }
+}
+:root[data-theme="dark"] .mtg-calculator .accordion-button::after {
+  filter: invert(1);
 }

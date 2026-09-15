@@ -20,6 +20,9 @@ description: Quantum Computing Workshop with IBM Q Composer and QISKit.
 
 I've recently attended to a quantum computing workshop at CDMX during last week (on June 18th-22nd, 2018), this workshop was organized by IBM México and ITESM with support from IBM and CONACYT.
 
+<!-- Borrador agregado — verifica antes de publicar -->
+The workshop covered the fundamentals of quantum computing: qubits and superposition (|x⟩ = α|0⟩ + β|1⟩), quantum gates and how to combine them into circuits, and how to run those circuits both on the simulator and on real hardware through the IBM Q Experience Composer and Qiskit. We closed by building Grover's algorithm (quantum search) for an AND function, which you can see running in one of the tweets below.
+
 I'll be updating the workshop info into a GitHub repo: https://github.com/RodolfoFerro/IBMQC18
 
 Here you have some tweets of the event:

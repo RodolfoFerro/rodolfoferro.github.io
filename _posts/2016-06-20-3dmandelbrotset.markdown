@@ -19,6 +19,9 @@ description: Ploteando el Conjunto de Mandelbrot en 3D.
 
 En este post se expone cómo se plotea el Conjunto de Mandelbrot en 3D usando Python (obviamente) y Mayavi.
 
+<!-- Borrador agregado — verifica antes de publicar -->
+El Conjunto de Mandelbrot se define iterando la función $z_{n+1} = z_n^2 + c$ para cada número complejo $c$ del plano, empezando en $z_0 = 0$: si la secuencia se mantiene acotada, $c$ pertenece al conjunto; si diverge, no. Normalmente se visualiza en 2D coloreando cada punto según qué tan rápido escapa, pero aquí usamos esa misma "velocidad de escape" como una tercera dimensión (altura), lo que convierte el fractal plano en una superficie.
+
 El código resulta ser bastante sencillo: sólo importamos las librerías que utilizaremos (numpy y mayavi), creamos nuestra función que itere sobre nuestro subconjunto del plano complejo, iteramos alguna función sobre dicho subconjunto y ploteamos el resultado obtenido.
 
 A continuación, se muestra el código utilizado:

@@ -1,67 +1,74 @@
-<p align="center">
-    <h2 align="center">Indigo Minimalist Jekyll Template - <a href="https://sergiokopplin.github.io/indigo/">Demo</a></h2>
-</p>
+# rodolfoferro.xyz
 
-<p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
-
-***
+Source for [rodolfoferro.xyz](https://rodolfoferro.xyz) — my personal site, blog and project index, built with Jekyll and styled after a monochrome, `hexdump`-style terminal aesthetic (IBM Plex Mono, bracket-style nav `[x] home`, live light/dark/auto theme toggle).
 
 <p align="center">
-    <b><a href="README.md#what-has-inside">What has inside</a></b>
-    |
-    <b><a href="README.md#setup">Setup</a></b>
-    |
-    <b><a href="README.md#settings">Settings</a></b>
-    |
-    <b><a href="README.md#how-to">How to</a></b>
+    <img src="assets/images/rodo_ferro.png" width="140" />
 </p>
 
-<p align="center">
-    Light and Dark themes.
-</p>
+## Stack
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png" />
-</p>
+- [Jekyll](https://jekyllrb.com/) on Ruby 3.4 (via the `github-pages` gem, so it builds the same way GitHub Pages builds it)
+- [Sass](https://sass-lang.com/) — a mix of legacy indented `.sass` (inherited component files) and `.scss` (design tokens, which need `.scss` syntax for the `:root[data-theme=...]` selectors)
+- [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) throughout
+- No JS framework — small vanilla-JS scripts for the theme toggle, the collapsible mobile nav, and the interactive terminal on the home page
+- [MathJax](https://www.mathjax.org/), [Disqus](https://disqus.com/) and related-posts/read-time are wired into the post layout, unrelated to the redesign
 
-## What has inside
+## Structure
 
-- [Jekyll](https://jekyllrb.com/), [Sass](https://sass-lang.com/) ~[RSCSS](https://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/);
-- Page Speed: [99~Desktop](https://pagespeed.web.dev/analysis/https-sergiokopplin-github-io-indigo/41axptm3as?utm_source=psi&utm_medium=redirect&form_factor=desktop);
+```
+_layouts/        default / page / post layouts
+_includes/       header, nav, footer, photo-frame, terminal, roles-checklist, etc.
+_sass/
+  base/           _variables.scss (design tokens), general, normalize, syntax
+  components/     header, nav, footer, terminal, photo-frame, others…
+  pages/          layout rules per page type (sections, page, post, error, tags)
+_posts/          blog posts, projects and talks/courses — disambiguated by front matter
+                  (category: blog | course | talk, projects: true)
+index.html        home (hero, terminal, roles checklist, latest post/project teasers)
+blog.html         blog index
+projects.html     projects grid
+talks.html        merged talks + courses index ([TALK] / [COURSE] badges)
+about.md          bio (EN/ES) + roles checklist
+resume.md         résumé page
+404.html          glitch-styled error page
+_config.yml       drives almost all content — bio, roles, social links, footer
+                   status strip, theme default, per-section toggles
+```
 
-## Setup
+## Theme system
 
-0. :star: to the project. :metal:
-1. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
-2. Edit `_config.yml` with your data
-3. Write some posts :bowtie:
+Colors are CSS custom properties defined in `_sass/base/_variables.scss` in three layers, so the visitor's OS setting and an explicit in-page choice both resolve correctly:
 
-To run locally do the following:
+1. Bare `:root` — light palette (default).
+2. `@media (prefers-color-scheme: dark)` scoped to `:root:not([data-theme="light"])` — dark palette when the OS prefers dark, unless the visitor explicitly chose light.
+3. `:root[data-theme="dark"]` — dark palette when the visitor explicitly chose dark, regardless of OS setting.
 
-1. Install [Jekyll](https://jekyllrb.com) and [Bundler](https://bundler.io/).
-2. Clone the forked repo on your machine
-3. Enter the cloned folder via terminal and run:
+`_config.yml`'s `dark-theme` (`true` / `false` / `"auto"`) sets the *initial* server-rendered state. The `[auto]/[light]/[dark]` button in the header cycles through and persists the visitor's choice in `localStorage`, overriding the initial state on load.
+
+## Content model
+
+- A post's `category` (`blog`, `course`, `talk`) and `projects: true` front matter decide where it shows up — no separate collections.
+- `talks.html` merges `category: talk` and `category: course` into one chronological list with a badge per entry.
+- `courses.html` is kept only as a redirect to `/talks/` so old links don't 404.
+
+## Running locally
+
 ```sh
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --port 4000
 ```
-4. Open it in your browser: [http://localhost:4000](http://localhost:4000)
 
-Or run with [docker](https://github.com/BretFisher/jekyll-serve).
+Open [http://localhost:4000](http://localhost:4000). Add `--watch` to auto-rebuild on file changes, or `--livereload` for browser auto-refresh.
 
-## Settings
+## Configuration
 
-You can customize your site on `_config.yml` file.
+Nearly everything content-wise lives in `_config.yml`: bio, the home roles checklist, social handles, the footer status strip (`status` / `location` / `timezone`), Disqus, and per-section toggles (`projects`, `talks`, `about`, `blog`, `read-time`, `show-tags`, `related`, …).
 
-## How To?
+## Deploy
 
-Check the [FAQ](./FAQ.md).
-
----
-## License
-
-[MIT](https://kopplin.mit-license.org/) License © Sérgio Kopplin
+This is a GitHub Pages user site (`RodolfoFerro/rodolfoferro.github.io`), served from `master` with a custom domain set via `CNAME` (`rodolfoferro.xyz`). GitHub Pages builds and deploys automatically on push — no CI step needed.
 
 ---
 
-[![Star History Chart](https://api.star-history.com/svg?repos=sergiokopplin/indigo&type=Date)](https://star-history.com/#sergiokopplin/indigo&Date)
+Originally based on the [Indigo](https://github.com/sergiokopplin/indigo) Jekyll theme by Sérgio Kopplin; the layout, styling and most templates have since been rewritten for this redesign.

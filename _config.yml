@@ -5,14 +5,26 @@ bio: "Let's build our future. 🚀"
 # twitter summary info
 description: "📊 Statistical Methods Specialist | 💻 Sr. SWE (Data Engineer) @ Bisonic | 👨🏻‍🏫 Data Science professor @ ENES León (UNAM) | 🧠 Data + AI + Blockchain"
 
+# shown as a checklist on the home hero
+roles:
+  - "Head of AI — Vira Doctores"
+  - "Profesor de IA — EdgeHub / ENES UNAM León"
+  - "Statistical Methods — CIMAT"
+
+# shown in the footer status strip
+status: "disponible para proyectos"
+location: "León, GTO, MX"
+timezone: "UTC-6"
+
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/rodolfoferro.jpg
+picture: assets/images/rodo_ferro.png
 
-# your site color theme, true for dark theme, 
-# false to light theme, auto to switch with system.
-dark-theme: false
+# your site color theme: true starts in dark, false starts in light,
+# "auto" follows the visitor's system. visitors can still override this
+# live with the [auto]/[light]/[dark] button (remembered via localStorage).
+dark-theme: "auto"
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -38,7 +50,7 @@ twitter: rodo_ferro
 instagram: rodo_ferro
 github: RodolfoFerro
 linkedin: rodolfoferro
-email: rodolfoferroperez@gmail.com
+email: rodovsky.ai@gmail.com
 # youtube: channel/UC3Q7iZXB950Bvtjpml9jqZg
 # medium: rodolfoferro
 # google: 
@@ -60,15 +72,16 @@ authors:
     twitter: rodo_ferro
 
 # do you want a larger site? change the option below
-# options: [normal, large] | default: normal
-# normal = 560px / large = 810px
-width: normal
+# options: [normal, large] | default: large
+# normal = 560px / large = 1040px
+width: large
 
 # if you don't need projects, comment the *projects* configs below
 projects: true
 
-# if you don't need courses, comment the *courses* configs below
-courses: true
+# if you don't need talks/courses, comment the *talks* config below
+# (this section lists both categories: course and category: talk posts)
+talks: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
@@ -107,6 +120,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-redirect-from
 
 compress_html:
   ignore:
@@ -119,7 +133,6 @@ exclude:
     "README.md",
     "Gemfile",
     "Gemfile.lock",
-    "FAQ.md",
     "vendor",
   ]
 

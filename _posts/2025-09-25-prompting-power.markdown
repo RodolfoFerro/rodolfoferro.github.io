@@ -29,6 +29,9 @@ Spacio i de Coparmex ZM de León y el Instituto de Innovación, Ciencia y Empren
 </center>
 
 
+<!-- Borrador agregado — verifica detalles del evento antes de publicar -->
+La charla parte de una idea simple: la calidad de lo que un modelo de lenguaje (LLM) te devuelve depende directamente de cómo le pides las cosas. Platicamos sobre técnicas concretas de prompt engineering — dar contexto y rol, pedir un formato de salida específico, encadenar pasos de razonamiento (few-shot y chain-of-thought) e iterar el prompt como si fuera código — y cómo estas técnicas permiten pasar de "usar un chatbot" a construir agentes que automatizan tareas reales dentro de una organización.
+
 Puedes revisar los slides dando [click aquí](https://docs.google.com/presentation/d/e/2PACX-1vTgNsrhZE1WhTwpxv5xnvF9m99upOs3bYq9Z49gE7QnviXWwLBLlPJwVRoMLQDnt2CvHfFWXUaymsDu/pub?start=false&loop=false&delayms=3000) o puedes consultarlos en directo a continuación.
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTgNsrhZE1WhTwpxv5xnvF9m99upOs3bYq9Z49gE7QnviXWwLBLlPJwVRoMLQDnt2CvHfFWXUaymsDu/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="380" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

@@ -1,34 +1,95 @@
-.header-home
-    display: block
+.site-bar
+    width: 100vw
+    margin-left: calc(-50vw + 50%)
+    margin-bottom: 48px
+    border-bottom: 1px solid var(--rule)
+    background: var(--bg-raised)
+    position: sticky
+    top: 0
+    z-index: 20
+
+.bar-inner
+    display: flex
+    align-items: center
+    gap: 20px
+    flex-wrap: wrap
+    width: 96%
+    max-width: 1040px
     margin: 0 auto
-    text-align: center
-    position: relative
-    z-index: 99
+    padding: 14px 0
 
-    > .link > .selfie
-        width: 125px
-        height: 125px
-        margin-bottom: 25px
-        border-radius: 100%
-        transition: all .2s
-        opacity: 1
+    @media #{$mobile}
+        width: 88%
 
-        &:hover
-            box-shadow: 0 0px 4px 0 rgba(0,0,0,0.18), 0 0px 12px 0 rgba(0,0,0,0.15)
-            opacity: .8
+    @media #{$tablet}
+        width: 88%
 
-    > .title
-        font-size: 4rem
-        margin: 0 0 13px
+.brand
+    font-weight: 600
+    font-size: 1.5rem
+    letter-spacing: 0.01em
+    text-decoration: none !important
+    color: var(--text)
+    white-space: nowrap
 
-    > .description
-        font-size: 1.85rem
-        font-weight: $thin-font
-        font-style: normal
-        color: $gama
-        width: 70%
-        margin: 0 auto 30px
+.cursor
+    display: inline-block
+    width: 0.5em
+    height: 1em
+    background: var(--signal)
+    vertical-align: -0.15em
+    margin-left: 2px
+    animation: blink 1.1s steps(1) infinite
 
-        // if you put some links in your bio. ;)
-        a
-            font-weight: 200
+@keyframes blink
+    50%
+        opacity: 0
+
+@media (prefers-reduced-motion: reduce)
+    .cursor
+        animation: none
+        opacity: .5
+
+.menu-toggle
+    display: none
+    font-family: $fontMonospace
+    font-size: 1.2rem
+    background: none
+    border: 1px solid var(--rule)
+    color: var(--text-dim)
+    border-radius: 3px
+    padding: 6px 10px
+    cursor: pointer
+
+    &:hover
+        color: var(--text)
+
+    &:focus-visible
+        outline: 2px solid var(--signal)
+        outline-offset: 1px
+
+.theme-toggle
+    font-family: $fontMonospace
+    font-size: 1.1rem
+    background: none
+    border: 1px solid var(--rule)
+    color: var(--text-dim)
+    border-radius: 3px
+    padding: 5px 9px
+    cursor: pointer
+
+    &:hover
+        color: var(--text)
+
+    &:focus-visible
+        outline: 2px solid var(--signal)
+        outline-offset: 1px
+
+@media #{$below}
+    .menu-toggle
+        display: inline-flex
+        align-items: center
+        order: 3
+
+    .theme-toggle
+        order: 4

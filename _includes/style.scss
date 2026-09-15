@@ -2,13 +2,24 @@
 @import "base/variables";
 @import "base/normalize";
 @import "base/syntax";
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @import "base/syntax-dark";
+  }
+}
+:root[data-theme="dark"] {
+  @import "base/syntax-dark";
+}
+
 @import "base/general";
 @import "base/helpers";
 
-@import "pages/home-blog-projects";
+@import "pages/sections";
 @import "pages/page";
 @import "pages/post";
 @import "pages/tags";
+@import "pages/error";
 
 @import "components/author";
 @import "components/disqus";
@@ -16,8 +27,11 @@
 @import "components/header";
 @import "components/nav";
 @import "components/others";
+@import "components/pdf-embed";
+@import "components/photo-frame";
 @import "components/related";
 @import "components/share";
 @import "components/side-by-side";
 @import "components/social-links";
 @import "components/spoiler";
+@import "components/terminal";

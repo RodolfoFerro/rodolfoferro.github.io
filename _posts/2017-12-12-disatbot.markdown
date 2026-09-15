@@ -197,7 +197,7 @@ For future development I am thinking about adding a map. The system already crea
 
 As mentioned I am considering expanding this to other platforms like Facebook Messenger and Twitter. Another good thing to add would be a website explaining the main use cases of the bot, maybe a wiki –*kinda*– site?
 
-If you have any other ideas or suggestions feel free to [contact me](https://twitter.com/FerroRodolfo) or:
+If you have any other ideas or suggestions feel free to [contact me](https://twitter.com/rodo_ferro) or:
 
 ## Contribute
 

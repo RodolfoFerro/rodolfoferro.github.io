@@ -18,7 +18,7 @@
 
                 <!-- The Mindskinner -->
                 <div class="tilt-box">
-                    <img src="https://gatherer-static.wizards.com/Cards/medium/3336F58E31CD45E77BC57F51417615DD281E267744911CF8B1F6925C2FA5F0CC.webp" class="d-block w-100" alt="The Mindskinner">
+                    <img src="https://gatherer-static.wizards.com/Cards/medium/3336F58E31CD45E77BC57F51417615DD281E267744911CF8B1F6925C2FA5F0CC.webp" class="d-block w-100" draggable="false" alt="The Mindskinner">
                 </div>
 
             </div>
@@ -39,7 +39,7 @@
 
                 <!-- Bruvac the Grandiloquent -->
                 <div class="tilt-box">
-                    <img src="https://gatherer-static.wizards.com/Cards/medium/3B3EB243AC234A77A20BBCAE47E7D1BC3EA45230E4667CE168D40676971B4C2E.webp" class="d-block w-100" alt="Bruvac the Grandiloquent">
+                    <img src="https://gatherer-static.wizards.com/Cards/medium/3B3EB243AC234A77A20BBCAE47E7D1BC3EA45230E4667CE168D40676971B4C2E.webp" class="d-block w-100" draggable="false" alt="Bruvac the Grandiloquent">
                 </div>
 
             </div>
@@ -60,7 +60,7 @@
 
                 <!-- The Wise Mothman -->
                 <div class="tilt-box">
-                    <img src="https://gatherer-static.wizards.com/Cards/medium/0E5817F9C4F9706D0088F7F0463A2209AB2FF55A0ED84E5641BD05D7BE027972.webp" class="d-block w-100" alt="The Wise Mothman">
+                    <img src="https://gatherer-static.wizards.com/Cards/medium/0E5817F9C4F9706D0088F7F0463A2209AB2FF55A0ED84E5641BD05D7BE027972.webp" class="d-block w-100" draggable="false" alt="The Wise Mothman">
                 </div>
 
             </div>
@@ -81,7 +81,7 @@
 
                 <!-- Captain N'Ghathrod -->
                 <div class="tilt-box">
-                    <img src="https://gatherer-static.wizards.com/Cards/medium/402335E1BDD28C78A613112C0626930433068424293BF3A0C3882FA10C2AB3DF.webp" class="d-block w-100" alt="Captain N'Ghathrod">
+                    <img src="https://gatherer-static.wizards.com/Cards/medium/402335E1BDD28C78A613112C0626930433068424293BF3A0C3882FA10C2AB3DF.webp" class="d-block w-100" draggable="false" alt="Captain N'Ghathrod">
                 </div>
 
             </div>
@@ -102,7 +102,7 @@
 
                 <!-- Phenax, God of Deception -->
                 <div class="tilt-box">
-                    <img src="https://gatherer-static.wizards.com/Cards/medium/8F011851D2BCAF764CD5F1599F0F0F7856F62484C44CFB06630DA115109025E5.webp" class="d-block w-100" alt="Phenax, God of Deception">
+                    <img src="https://gatherer-static.wizards.com/Cards/medium/8F011851D2BCAF764CD5F1599F0F0F7856F62484C44CFB06630DA115109025E5.webp" class="d-block w-100" draggable="false" alt="Phenax, God of Deception">
                 </div>
 
             </div>
@@ -123,7 +123,7 @@
 
                 <!-- Zellix, Sanity Flayer -->
                 <div class="tilt-box">
-                    <img src="https://gatherer-static.wizards.com/Cards/medium/489070BB0D721A090FEAFDE8EA23A27609BDBE1335FECB6C3F1BAAEB19C1A28A.webp" class="d-block w-100" alt="Zellix, Sanity Flayer">
+                    <img src="https://gatherer-static.wizards.com/Cards/medium/489070BB0D721A090FEAFDE8EA23A27609BDBE1335FECB6C3F1BAAEB19C1A28A.webp" class="d-block w-100" draggable="false" alt="Zellix, Sanity Flayer">
                 </div>
 
             </div>
@@ -131,19 +131,6 @@
     </div>
 </div>
 
-<style>
-    {% if site.dark-theme == "auto" %}
-        {% capture scss_sheet %}
-            {% include style.scss %}
-            @media (prefers-color-scheme: dark) {
-                {% include style-dark.scss %}
-            }
-        {% endcapture %}
-    {% elsif site.dark-theme %}
-        {% capture scss_sheet %}{% include style-dark.scss %}{% endcapture %}
-    {% else %}
-        {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
-    {% endif %}
-
-    {{ scss_sheet | scssify }}
-</style>
+<!-- loaded again here (not just where the post links it) so it always
+     cascades after bootstrap.min.css above, regardless of include order -->
+<link rel="stylesheet" href="/assets/css/mtg-mc-mill-gallery.css">

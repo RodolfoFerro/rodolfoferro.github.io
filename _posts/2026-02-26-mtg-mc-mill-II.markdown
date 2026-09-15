@@ -16,8 +16,6 @@ category: blog
 author: rodferro
 ---
 
-<link rel="stylesheet" href="/assets/css/mtg-mc-mill-gallery.css">
-
 Como hemos compartido anteriormente en la [parte I](https://rodolfoferro.xyz/mtg-mc-mill/), un caso interesante por modelar es el de la interacción entre **Altar of the Brood** y **Zellix, Sanity Flayer** en campo cuando se dispara un trigger de _milleo_.
 
 {% include mtg-mc-mill-gallery-zellix-altar.html %}

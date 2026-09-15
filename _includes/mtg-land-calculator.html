@@ -56,17 +56,17 @@
             <div class="row g-3">
                 <div class="col-md-4">
                 <label class="form-label">🎴 Cartas en el mazo</label>
-                <input type="number" id="deckSize" class="form-control" value="99">
+                <input type="number" id="deckSize" class="form-control" value="99" autocomplete="off">
                 </div>
 
                 <div class="col-md-4">
                 <label class="form-label">🏝️ Tierras en el mazo</label>
-                <input type="number" id="lands" class="form-control" value="37">
+                <input type="number" id="lands" class="form-control" value="37" autocomplete="off">
                 </div>
 
                 <div class="col-md-4">
                 <label class="form-label">✋ Cartas robadas</label>
-                <input type="number" id="handSize" class="form-control" value="7">
+                <input type="number" id="handSize" class="form-control" value="7" autocomplete="off">
                 </div>
             </div>
 
@@ -146,19 +146,6 @@
     </div>
 </div>
 
-<style>
-    {% if site.dark-theme == "auto" %}
-        {% capture scss_sheet %}
-            {% include style.scss %}
-            @media (prefers-color-scheme: dark) {
-                {% include style-dark.scss %}
-            }
-        {% endcapture %}
-    {% elsif site.dark-theme %}
-        {% capture scss_sheet %}{% include style-dark.scss %}{% endcapture %}
-    {% else %}
-        {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
-    {% endif %}
-
-    {{ scss_sheet | scssify }}
-</style>
+<!-- loaded again here (not just where the post links it) so it always
+     cascades after bootstrap.min.css above, regardless of include order -->
+<link rel="stylesheet" href="/assets/css/mtg-calculator.css">

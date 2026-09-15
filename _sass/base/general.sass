@@ -4,7 +4,11 @@ body, html
 body
 	font: 16px $fontSans
 	color: $alpha
-	background: $omega
+	background: repeating-linear-gradient(0deg, color-mix(in srgb, var(--text) 2.5%, transparent) 0 1px, transparent 1px 14px), repeating-linear-gradient(90deg, color-mix(in srgb, var(--text) 2.5%, transparent) 0 1px, transparent 1px 14px), var(--bg)
+
+::selection
+	background: var(--signal)
+	color: var(--on-signal)
 
 h1, h2, h3, h4
 	font-family: $fontSans
@@ -79,13 +83,13 @@ figcaption
 
 blockquote
 	padding-left: 15px
-	border-left: 3px solid #eee
+	border-left: 3px solid var(--rule)
 
 hr
 	border: none
 	height: 1px
 	margin: 40px auto
-	background: #eee
+	background: var(--rule)
 	width: 100%
 
 figure.highlight
@@ -97,7 +101,7 @@ code
 	font-family: $fontMonospace
 	font-size: 12px
 	vertical-align: middle
-	background: #eee
+	background: var(--bg-inset)
 	border-radius: 2px
 
 pre > code,
@@ -138,4 +142,4 @@ pre
 	max-width: 560px
 
 .wrapper-large
-	max-width: 810px
+	max-width: 1040px

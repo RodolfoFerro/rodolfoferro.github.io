@@ -1,6 +1,10 @@
-<div class="item {% if post.star %}star{% endif %}">
-    <a class="url" href="{{ site.url }}{{ post.url }}">
-        <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-        <h3 class="title">{{ post.title }}</h3>
-    </a>
-</div>
+<a class="row" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ post.url }}{% endif %}">
+    <span class="row-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <span class="row-title">{{ post.title }}</span>
+    {% if include.badge or post.tag %}
+    <span class="row-tags">
+        {% if include.badge %}<span class="tag tag--badge">{{ include.badge }}</span>{% endif %}
+        {% for t in post.tag %}<span class="tag">{{ t }}</span>{% endfor %}
+    </span>
+    {% endif %}
+</a>

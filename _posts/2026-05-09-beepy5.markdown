@@ -1,0 +1,31 @@
+---
+title: "Imágenes como datos: redes neuronales y visión por computadora"
+layout: post
+date: 2026-05-09 00:00
+published: true
+image:
+headerImage: false
+tag:
+- Computer Vision
+- CNN
+- GradCAM
+category: talk
+hidden: false # don't count this post in blog pagination
+externalLink: false
+author: rodferro
+description: "Taller práctico sobre cómo las redes neuronales convolucionales procesan imágenes, con interpretabilidad vía GradCAM."
+# TODO: verificar evento/fecha exacta (BeePy 5.0?)
+---
+
+Taller práctico: **"Imágenes como datos: redes neuronales y visión por computadora"** 🔬
+
+¿Cómo "ven" las redes neuronales artificiales una imagen? Exploramos cómo se representa una imagen como dato, cómo las redes neuronales convolucionales extraen patrones y características que escapan a la percepción humana, y armamos un pipeline completo — de la imagen cruda al resultado — visualizando qué está aprendiendo el modelo con **GradCAM**.
+
+**Material:**
+
+- Notebook 1 — La imagen como dato.
+- Notebook 2 — Clasificación con CNNs e interpretabilidad con GradCAM.
+
+Ambos notebooks corren directamente en Google Colab.
+
+Repositorio: [github.com/RodolfoFerro/beepy5](https://github.com/RodolfoFerro/beepy5)
