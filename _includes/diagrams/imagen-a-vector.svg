@@ -1,0 +1,38 @@
+<svg class="d-svg" viewBox="0 0 960 285" role="img" aria-labelledby="imagen-a-vector-t" xmlns="http://www.w3.org/2000/svg"><title id="imagen-a-vector-t">Una imagen de 64 × 64 × 3 pasa por el codificador de CLIP y se convierte en un vector de 512 números</title>
+<defs>
+<marker id="imagen-a-vector-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head"/></marker>
+<marker id="imagen-a-vector-fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-acc"/></marker>
+<marker id="imagen-a-vector-fo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-o"/></marker>
+</defs>
+<rect x="76.0" y="34.0" width="150.0" height="150.0" rx="3" class="d-chan-b"/>
+<rect x="63.0" y="47.0" width="150.0" height="150.0" rx="3" class="d-chan-g"/>
+<rect x="50.0" y="60.0" width="150.0" height="150.0" rx="3" class="d-chan-r"/>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/annualcrop_656.jpg" x="50.0" y="60.0" width="150.0" height="150.0" preserveAspectRatio="none"/><rect x="50.0" y="60.0" width="150.0" height="150.0" rx="2" class="d-frame"/>
+<text x="138.0" y="240.0" class="d-h" text-anchor="middle">Imagen: 64 × 64 × 3</text>
+<text x="138.0" y="260.0" class="d-t" text-anchor="middle">12,288 números (pixeles)</text>
+<line x1="250.0" y1="135.0" x2="318.0" y2="135.0" class="d-line" marker-end="url(#imagen-a-vector-f)"/>
+<polygon points="330,55 500,95 500,175 330,215" class="d-enc"/>
+<text x="412.0" y="130.0" class="d-h" text-anchor="middle" style="font-size:16px">CLIP</text>
+<text x="412.0" y="150.0" class="d-t" text-anchor="middle" style="font-size:12px">codificador</text>
+<text x="412.0" y="165.0" class="d-t" text-anchor="middle" style="font-size:12px">de imágenes</text>
+<line x1="512.0" y1="135.0" x2="580.0" y2="135.0" class="d-line" marker-end="url(#imagen-a-vector-f)"/>
+<rect x="595.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.22"/>
+<rect x="616.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.35"/>
+<rect x="637.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.83"/>
+<rect x="658.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.64"/>
+<rect x="679.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.23"/>
+<rect x="700.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.52"/>
+<rect x="721.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.56"/>
+<rect x="742.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.29"/>
+<rect x="763.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.77"/>
+<rect x="784.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.25"/>
+<rect x="805.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.48"/>
+<rect x="826.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.59"/>
+<text x="857.0" y="140.0" class="d-t" text-anchor="middle" style="font-size:16px">…</text>
+<rect x="873.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.43"/>
+<rect x="894.0" y="120.0" width="18.0" height="30.0" rx="2" class="d-acc" fill-opacity="0.99"/>
+<text x="760.0" y="100.0" class="d-h" text-anchor="middle">Embedding</text>
+<text x="760.0" y="182.0" class="d-t" text-anchor="middle" style="font-size:12px">[0.009, −0.000, 0.024, −0.033, …]</text>
+<text x="760.0" y="240.0" class="d-h" text-anchor="middle">512 números que resumen</text>
+<text x="760.0" y="260.0" class="d-t" text-anchor="middle">el contenido de la imagen</text>
+</svg>

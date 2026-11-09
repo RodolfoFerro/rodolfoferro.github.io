@@ -1,0 +1,5 @@
+<figure class="post-figure">
+    <div class="plotly-chart" data-src="{{ include.src }}" style="min-height: {{ include.height | default: 450 }}px" role="img" aria-label="{{ include.alt | default: include.caption | strip_html }}"></div>
+    {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>
+{% unless plotly_charts_loaded %}{% assign plotly_charts_loaded = true %}<script src="/assets/js/plotly-charts.js" defer></script>{% endunless %}

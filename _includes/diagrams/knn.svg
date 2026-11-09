@@ -1,0 +1,62 @@
+<svg class="d-svg" viewBox="0 0 960 370" role="img" aria-labelledby="knn-t" xmlns="http://www.w3.org/2000/svg"><title id="knn-t">k vecinos más cercanos: los 5 puntos más cercanos a la consulta votan y gana la clase más común</title>
+<defs>
+<marker id="knn-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head"/></marker>
+<marker id="knn-fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-acc"/></marker>
+<marker id="knn-fo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-o"/></marker>
+</defs>
+<rect x="20.0" y="20.0" width="540.0" height="340.0" rx="6" class="d-panel"/>
+<circle cx="267.0" cy="265.2" r="48.7" class="d-halo"/>
+<line x1="267.0" y1="265.2" x2="253.9" y2="280.8" class="d-edge"/>
+<line x1="267.0" y1="265.2" x2="295.6" y2="272.1" class="d-edge"/>
+<line x1="267.0" y1="265.2" x2="236.8" y2="277.4" class="d-edge"/>
+<line x1="267.0" y1="265.2" x2="250.5" y2="304.7" class="d-edge"/>
+<line x1="267.0" y1="265.2" x2="311.1" y2="260.0" class="d-edge"/>
+<circle cx="202.3" cy="285.2" r="6" class="d-acc d-ring"/>
+<circle cx="228.9" cy="201.4" r="6" class="d-acc d-ring"/>
+<circle cx="295.3" cy="216.3" r="6" class="d-acc d-ring"/>
+<circle cx="214.3" cy="259.3" r="6" class="d-acc d-ring"/>
+<circle cx="276.7" cy="143.1" r="6" class="d-acc d-ring"/>
+<circle cx="253.9" cy="280.8" r="6" class="d-acc d-ring"/>
+<circle cx="194.8" cy="144.8" r="6" class="d-acc d-ring"/>
+<circle cx="250.5" cy="304.7" r="6" class="d-acc d-ring"/>
+<circle cx="236.8" cy="277.4" r="6" class="d-acc d-ring"/>
+<circle cx="210.6" cy="245.0" r="6" class="d-acc d-ring"/>
+<circle cx="206.6" cy="195.0" r="6" class="d-acc d-ring"/>
+<circle cx="364.6" cy="286.6" r="6" class="d-g d-ring"/>
+<circle cx="385.2" cy="224.7" r="6" class="d-g d-ring"/>
+<circle cx="295.6" cy="272.1" r="6" class="d-g d-ring"/>
+<circle cx="324.5" cy="268.4" r="6" class="d-g d-ring"/>
+<circle cx="311.1" cy="260.0" r="6" class="d-g d-ring"/>
+<circle cx="365.7" cy="274.1" r="6" class="d-g d-ring"/>
+<circle cx="321.6" cy="278.2" r="6" class="d-g d-ring"/>
+<circle cx="319.7" cy="320.0" r="6" class="d-g d-ring"/>
+<circle cx="377.1" cy="309.3" r="6" class="d-g d-ring"/>
+<circle cx="365.3" cy="80.0" r="6" class="d-o d-ring"/>
+<circle cx="240.9" cy="97.5" r="6" class="d-o d-ring"/>
+<circle cx="276.1" cy="106.8" r="6" class="d-o d-ring"/>
+<circle cx="321.0" cy="186.2" r="6" class="d-o d-ring"/>
+<circle cx="310.2" cy="118.2" r="6" class="d-o d-ring"/>
+<circle cx="357.1" cy="154.5" r="6" class="d-o d-ring"/>
+<circle cx="348.3" cy="151.3" r="6" class="d-o d-ring"/>
+<circle cx="306.3" cy="141.1" r="6" class="d-o d-ring"/>
+<circle cx="267.0" cy="265.2" r="8" class="d-query"/>
+<text x="267.0" y="249.2" class="d-h" text-anchor="middle" style="font-size:13px">¿?</text>
+<circle cx="44" cy="338" r="6" class="d-acc d-ring"/>
+<text x="56.0" y="343.0" class="d-t" text-anchor="start" style="font-size:12px">Bosque</text>
+<circle cx="174" cy="338" r="6" class="d-g d-ring"/>
+<text x="186.0" y="343.0" class="d-t" text-anchor="start" style="font-size:12px">Mar o lago</text>
+<circle cx="304" cy="338" r="6" class="d-o d-ring"/>
+<text x="316.0" y="343.0" class="d-t" text-anchor="start" style="font-size:12px">Río</text>
+<text x="600.0" y="60.0" class="d-h" text-anchor="start" style="font-size:13px">Los k = 5 vecinos más</text>
+<text x="600.0" y="78.0" class="d-h" text-anchor="start" style="font-size:13px">cercanos votan:</text>
+<circle cx="612" cy="115" r="7" class="d-acc d-ring"/>
+<circle cx="634" cy="115" r="7" class="d-acc d-ring"/>
+<circle cx="656" cy="115" r="7" class="d-acc d-ring"/>
+<text x="686.0" y="120.0" class="d-t" text-anchor="start" style="font-size:13px">Bosque: 3</text>
+<circle cx="612" cy="149" r="7" class="d-g d-ring"/>
+<circle cx="634" cy="149" r="7" class="d-g d-ring"/>
+<text x="686.0" y="154.0" class="d-t" text-anchor="start" style="font-size:13px">Mar o lago: 2</text>
+<text x="600.0" y="213.0" class="d-acc-t" text-anchor="start" style="font-size:14px">Predicción: Bosque</text>
+<text x="600.0" y="247.0" class="d-faint" text-anchor="start" style="font-size:12px">Es el buscador de la parte I</text>
+<text x="600.0" y="265.0" class="d-faint" text-anchor="start" style="font-size:12px">más una votación.</text>
+</svg>

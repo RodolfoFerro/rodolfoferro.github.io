@@ -1,0 +1,31 @@
+<svg class="d-svg" viewBox="0 0 960 275" role="img" aria-labelledby="similitud-coseno-t" xmlns="http://www.w3.org/2000/svg"><title id="similitud-coseno-t">Similitud coseno: vectores con ángulo pequeño tienen similitud cercana a 1, perpendiculares 0 y opuestos −1</title>
+<defs>
+<marker id="similitud-coseno-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head"/></marker>
+<marker id="similitud-coseno-fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-acc"/></marker>
+<marker id="similitud-coseno-fo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-o"/></marker>
+</defs>
+<line x1="90.0" y1="170.0" x2="207.5" y2="127.2" class="d-acc-line d-thick" marker-end="url(#similitud-coseno-fa)"/>
+<line x1="90.0" y1="170.0" x2="170.3" y2="74.2" class="d-o-line d-thick" marker-end="url(#similitud-coseno-fo)"/>
+<path d="M125.7,157.0 A38,38 0 0 0 114.4,140.9" class="d-line"/>
+<text x="134.2" y="144.0" class="d-h" text-anchor="middle" style="font-size:13px">θ</text>
+<circle cx="90" cy="170" r="3" class="d-dot"/>
+<text x="160.0" y="215.0" class="d-t" text-anchor="middle" style="font-size:13px">θ pequeño</text>
+<text x="160.0" y="237.0" class="d-h" text-anchor="middle" style="font-size:15px">sim ≈ 0.9</text>
+<text x="160.0" y="257.0" class="d-t" text-anchor="middle" style="font-size:13px">parecidos</text>
+<line x1="410.0" y1="170.0" x2="535.0" y2="170.0" class="d-acc-line d-thick" marker-end="url(#similitud-coseno-fa)"/>
+<line x1="410.0" y1="170.0" x2="410.0" y2="45.0" class="d-o-line d-thick" marker-end="url(#similitud-coseno-fo)"/>
+<path d="M448.0,170.0 A38,38 0 0 0 410.0,132.0" class="d-line"/>
+<text x="448.2" y="136.8" class="d-h" text-anchor="middle" style="font-size:13px">θ</text>
+<circle cx="410" cy="170" r="3" class="d-dot"/>
+<text x="480.0" y="215.0" class="d-t" text-anchor="middle" style="font-size:13px">θ = 90°</text>
+<text x="480.0" y="237.0" class="d-h" text-anchor="middle" style="font-size:15px">sim = 0</text>
+<text x="480.0" y="257.0" class="d-t" text-anchor="middle" style="font-size:13px">sin relación</text>
+<line x1="800.0" y1="170.0" x2="925.0" y2="170.0" class="d-acc-line d-thick" marker-end="url(#similitud-coseno-fa)"/>
+<line x1="800.0" y1="170.0" x2="675.0" y2="170.0" class="d-o-line d-thick" marker-end="url(#similitud-coseno-fo)"/>
+<path d="M838.0,170.0 A38,38 0 0 0 762.0,170.0" class="d-line"/>
+<text x="800.0" y="121.0" class="d-h" text-anchor="middle" style="font-size:13px">θ</text>
+<circle cx="800" cy="170" r="3" class="d-dot"/>
+<text x="800.0" y="215.0" class="d-t" text-anchor="middle" style="font-size:13px">θ = 180°</text>
+<text x="800.0" y="237.0" class="d-h" text-anchor="middle" style="font-size:15px">sim = −1</text>
+<text x="800.0" y="257.0" class="d-t" text-anchor="middle" style="font-size:13px">opuestos</text>
+</svg>

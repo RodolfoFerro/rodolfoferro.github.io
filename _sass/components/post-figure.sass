@@ -1,0 +1,180 @@
+// figures inside posts: exported images and interactive plotly charts
+// (_includes/post-figure.html, _includes/plotly-chart.html)
+.post-figure
+    margin: 3rem 0
+    padding: 0
+
+    > img
+        display: block
+        width: 100%
+        height: auto
+        margin: 0 auto
+
+    > figcaption
+        top: 0
+        margin-top: 1rem
+        font-size: 1.3rem
+        line-height: 1.6
+        color: var(--text-dim)
+        text-align: center
+
+.plotly-chart
+    width: 100%
+    border: 1px solid var(--rule)
+    border-radius: 4px
+    background: var(--bg-raised)
+
+.plotly-chart--error
+    display: flex
+    align-items: center
+    justify-content: center
+    color: var(--text-faint)
+
+// markdown tables inside posts (the theme had no table styles)
+.post table
+    display: block
+    max-width: 100%
+    overflow-x: auto
+    margin: 2rem 0
+    border-collapse: collapse
+    font-size: 1.4rem
+
+    th,
+    td
+        padding: 0.6rem 1.2rem
+        border-bottom: 1px solid var(--rule)
+        text-align: left
+
+    th
+        color: var(--text)
+        border-bottom-color: var(--text-faint)
+
+// inline SVG diagrams (_includes/diagram.html, _includes/diagrams/*.svg):
+// every color comes from the theme tokens, so they follow light/dark
+.diagram
+    --d-accent: #2a78d6
+    --d-accent-soft: rgba(42, 120, 214, 0.14)
+    --d-orange: #eb6834
+    --d-green: #1baf7a
+
+    .diagram-scroll
+        overflow-x: auto
+
+    .d-svg
+        display: block
+        width: 100%
+        min-width: 620px
+        height: auto
+        font-family: inherit
+
+    .d-t
+        fill: var(--text-dim)
+        font-size: 13px
+    .d-h
+        fill: var(--text)
+        font-size: 14px
+        font-weight: 600
+    .d-faint
+        fill: var(--text-dim)
+        opacity: 0.8
+        font-size: 12px
+    .d-acc-t
+        fill: var(--d-accent)
+        font-weight: 600
+    .d-o-t
+        fill: var(--d-orange)
+        font-weight: 600
+    .d-on-acc
+        fill: var(--bg-raised)
+        font-weight: 600
+
+    .d-box
+        fill: var(--bg-inset)
+        stroke: var(--rule)
+    .d-panel
+        fill: var(--bg-raised)
+        stroke: var(--rule)
+    .d-frame
+        fill: none
+        stroke: var(--rule)
+    .d-enc
+        fill: var(--d-accent-soft)
+        stroke: var(--d-accent)
+        stroke-width: 1.5
+    .d-frozen
+        fill: var(--bg-inset)
+        stroke: var(--text-faint)
+        stroke-width: 1.5
+        stroke-dasharray: 6 4
+    .d-mute
+        fill: var(--text-faint)
+        opacity: 0.55
+    .d-chan-r
+        fill: rgba(220, 40, 40, 0.55)
+    .d-chan-g
+        fill: rgba(30, 170, 60, 0.55)
+    .d-chan-b
+        fill: rgba(40, 80, 220, 0.55)
+
+    .d-line
+        stroke: var(--text-faint)
+        stroke-width: 1.5
+        fill: none
+    .d-thick
+        stroke-width: 2.5
+    .d-dash
+        stroke-dasharray: 5 4
+    .d-grid
+        stroke: rgba(255, 255, 255, 0.75)
+        stroke-width: 1
+    .d-edge
+        stroke: var(--text-faint)
+        stroke-width: 1
+        opacity: 0.8
+    .d-acc-line
+        stroke: var(--d-accent)
+        stroke-width: 1.8
+        fill: none
+    .d-o-line
+        stroke: var(--d-orange)
+        stroke-width: 1.8
+        fill: none
+    .d-head
+        fill: var(--text-faint)
+
+    .d-acc
+        fill: var(--d-accent)
+    .d-o
+        fill: var(--d-orange)
+    .d-g
+        fill: var(--d-green)
+    .d-ring
+        stroke: var(--bg-raised)
+        stroke-width: 2
+    .d-pt
+        fill: var(--d-accent)
+        fill-opacity: 0.55
+    .d-dot,
+    .d-ink-dot
+        fill: var(--text)
+    .d-halo
+        fill: var(--d-accent-soft)
+        stroke: var(--d-accent)
+        stroke-dasharray: 5 4
+    .d-query
+        fill: var(--bg-raised)
+        stroke: var(--text)
+        stroke-width: 3
+
+@media (prefers-color-scheme: dark)
+    html:not([data-theme="light"]) .diagram
+        --d-accent: #6ea8f5
+        --d-accent-soft: rgba(110, 168, 245, 0.16)
+        --d-orange: #f08a5d
+        --d-green: #3cc893
+
+html[data-theme="dark"] .diagram
+    --d-accent: #6ea8f5
+    --d-accent-soft: rgba(110, 168, 245, 0.16)
+    --d-orange: #f08a5d
+    --d-green: #3cc893

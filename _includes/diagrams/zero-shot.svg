@@ -1,0 +1,77 @@
+<svg class="d-svg" viewBox="0 0 960 315" role="img" aria-labelledby="zero-shot-t" xmlns="http://www.w3.org/2000/svg"><title id="zero-shot-t">Clasificación zero-shot: se compara el embedding de la imagen con el de una frase por clase y gana la más similar</title>
+<defs>
+<marker id="zero-shot-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head"/></marker>
+<marker id="zero-shot-fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-acc"/></marker>
+<marker id="zero-shot-fo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-o"/></marker>
+</defs>
+<text x="20.0" y="30.0" class="d-h" text-anchor="start" style="font-size:13px">Una frase por clase</text>
+<rect x="20.0" y="44.0" width="300.0" height="24.0" rx="3" class="d-box"/>
+<text x="30.0" y="61.0" class="d-t" text-anchor="start" style="font-size:11px">a centered satellite photo of forest.</text>
+<rect x="20.0" y="74.0" width="300.0" height="24.0" rx="3" class="d-box"/>
+<text x="30.0" y="91.0" class="d-t" text-anchor="start" style="font-size:11px">a centered satellite photo of river.</text>
+<rect x="20.0" y="104.0" width="300.0" height="24.0" rx="3" class="d-box"/>
+<text x="30.0" y="121.0" class="d-t" text-anchor="start" style="font-size:11px">a centered satellite photo of sea or lake.</text>
+<rect x="20.0" y="134.0" width="300.0" height="24.0" rx="3" class="d-box"/>
+<text x="30.0" y="151.0" class="d-t" text-anchor="start" style="font-size:11px">a centered satellite photo of highway.</text>
+<text x="170.0" y="180.0" class="d-t" text-anchor="middle" style="font-size:12px">… (10 frases)</text>
+<line x1="330.0" y1="100.0" x2="368.0" y2="100.0" class="d-line" marker-end="url(#zero-shot-f)"/>
+<rect x="376.0" y="72.0" width="120.0" height="56.0" rx="6" class="d-enc"/>
+<text x="436.0" y="96.0" class="d-t" text-anchor="middle" style="font-size:12px">codificador</text>
+<text x="436.0" y="112.0" class="d-t" text-anchor="middle" style="font-size:12px">de texto</text>
+<line x1="504.0" y1="100.0" x2="540.0" y2="100.0" class="d-line" marker-end="url(#zero-shot-f)"/>
+<rect x="548.0" y="50.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.39"/>
+<rect x="562.0" y="50.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.54"/>
+<rect x="576.0" y="50.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.25"/>
+<rect x="590.0" y="50.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.59"/>
+<rect x="604.0" y="50.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.50"/>
+<rect x="618.0" y="50.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.21"/>
+<rect x="548.0" y="76.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.81"/>
+<rect x="562.0" y="76.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.66"/>
+<rect x="576.0" y="76.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.75"/>
+<rect x="590.0" y="76.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.23"/>
+<rect x="604.0" y="76.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.69"/>
+<rect x="618.0" y="76.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.98"/>
+<rect x="548.0" y="102.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.46"/>
+<rect x="562.0" y="102.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.32"/>
+<rect x="576.0" y="102.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.23"/>
+<rect x="590.0" y="102.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.71"/>
+<rect x="604.0" y="102.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.54"/>
+<rect x="618.0" y="102.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.99"/>
+<rect x="548.0" y="128.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.74"/>
+<rect x="562.0" y="128.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.70"/>
+<rect x="576.0" y="128.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.26"/>
+<rect x="590.0" y="128.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.25"/>
+<rect x="604.0" y="128.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.71"/>
+<rect x="618.0" y="128.0" width="12.0" height="18.0" rx="2" class="d-o" fill-opacity="0.88"/>
+<text x="593.0" y="168.0" class="d-t" text-anchor="middle" style="font-size:12px">T: 10 vectores</text>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_1.jpg" x="120.0" y="222.0" width="70.0" height="70.0" preserveAspectRatio="none"/><rect x="120.0" y="222.0" width="70.0" height="70.0" rx="2" class="d-frame"/>
+<line x1="200.0" y1="257.0" x2="368.0" y2="257.0" class="d-line" marker-end="url(#zero-shot-f)"/>
+<rect x="376.0" y="229.0" width="120.0" height="56.0" rx="6" class="d-enc"/>
+<text x="436.0" y="253.0" class="d-t" text-anchor="middle" style="font-size:12px">codificador</text>
+<text x="436.0" y="269.0" class="d-t" text-anchor="middle" style="font-size:12px">de imágenes</text>
+<line x1="504.0" y1="257.0" x2="540.0" y2="257.0" class="d-line" marker-end="url(#zero-shot-f)"/>
+<rect x="548.0" y="248.0" width="12.0" height="18.0" rx="2" class="d-acc" fill-opacity="0.22"/>
+<rect x="562.0" y="248.0" width="12.0" height="18.0" rx="2" class="d-acc" fill-opacity="0.35"/>
+<rect x="576.0" y="248.0" width="12.0" height="18.0" rx="2" class="d-acc" fill-opacity="0.83"/>
+<rect x="590.0" y="248.0" width="12.0" height="18.0" rx="2" class="d-acc" fill-opacity="0.64"/>
+<rect x="604.0" y="248.0" width="12.0" height="18.0" rx="2" class="d-acc" fill-opacity="0.23"/>
+<rect x="618.0" y="248.0" width="12.0" height="18.0" rx="2" class="d-acc" fill-opacity="0.52"/>
+<text x="593.0" y="292.0" class="d-t" text-anchor="middle" style="font-size:12px">x: 1 vector</text>
+<line x1="650.0" y1="200.0" x2="688.0" y2="200.0" class="d-line" marker-end="url(#zero-shot-f)"/>
+<text x="800.0" y="30.0" class="d-h" text-anchor="middle" style="font-size:13px">Similitud de x con cada frase</text>
+<text x="790.0" y="75.0" class="d-h" text-anchor="end" style="font-size:12px">Bosque</text>
+<rect x="800.0" y="60.0" width="105.0" height="22.0" rx="3" class="d-acc"/>
+<text x="911.0" y="76.0" class="d-t" text-anchor="start" style="font-size:12px">0.29</text>
+<text x="790.0" y="115.0" class="d-t" text-anchor="end" style="font-size:12px">Mar o lago</text>
+<rect x="800.0" y="100.0" width="76.4" height="22.0" rx="3" class="d-mute"/>
+<text x="882.4" y="116.0" class="d-t" text-anchor="start" style="font-size:12px">0.26</text>
+<text x="790.0" y="155.0" class="d-t" text-anchor="end" style="font-size:12px">Río</text>
+<rect x="800.0" y="140.0" width="57.3" height="22.0" rx="3" class="d-mute"/>
+<text x="863.3" y="156.0" class="d-t" text-anchor="start" style="font-size:12px">0.24</text>
+<text x="790.0" y="195.0" class="d-t" text-anchor="end" style="font-size:12px">Autopista</text>
+<rect x="800.0" y="180.0" width="38.2" height="22.0" rx="3" class="d-mute"/>
+<text x="844.2" y="196.0" class="d-t" text-anchor="start" style="font-size:12px">0.22</text>
+<text x="800.0" y="242.0" class="d-t" text-anchor="start" style="font-size:16px">…</text>
+<text x="800.0" y="282.0" class="d-h" text-anchor="middle" style="font-size:13px">Predicción: la frase</text>
+<text x="800.0" y="300.0" class="d-acc-t" text-anchor="middle" style="font-size:13px">más similar → Bosque</text>
+</svg>

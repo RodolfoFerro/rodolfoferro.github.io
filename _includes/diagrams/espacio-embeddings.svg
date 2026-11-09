@@ -1,0 +1,26 @@
+<svg class="d-svg" viewBox="0 0 960 360" role="img" aria-labelledby="espacio-embeddings-t" xmlns="http://www.w3.org/2000/svg"><title id="espacio-embeddings-t">En el espacio de embeddings, las imágenes de bosque quedan juntas y lejos de las zonas residenciales</title>
+<defs>
+<marker id="espacio-embeddings-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head"/></marker>
+<marker id="espacio-embeddings-fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-acc"/></marker>
+<marker id="espacio-embeddings-fo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-o"/></marker>
+</defs>
+<rect x="30.0" y="20.0" width="900.0" height="330.0" rx="6" class="d-panel"/>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_1.jpg" x="130.0" y="70.0" width="58.0" height="58.0" preserveAspectRatio="none"/><rect x="130.0" y="70.0" width="58.0" height="58.0" rx="2" class="d-frame"/>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_3.jpg" x="205.0" y="108.0" width="58.0" height="58.0" preserveAspectRatio="none"/><rect x="205.0" y="108.0" width="58.0" height="58.0" rx="2" class="d-frame"/>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_7.jpg" x="120.0" y="150.0" width="58.0" height="58.0" preserveAspectRatio="none"/><rect x="120.0" y="150.0" width="58.0" height="58.0" rx="2" class="d-frame"/>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/sealake_1.jpg" x="300.0" y="205.0" width="58.0" height="58.0" preserveAspectRatio="none"/><rect x="300.0" y="205.0" width="58.0" height="58.0" rx="2" class="d-frame"/>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/sealake_5.jpg" x="365.0" y="245.0" width="58.0" height="58.0" preserveAspectRatio="none"/><rect x="365.0" y="245.0" width="58.0" height="58.0" rx="2" class="d-frame"/>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/residential_2.jpg" x="690.0" y="60.0" width="58.0" height="58.0" preserveAspectRatio="none"/><rect x="690.0" y="60.0" width="58.0" height="58.0" rx="2" class="d-frame"/>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/residential_3.jpg" x="770.0" y="95.0" width="58.0" height="58.0" preserveAspectRatio="none"/><rect x="770.0" y="95.0" width="58.0" height="58.0" rx="2" class="d-frame"/>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/residential_12.jpg" x="705.0" y="140.0" width="58.0" height="58.0" preserveAspectRatio="none"/><rect x="705.0" y="140.0" width="58.0" height="58.0" rx="2" class="d-frame"/>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/industrial_4.jpg" x="790.0" y="230.0" width="58.0" height="58.0" preserveAspectRatio="none"/><rect x="790.0" y="230.0" width="58.0" height="58.0" rx="2" class="d-frame"/>
+<text x="185.0" y="235.0" class="d-h" text-anchor="middle">Bosque</text>
+<text x="372.0" y="330.0" class="d-h" text-anchor="middle">Mar o lago</text>
+<text x="752.0" y="222.0" class="d-h" text-anchor="middle">Residencial</text>
+<text x="819.0" y="312.0" class="d-h" text-anchor="middle">Industrial</text>
+<line x1="160.0" y1="128.0" x2="223.0" y2="137.0" class="d-acc-line" marker-end="url(#espacio-embeddings-fa)" marker-start="url(#espacio-embeddings-fa)"/>
+<text x="118.0" y="50.0" class="d-acc-t" text-anchor="start" style="font-size:12px">cerca: contenido parecido</text>
+<line x1="240.0" y1="112.0" x2="685.0" y2="95.0" class="d-o-line d-dash" marker-end="url(#espacio-embeddings-fo)" marker-start="url(#espacio-embeddings-fo)"/>
+<text x="462.0" y="92.0" class="d-o-t" text-anchor="middle" style="font-size:12px">lejos: contenido distinto</text>
+<text x="910.0" y="340.0" class="d-t" text-anchor="end" style="font-size:11px">(2 de las 512 dimensiones, como ilustración)</text>
+</svg>

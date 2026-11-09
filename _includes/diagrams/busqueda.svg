@@ -1,0 +1,46 @@
+<svg class="d-svg" viewBox="0 0 960 260" role="img" aria-labelledby="busqueda-t" xmlns="http://www.w3.org/2000/svg"><title id="busqueda-t">El buscador compara el embedding de la consulta con todas las imágenes, las ordena por similitud y devuelve las 5 más parecidas</title>
+<defs>
+<marker id="busqueda-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head"/></marker>
+<marker id="busqueda-fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-acc"/></marker>
+<marker id="busqueda-fo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-o"/></marker>
+</defs>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_1.jpg" x="30.0" y="95.0" width="90.0" height="90.0" preserveAspectRatio="none"/><rect x="30.0" y="95.0" width="90.0" height="90.0" rx="2" class="d-frame"/>
+<text x="75.0" y="82.0" class="d-h" text-anchor="middle" style="font-size:13px">Consulta</text>
+<text x="75.0" y="210.0" class="d-t" text-anchor="middle" style="font-size:12px">su embedding q</text>
+<line x1="132.0" y1="140.0" x2="200.0" y2="140.0" class="d-line" marker-end="url(#busqueda-f)"/>
+<text x="166.0" y="128.0" class="d-acc-t" text-anchor="middle" style="font-size:12px">X @ q</text>
+<text x="262.0" y="40.0" class="d-h" text-anchor="middle" style="font-size:13px">Similitud con</text>
+<text x="262.0" y="58.0" class="d-h" text-anchor="middle" style="font-size:13px">las 2,000 imágenes</text>
+<rect x="212.0" y="72.0" width="100.0" height="19.0" rx="3" class="d-box"/>
+<text x="262.0" y="86.0" class="d-t" text-anchor="middle" style="font-size:12px">0.81</text>
+<rect x="212.0" y="96.0" width="100.0" height="19.0" rx="3" class="d-box"/>
+<text x="262.0" y="110.0" class="d-t" text-anchor="middle" style="font-size:12px">0.95</text>
+<rect x="212.0" y="120.0" width="100.0" height="19.0" rx="3" class="d-box"/>
+<text x="262.0" y="134.0" class="d-t" text-anchor="middle" style="font-size:12px">0.78</text>
+<rect x="212.0" y="144.0" width="100.0" height="19.0" rx="3" class="d-box"/>
+<text x="262.0" y="158.0" class="d-t" text-anchor="middle" style="font-size:12px">0.93</text>
+<rect x="212.0" y="168.0" width="100.0" height="19.0" rx="3" class="d-box"/>
+<text x="262.0" y="182.0" class="d-t" text-anchor="middle" style="font-size:12px">0.84</text>
+<rect x="212.0" y="192.0" width="100.0" height="19.0" rx="3" class="d-box"/>
+<text x="262.0" y="206.0" class="d-t" text-anchor="middle" style="font-size:12px">0.94</text>
+<text x="262.0" y="232.0" class="d-t" text-anchor="middle" style="font-size:16px">…</text>
+<line x1="325.0" y1="140.0" x2="393.0" y2="140.0" class="d-line" marker-end="url(#busqueda-f)"/>
+<text x="359.0" y="128.0" class="d-t" text-anchor="middle" style="font-size:12px">ordenar</text>
+<text x="640.0" y="40.0" class="d-h" text-anchor="middle" style="font-size:13px">Los 5 resultados más parecidos</text>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_3.jpg" x="410.0" y="70.0" width="80.0" height="80.0" preserveAspectRatio="none"/><rect x="410.0" y="70.0" width="80.0" height="80.0" rx="2" class="d-frame"/>
+<text x="450.0" y="172.0" class="d-t" text-anchor="middle" style="font-size:12px">0.95</text>
+<text x="450.0" y="198.0" class="d-acc-t" text-anchor="middle" style="font-size:18px">✓</text>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_7.jpg" x="504.0" y="70.0" width="80.0" height="80.0" preserveAspectRatio="none"/><rect x="504.0" y="70.0" width="80.0" height="80.0" rx="2" class="d-frame"/>
+<text x="544.0" y="172.0" class="d-t" text-anchor="middle" style="font-size:12px">0.94</text>
+<text x="544.0" y="198.0" class="d-acc-t" text-anchor="middle" style="font-size:18px">✓</text>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_9.jpg" x="598.0" y="70.0" width="80.0" height="80.0" preserveAspectRatio="none"/><rect x="598.0" y="70.0" width="80.0" height="80.0" rx="2" class="d-frame"/>
+<text x="638.0" y="172.0" class="d-t" text-anchor="middle" style="font-size:12px">0.93</text>
+<text x="638.0" y="198.0" class="d-acc-t" text-anchor="middle" style="font-size:18px">✓</text>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/sealake_1.jpg" x="692.0" y="70.0" width="80.0" height="80.0" preserveAspectRatio="none"/><rect x="692.0" y="70.0" width="80.0" height="80.0" rx="2" class="d-frame"/>
+<text x="732.0" y="172.0" class="d-t" text-anchor="middle" style="font-size:12px">0.93</text>
+<text x="732.0" y="198.0" class="d-o-t" text-anchor="middle" style="font-size:18px">✗</text>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_2.jpg" x="786.0" y="70.0" width="80.0" height="80.0" preserveAspectRatio="none"/><rect x="786.0" y="70.0" width="80.0" height="80.0" rx="2" class="d-frame"/>
+<text x="826.0" y="172.0" class="d-t" text-anchor="middle" style="font-size:12px">0.92</text>
+<text x="826.0" y="198.0" class="d-acc-t" text-anchor="middle" style="font-size:18px">✓</text>
+<text x="640.0" y="238.0" class="d-h" text-anchor="middle" style="font-size:14px">precisión en 5 = 4 / 5 = 80%</text>
+</svg>

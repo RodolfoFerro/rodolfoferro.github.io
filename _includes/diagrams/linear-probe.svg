@@ -1,0 +1,49 @@
+<svg class="d-svg" viewBox="0 0 960 330" role="img" aria-labelledby="linear-probe-t" xmlns="http://www.w3.org/2000/svg"><title id="linear-probe-t">Linear probe: CLIP queda congelado y solo se entrena una regresión logística encima. Fine-tuning: también se entrena CLIP</title>
+<defs>
+<marker id="linear-probe-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-head"/></marker>
+<marker id="linear-probe-fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-acc"/></marker>
+<marker id="linear-probe-fo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="d-o"/></marker>
+</defs>
+<text x="20.0" y="32.0" class="d-h" text-anchor="start" style="font-size:14px">Linear probe</text>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_1.jpg" x="20.0" y="50.0" width="64.0" height="64.0" preserveAspectRatio="none"/><rect x="20.0" y="50.0" width="64.0" height="64.0" rx="2" class="d-frame"/>
+<line x1="92.0" y1="82.0" x2="128.0" y2="82.0" class="d-line" marker-end="url(#linear-probe-f)"/>
+<rect x="136.0" y="44.0" width="200.0" height="76.0" rx="6" class="d-frozen"/>
+<text x="236.0" y="76.0" class="d-h" text-anchor="middle" style="font-size:15px">CLIP</text>
+<text x="236.0" y="98.0" class="d-t" text-anchor="middle" style="font-size:12px">(congelado)</text>
+<line x1="344.0" y1="82.0" x2="380.0" y2="82.0" class="d-line" marker-end="url(#linear-probe-f)"/>
+<rect x="388.0" y="70.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.22"/>
+<rect x="402.0" y="70.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.35"/>
+<rect x="416.0" y="70.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.83"/>
+<rect x="430.0" y="70.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.64"/>
+<rect x="444.0" y="70.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.23"/>
+<rect x="458.0" y="70.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.52"/>
+<line x1="480.0" y1="82.0" x2="516.0" y2="82.0" class="d-line" marker-end="url(#linear-probe-f)"/>
+<rect x="524.0" y="44.0" width="220.0" height="76.0" rx="6" class="d-enc"/>
+<text x="634.0" y="76.0" class="d-h" text-anchor="middle" style="font-size:13px">regresión logística</text>
+<text x="634.0" y="98.0" class="d-acc-t" text-anchor="middle" style="font-size:12px">(se entrena)</text>
+<line x1="752.0" y1="82.0" x2="788.0" y2="82.0" class="d-line" marker-end="url(#linear-probe-f)"/>
+<text x="796.0" y="87.0" class="d-h" text-anchor="start" style="font-size:14px">Bosque</text>
+<text x="20.0" y="167.0" class="d-h" text-anchor="start" style="font-size:14px">Fine-tuning</text>
+<image href="/assets/posts/buscador-imagenes-ia/miniaturas/forest_1.jpg" x="20.0" y="185.0" width="64.0" height="64.0" preserveAspectRatio="none"/><rect x="20.0" y="185.0" width="64.0" height="64.0" rx="2" class="d-frame"/>
+<line x1="92.0" y1="217.0" x2="128.0" y2="217.0" class="d-line" marker-end="url(#linear-probe-f)"/>
+<rect x="136.0" y="179.0" width="200.0" height="76.0" rx="6" class="d-enc"/>
+<text x="236.0" y="211.0" class="d-h" text-anchor="middle" style="font-size:15px">CLIP</text>
+<text x="236.0" y="233.0" class="d-acc-t" text-anchor="middle" style="font-size:12px">(se entrena)</text>
+<line x1="344.0" y1="217.0" x2="380.0" y2="217.0" class="d-line" marker-end="url(#linear-probe-f)"/>
+<rect x="388.0" y="205.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.22"/>
+<rect x="402.0" y="205.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.35"/>
+<rect x="416.0" y="205.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.83"/>
+<rect x="430.0" y="205.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.64"/>
+<rect x="444.0" y="205.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.23"/>
+<rect x="458.0" y="205.0" width="12.0" height="24.0" rx="2" class="d-acc" fill-opacity="0.52"/>
+<line x1="480.0" y1="217.0" x2="516.0" y2="217.0" class="d-line" marker-end="url(#linear-probe-f)"/>
+<rect x="524.0" y="179.0" width="220.0" height="76.0" rx="6" class="d-enc"/>
+<text x="634.0" y="211.0" class="d-h" text-anchor="middle" style="font-size:13px">capa de clasificación</text>
+<text x="634.0" y="233.0" class="d-acc-t" text-anchor="middle" style="font-size:12px">(se entrena)</text>
+<line x1="752.0" y1="217.0" x2="788.0" y2="217.0" class="d-line" marker-end="url(#linear-probe-f)"/>
+<text x="796.0" y="222.0" class="d-h" text-anchor="start" style="font-size:14px">Bosque</text>
+<rect x="20.0" y="300.0" width="22.0" height="16.0" rx="3" class="d-enc"/>
+<text x="50.0" y="313.0" class="d-t" text-anchor="start" style="font-size:12px">se entrena con nuestros datos</text>
+<rect x="300.0" y="300.0" width="22.0" height="16.0" rx="3" class="d-frozen"/>
+<text x="330.0" y="313.0" class="d-t" text-anchor="start" style="font-size:12px">congelado: solo se usa para calcular embeddings</text>
+</svg>
